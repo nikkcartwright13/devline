@@ -83,3 +83,29 @@ a:focus-visible, button:focus-visible {
   outline-offset: 2px;
   border-radius: 8px;
 }
+
+/* Hero 3D visual — scales down on phones instead of disappearing */
+.dl-hero-visual { min-height: 300px; margin-top: 12px; }
+.dl-hero-glow-a { width: 220px; height: 220px; }
+.dl-hero-glow-b { width: 140px; height: 140px; top: 6px; right: 14px; }
+.dl-hero-mockup { transform: scale(.6); }
+.dl-hero-phone { bottom: -14px; right: -4px; transform: translateZ(40px) scale(.4); }
+.dl-hero-badge { top: -6px; left: -6px; transform: translateZ(30px); }
+
+@media (min-width: 640px) {
+  .dl-hero-visual { min-height: 380px; }
+  .dl-hero-glow-a { width: 260px; height: 260px; }
+  .dl-hero-glow-b { width: 160px; height: 160px; top: 8px; right: 20px; }
+  .dl-hero-mockup { transform: scale(.72); }
+  .dl-hero-phone { bottom: -30px; right: -8px; transform: translateZ(60px) scale(.48); }
+  .dl-hero-badge { top: -14px; left: -18px; transform: translateZ(50px); }
+}
+
+@media (min-width: 1280px) {
+  .dl-hero-visual { min-height: 460px; margin-top: 0; }
+  .dl-hero-glow-a { width: 320px; height: 320px; }
+  .dl-hero-glow-b { width: 200px; height: 200px; top: 10px; right: 30px; }
+  .dl-hero-mockup { transform: scale(.82); }
+  .dl-hero-phone { bottom: -46px; right: -14px; transform: translateZ(90px) scale(.54); }
+  .dl-hero-badge { top: -22px; left: -34px; transform: translateZ(70px); }
+}

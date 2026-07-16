@@ -70,22 +70,23 @@ export default function HeroCarousel() {
         </div>
 
         {/* 3D visual accent */}
-        <div className="hidden xl:flex justify-center items-center" style={{ position: "relative", minHeight: 460 }}>
-          <span aria-hidden style={{ position: "absolute", width: 320, height: 320, borderRadius: "50%", background: "radial-gradient(circle, rgba(79,140,255,.35), transparent 70%)", filter: "blur(30px)" }} />
-          <span aria-hidden style={{ position: "absolute", width: 200, height: 200, top: 10, right: 30, borderRadius: "50%", background: "radial-gradient(circle, rgba(139,92,246,.32), transparent 70%)", filter: "blur(26px)" }} />
+        <div className="dl-hero-visual flex justify-center items-center" style={{ position: "relative" }}>
+          <span aria-hidden className="dl-hero-glow-a" style={{ position: "absolute", borderRadius: "50%", background: "radial-gradient(circle, rgba(79,140,255,.35), transparent 70%)", filter: "blur(30px)" }} />
+          <span aria-hidden className="dl-hero-glow-b" style={{ position: "absolute", borderRadius: "50%", background: "radial-gradient(circle, rgba(139,92,246,.32), transparent 70%)", filter: "blur(26px)" }} />
 
           <Tilt3D max={16} scale={1.05}>
-            <div style={{ transform: "translateZ(0px) scale(.82)" }}>
+            <div className="dl-hero-mockup" style={{ transform: "translateZ(0px)" }}>
               <WebsiteMockup />
             </div>
 
-            <div style={{ position: "absolute", bottom: -46, right: -14, transform: "translateZ(90px) scale(.54)", zIndex: 3 }}>
+            <div className="dl-hero-phone" style={{ position: "absolute", zIndex: 3 }}>
               <PhoneMockup variant="front" />
             </div>
 
             <div
+              className="dl-hero-badge"
               style={{
-                position: "absolute", top: -22, left: -34, transform: "translateZ(70px)", zIndex: 4,
+                position: "absolute", zIndex: 4,
                 animation: "dl-web-float 6s ease-in-out infinite alternate",
               }}
             >
