@@ -1,0 +1,15 @@
+# Example Nginx server block for this app (react-router-dom client-side routing).
+# This isn't picked up automatically — copy the relevant `location` block into
+# your actual site config. Without `try_files` falling back to index.html,
+# hitting a route directly (e.g. /services) or refreshing on it 404s.
+
+server {
+    listen 80;
+    server_name devline.digital www.devline.digital;
+    root   /var/www/devline/build;
+    index  index.html;
+
+    location / {
+        try_files $uri /index.html;
+    }
+}

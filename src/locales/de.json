@@ -1,0 +1,592 @@
+{
+  "meta": {
+    "siteName": "Devline.digital",
+    "defaultTitleSuffix": "Software Studio",
+    "defaultDescription": "Devline.digital — ein georgisches Software-Studio: Web- und Mobile-Apps, Jira/JSM-Einrichtung, Design und Marketing."
+  },
+  "header": {
+    "contactUs": "Kontakt",
+    "menuAria": "Menü",
+    "companyLabel": "Unternehmen"
+  },
+  "nav": {
+    "companyDropdown": {
+      "about": {
+        "label": "Über uns",
+        "text": "Unser Team, Mission und Werte."
+      },
+      "stories": {
+        "label": "Kundengeschichten",
+        "text": "Wie wir unseren Kunden helfen."
+      },
+      "contact": {
+        "label": "Kontakt",
+        "text": "Erzählen Sie uns von Ihrem Projekt."
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Menschzentrierter Service — mit Erfahrung und Innovation.",
+    "contactHeading": "Kontakt",
+    "address": "Tiflis, Georgien",
+    "privacyTerms": "Privacy terms",
+    "cookiePolicy": "Cookie policy"
+  },
+  "hero": {
+    "slides": [
+      {
+        "eyebrow": "SOFTWARE STUDIO · TBILISI",
+        "title": "Digitale Produkte, die Ihr Geschäft voranbringen",
+        "text": "Devline ist ein georgisches Software-Studio — wir entwickeln Web- und Mobile-Anwendungen, DevOps-Pipelines und Infrastruktur nach dem Full-Cycle-Prinzip: von der Idee bis zur Produktion.",
+        "primary": "Projekt starten →",
+        "secondary": "Leistungen ansehen"
+      },
+      {
+        "eyebrow": "WEB & MOBILE",
+        "title": "Von der Idee zur Produktion — ein Team",
+        "text": "Wir entwickeln Web- und Mobile-Anwendungen mit einem einzigen Team, damit Design, Entwicklung und Launch natürlich zusammenpassen.",
+        "primary": "Leistungen ansehen →",
+        "secondary": "Mobile Apps"
+      },
+      {
+        "eyebrow": "DEVOPS & INFRASTRUCTURE",
+        "title": "Ihre Infrastruktur — unsere Verantwortung",
+        "text": "CI/CD-Pipelines, Cloud- und On-Prem-Umgebungen, Monitoring und 24/7-Support — Releases ohne Stress.",
+        "primary": "Sprechen Sie mit uns →",
+        "secondary": "Team kennenlernen"
+      }
+    ],
+    "stats": {
+      "projects": "Projekte",
+      "experience": "Jahre Erfahrung",
+      "uptime": "Uptime SLA"
+    }
+  },
+  "services": {
+    "section": {
+      "eyebrow": "SERVICES",
+      "title": "Was wir tun",
+      "text": "Vier Disziplinen in einem Team — von der Entwicklung bis zum Marketing, alles perfekt aufeinander abgestimmt.",
+      "viewAll": "Alle Leistungen →"
+    },
+    "categories": {
+      "programmers": {
+        "title": "Entwicklung",
+        "blurb": "Web- und Mobile-Entwicklung, DevOps, Infrastruktur, Analytics und laufender Support."
+      },
+      "jsm": {
+        "title": "IT-Programme",
+        "blurb": "Konfiguration und Verwaltung von ClickUp, JSM, Jira und Slack für Ihr Team."
+      },
+      "designers": {
+        "title": "Design",
+        "blurb": "Figma, Adobe Photoshop, Illustrator und Premiere — vom Design bis zur Videoproduktion."
+      },
+      "marketers": {
+        "title": "Marketing",
+        "blurb": "Werbekampagnen auf Meta-Plattformen und Suchmaschinenoptimierung (SEO)."
+      }
+    },
+    "items": {
+      "web": {
+        "title": "Web-Anwendungen",
+        "text": "Schnelle, skalierbare Web-Produkte auf Basis von React.js — von Unternehmenswebsites bis zu komplexen Portalen.",
+        "features": [
+          "React.js- / Next.js-Architektur",
+          "Responsives, SEO-freundliches UI",
+          "API-Integrationen & Authentifizierung",
+          "Leistungsoptimierung & Tests"
+        ]
+      },
+      "mobile": {
+        "title": "Mobile Apps",
+        "text": "Plattformübergreifende Anwendungen in Flutter für iOS und Android mit einer einzigen Codebasis.",
+        "features": [
+          "Plattformübergreifende Apps für iOS & Android mit Flutter",
+          "Modernes, performantes UI/UX",
+          "Push-Benachrichtigungen & tiefe Integrationen",
+          "Veröffentlichung im App Store & bei Google Play"
+        ]
+      },
+      "devops": {
+        "title": "DevOps & CI/CD",
+        "text": "GitLab-CI/CD-Pipelines, automatisiertes Deployment und Monitoring — stressfreie Releases.",
+        "features": [
+          "GitLab-/GitHub-CI/CD-Pipelines",
+          "Docker- & Kubernetes-Containerisierung",
+          "Automatisierte Tests & Deployment",
+          "Monitoring & Alerting"
+        ],
+        "eyebrow": "CI/CD PROZESS"
+      },
+      "infra": {
+        "title": "Infrastruktur",
+        "text": "Planung, Administration, Sicherheit und Optimierung von Cloud- und On-Prem-Umgebungen.",
+        "features": [
+          "Planung von AWS-/GCP-/Azure-Umgebungen",
+          "Serveradministration & Skalierung",
+          "Sicherheitskonfiguration & Backups",
+          "Kostenoptimierung"
+        ],
+        "eyebrow": "CLOUD-INFRASTRUKTUR"
+      },
+      "support": {
+        "title": "Support",
+        "text": "SLA-basierter fortlaufender Support, Monitoring und Produktentwicklung nach dem Launch.",
+        "features": [
+          "Reaktionszeiten nach SLA",
+          "24/7-Monitoring",
+          "Bugfixes & Patches",
+          "Kontinuierliche Produktweiterentwicklung"
+        ],
+        "eyebrow": "24/7-SUPPORT"
+      },
+      "clickup": {
+        "title": "ClickUp",
+        "text": "Konfiguration und Anpassung Ihres ClickUp-Workspace, Ihrer Projekte und Workflows.",
+        "features": [
+          "Einrichtung von Spaces & Projektstruktur",
+          "Individuelle Workflows & Status",
+          "Automatisierungen & Integrationen",
+          "Team-Onboarding & Schulung"
+        ],
+        "eyebrow": "PROJEKTMANAGEMENT"
+      },
+      "jsmPortal": {
+        "title": "JSM",
+        "text": "Einrichtung des Jira Service Management Customer Portals, der SLAs und Anfragetypen.",
+        "features": [
+          "Design & Einrichtung des Customer Portals",
+          "Konfiguration von SLAs & Anfragetypen",
+          "Integration der Wissensdatenbank",
+          "Support-Workflows für Mitarbeiter/Kunden"
+        ],
+        "eyebrow": "KUNDENPORTAL"
+      },
+      "jira": {
+        "title": "Jira",
+        "text": "Konfiguration und Support für Jira-Projekte, Workflows und Automatisierungen.",
+        "features": [
+          "Projekt- und Board-Struktur",
+          "Einrichtung von Workflows & Automatisierungen",
+          "Sprint-/Scrum- und Kanban-Prozesse",
+          "Reporting & Dashboards"
+        ],
+        "eyebrow": "JIRA-WORKFLOWS"
+      },
+      "slack": {
+        "title": "Slack",
+        "text": "Strukturierung des Slack-Workspace, Integrationen und Automatisierung von Benachrichtigungen.",
+        "features": [
+          "Struktur von Workspace & Channels",
+          "Einrichtung von Bots & Automatisierungen",
+          "Integrationen mit anderen Tools (Jira, ClickUp)",
+          "Anpassung von Benachrichtigungen & Workflows"
+        ],
+        "eyebrow": "TEAM-KOMMUNIKATION"
+      },
+      "figma": {
+        "title": "Figma",
+        "text": "UI/UX-Design und interaktive Prototypen in Figma — für Web- und Mobile-Oberflächen.",
+        "features": [
+          "UI/UX-Design & Wireframes",
+          "Interaktive Prototypen",
+          "Designsysteme & Komponentenbibliotheken",
+          "Übergabe an Entwickler (Dev Mode)"
+        ],
+        "eyebrow": "UI/UX-DESIGN"
+      },
+      "photoshop": {
+        "title": "Adobe Photoshop",
+        "text": "Bildbearbeitung, Retusche und Vorbereitung visueller Materialien.",
+        "features": [
+          "Fotoretusche & -bearbeitung",
+          "Banner & Social-Media-Grafiken",
+          "Fotorealistisches Compositing",
+          "Erstellung visueller Markenmaterialien"
+        ],
+        "eyebrow": "BILDBEARBEITUNG"
+      },
+      "illustrator": {
+        "title": "Adobe Illustrator",
+        "text": "Logos, Icons und Vektorgrafiken.",
+        "features": [
+          "Logodesign & Brandbook",
+          "Icons & Vektorillustrationen",
+          "Druckfertige Materialien",
+          "Infografiken"
+        ],
+        "eyebrow": "VEKTORGRAFIK"
+      },
+      "premiere": {
+        "title": "Adobe Premiere",
+        "text": "Videoschnitt und Postproduktion.",
+        "features": [
+          "Videoschnitt & Farbkorrektur",
+          "Promo- & Motivationsclips",
+          "Audiobearbeitung & Untertitel",
+          "Formatierung für Social Media"
+        ],
+        "eyebrow": "VIDEOSCHNITT"
+      },
+      "metaMarketing": {
+        "title": "Meta Product Marketing",
+        "text": "Planung, Start und Optimierung von Werbekampagnen auf Facebook und Instagram.",
+        "features": [
+          "Kampagnenstrategie & Zielgruppen-Targeting",
+          "Anzeigendesign & Creatives",
+          "A/B-Tests & Optimierung",
+          "Analytics & ROI-Reporting"
+        ],
+        "eyebrow": "META-ANZEIGEN"
+      },
+      "seo": {
+        "title": "SEO",
+        "text": "Verbesserung der Suchmaschinen-Rankings — technisches SEO, Content- und Linkstrategie.",
+        "features": [
+          "Technisches SEO-Audit",
+          "Keyword-Recherche & Content-Strategie",
+          "Linkbuilding-Strategie",
+          "Ranking- & Traffic-Monitoring"
+        ],
+        "eyebrow": "SUCHMASCHINEN-RANKING"
+      },
+      "analytics": {
+        "eyebrow": "WEB-ANALYTICS",
+        "title": "Web-Analytics",
+        "text": "Wir erfassen, speichern und analysieren die Traffic- und Verhaltensdaten Ihrer Website — damit jede Entscheidung auf echten Daten basiert.",
+        "features": [
+          "Einrichtung von Google Analytics / GA4",
+          "Individuelles Event- & Conversion-Tracking",
+          "Datenspeicherung & Dashboards",
+          "Traffic- & Verhaltensberichte"
+        ]
+      }
+    }
+  },
+  "practices": {
+    "section": {
+      "eyebrow": "PRACTICES",
+      "title": "Unsere Methodik",
+      "text": "Wir schaffen stabile, transparente Prozesse auf Basis branchenerprobter Frameworks und Praktiken."
+    },
+    "items": {
+      "agile": {
+        "title": "Agile & Scrum",
+        "text": "Wir steuern unseren Workflow mit der Agile/Scrum-Methodik — kurze Iterationen und transparenter Fortschritt jede Woche."
+      },
+      "devopsCulture": {
+        "title": "DevOps-Kultur",
+        "text": "CI/CD, Infrastructure-as-Code und Automatisierung stehen im Zentrum jedes Projekts — Releases sind kein Stress mehr."
+      },
+      "itsm": {
+        "title": "IT Service Management",
+        "text": "Strukturierte Betriebsprozesse nach ITSM-Prinzipien — vom Incident-Management bis zum SLA."
+      }
+    },
+    "cta": {
+      "title": "Möchten Sie mit einem Experten sprechen?",
+      "text": "Kontaktieren Sie uns, wir melden uns innerhalb von 24 Stunden.",
+      "button": "Anruf buchen →"
+    }
+  },
+  "stats": {
+    "section": {
+      "eyebrow": "IMPACT",
+      "title": "Unsere Wirkung in Zahlen"
+    },
+    "items": {
+      "projects": "abgeschlossene Projekte",
+      "experience": "Jahre Erfahrung",
+      "uptime": "Uptime SLA",
+      "clients": "aktive Kunden",
+      "deploys": "automatisierte Deployments / Monat",
+      "team": "Teammitglieder"
+    }
+  },
+  "about": {
+    "section": {
+      "eyebrow": "ABOUT US",
+      "title": "Ingenieure, die Produktion verstehen",
+      "text": "Devline.digital vereint ein Team mit echter Erfahrung in Enterprise-Umgebungen — Entwicklung, DevOps, Systemadministration und Sicherheit. Für uns ist ein gutes Produkt nicht nur eine schöne Oberfläche: Es ist eine stabile Pipeline, messbare Performance und ein Team, das immer reagiert."
+    },
+    "ctaDefault": "Team kennenlernen →",
+    "ctaContact": "Kontakt aufnehmen →",
+    "highlights": {
+      "fullCycle": {
+        "title": "Full-cycle",
+        "text": "Ein Team, von der Idee bis zur Produktion"
+      },
+      "enterprise": {
+        "title": "Enterprise",
+        "text": "Erfahrung mit großer Infrastruktur"
+      },
+      "automationFirst": {
+        "title": "Automation-first",
+        "text": "CI/CD und Monitoring in jedem Projekt"
+      },
+      "transparent": {
+        "title": "Transparent",
+        "text": "Wöchentlicher Fortschritt und offene Kommunikation"
+      }
+    }
+  },
+  "mobile": {
+    "section": {
+      "eyebrow": "MOBILE APPS",
+      "titleA": "Ihre App —",
+      "titleB": "auf beiden Plattformen",
+      "text": "Wir schreiben eine einzige Codebasis in Flutter, die auf iOS und Android gleichermaßen natürlich funktioniert — halbe Zeit, doppeltes Publikum. Vom Design bis zur Veröffentlichung im App Store/Play Store kümmern wir uns um alles."
+    },
+    "features": [
+      "Eine Codebasis — iOS + Android",
+      "Native Performance und Animationen",
+      "Firebase, Push-Benachrichtigungen, Analytics",
+      "Automatisierte Builds mit CI/CD und Store-Veröffentlichung"
+    ],
+    "cta": "App bestellen →",
+    "page": {
+      "eyebrow": "MOBILE APPS",
+      "title": "Mobile Apps für iOS und Android",
+      "text": "Eine einzige Codebasis in Flutter mit nativem Look and Feel auf beiden Plattformen — vom Design bis zur Veröffentlichung im Store."
+    },
+    "app": {
+      "greeting": "Hallo, Cartwright 👋",
+      "statLabel": "Heutige Besuche",
+      "schedule": [
+        {
+          "icon": "🐕",
+          "label": "Gassi — Rex",
+          "time": "10:30"
+        },
+        {
+          "icon": "✂️",
+          "label": "Grooming — Luna",
+          "time": "13:00"
+        },
+        {
+          "icon": "💉",
+          "label": "Tierarzt — Murr",
+          "time": "16:45"
+        }
+      ]
+    }
+  },
+  "web": {
+    "section": {
+      "eyebrow": "WEB APPS",
+      "title": "Eine Website, die für Ihr Geschäft arbeitet",
+      "text": "Wir entwickeln schnelle, skalierbare Web-Produkte auf React.js — von Unternehmenswebsites bis zu komplexen, datengetriebenen Portalen."
+    },
+    "features": [
+      "React.js — schnelle, SEO-freundliche Web-Anwendungen",
+      "Individuelles Design für jeden Bildschirm",
+      "API-Integrationen und Datenbanken",
+      "Cloud-Deployment und automatisiertes CI/CD"
+    ],
+    "cta": "Web-Projekt bestellen →"
+  },
+  "jira": {
+    "section": {
+      "eyebrow": "JIRA & JSM",
+      "titleA": "Jira & JSM Portale,",
+      "titleB": "die wirklich funktionieren",
+      "text": "Wir richten Jira und Jira Service Management ein und betreuen sie — von Workflows über Customer Portal bis zu SLAs, abgestimmt auf den realen Prozess Ihres Teams."
+    },
+    "features": [
+      "Erstkonfiguration und Migration für Jira & JSM",
+      "Individuelle Workflows und Automatisierungen",
+      "Customer-Portal-Design und SLA-Einrichtung",
+      "Integrationen mit Confluence und Ihren anderen Tools"
+    ],
+    "cta": "Jira/JSM-Beratung →"
+  },
+  "design": {
+    "section": {
+      "eyebrow": "DESIGN",
+      "titleA": "Design,",
+      "titleB": "das Ihre Marke versteht",
+      "text": "Figma, Adobe Photoshop, Illustrator und Premiere — wir gestalten Interfaces, Branding und visuelle Inhalte, die Ihr Produkt hervorheben."
+    },
+    "features": [
+      "UI/UX-Design und interaktive Prototypen in Figma",
+      "Branding, Logos und visuelle Identität in Illustrator",
+      "Bildbearbeitung und Retusche in Photoshop",
+      "Videoschnitt und Postproduktion in Premiere"
+    ],
+    "cta": "Design-Projekt bestellen →"
+  },
+  "marketing": {
+    "section": {
+      "eyebrow": "MARKETING",
+      "titleA": "Marketing,",
+      "titleB": "das messbar ist",
+      "text": "Von Meta-Werbekampagnen bis SEO — wir planen, starten und analysieren Marketingaktivitäten mit messbaren Ergebnissen."
+    },
+    "features": [
+      "Planung und Start von Facebook- und Instagram-Kampagnen",
+      "Zielgruppen-Targeting und Budgetoptimierung",
+      "Suchmaschinenoptimierung (SEO) — technische Strategie und Content-Strategie",
+      "Ergebnisanalyse und monatliches Reporting"
+    ],
+    "cta": "Marketing-Beratung →",
+    "mock": {
+      "impressions": "Impressionen",
+      "active": "Aktiv",
+      "planned": "Geplant"
+    }
+  },
+  "testimonials": {
+    "section": {
+      "eyebrow": "TESTIMONIALS",
+      "title": "Was man über uns sagt"
+    },
+    "items": [
+      {
+        "quote": "[Durch ein echtes Testimonial eines zufriedenen Kunden ersetzen.]",
+        "author": "[Vorname Nachname]",
+        "role": "[Position, Unternehmen]"
+      },
+      {
+        "quote": "[Durch ein echtes Testimonial eines zufriedenen Kunden ersetzen.]",
+        "author": "[Vorname Nachname]",
+        "role": "[Position, Unternehmen]"
+      },
+      {
+        "quote": "[Durch ein echtes Testimonial eines zufriedenen Kunden ersetzen.]",
+        "author": "[Vorname Nachname]",
+        "role": "[Position, Unternehmen]"
+      }
+    ]
+  },
+  "stories": {
+    "previewSection": {
+      "eyebrow": "CUSTOMER STORIES",
+      "title": "Wie wir unseren Kunden helfen",
+      "viewAll": "Alle Geschichten →"
+    },
+    "page": {
+      "eyebrow": "CUSTOMER STORIES",
+      "title": "Wie wir unseren Kunden helfen",
+      "text": "Reale Beispiele dafür, wie Devline mit Unternehmen wie Ihrem zusammenarbeitet."
+    },
+    "readStory": "Geschichte lesen →",
+    "backToStories": "← Alle Geschichten",
+    "notFound": "Geschichte nicht gefunden",
+    "seo": {
+      "title": "Kundengeschichten",
+      "description": "Wie Devline echten Unternehmen hilft — Kundengeschichten."
+    },
+    "items": [
+      {
+        "slug": "placeholder-story-1",
+        "client": "[Kundenname]",
+        "industry": "[Branche]",
+        "summary": "[Kurze Beschreibung der Herausforderung, die Devline für diesen Kunden gelöst hat.]",
+        "body": "[Durch die vollständige Geschichte ersetzen — Kontext, Lösung und Ergebnis.]"
+      },
+      {
+        "slug": "placeholder-story-2",
+        "client": "[Kundenname]",
+        "industry": "[Branche]",
+        "summary": "[Kurze Beschreibung der Herausforderung, die Devline für diesen Kunden gelöst hat.]",
+        "body": "[Durch die vollständige Geschichte ersetzen — Kontext, Lösung und Ergebnis.]"
+      },
+      {
+        "slug": "placeholder-story-3",
+        "client": "[Kundenname]",
+        "industry": "[Branche]",
+        "summary": "[Kurze Beschreibung der Herausforderung, die Devline für diesen Kunden gelöst hat.]",
+        "body": "[Durch die vollständige Geschichte ersetzen — Kontext, Lösung und Ergebnis.]"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Bereit für Ihr Projekt?",
+    "text": "Schicken Sie uns Ihre Idee, und wir melden uns innerhalb von 24 Stunden mit einer konkreten Einschätzung und einem Angebot."
+  },
+  "placeholderBadge": "Platzhalterinhalt",
+  "contact": {
+    "seo": {
+      "title": "Kontakt",
+      "description": "Kontaktieren Sie uns zu Ihrem Projekt — Devline.digital."
+    },
+    "header": {
+      "eyebrow": "CONTACT",
+      "title": "Bereit für Ihr Projekt?",
+      "text": "Schicken Sie uns Ihre Idee, und wir melden uns innerhalb von 24 Stunden mit einer konkreten Einschätzung und einem Angebot."
+    },
+    "getInTouch": {
+      "eyebrow": "GET IN TOUCH",
+      "title": "Kontakt aufnehmen",
+      "emailLabel": "E-MAIL",
+      "phoneLabel": "TELEFON",
+      "addressLabel": "ADRESSE",
+      "addressValue": "Tiflis, Georgien"
+    },
+    "form": {
+      "namePlaceholder": "Name",
+      "emailPlaceholder": "E-Mail",
+      "messagePlaceholder": "Erzählen Sie uns von Ihrem Projekt",
+      "submit": "Senden →",
+      "hint": "Beim Klicken öffnet sich Ihr E-Mail-Programm mit einer vorausgefüllten Nachricht.",
+      "subjectPrefix": "Projektanfrage",
+      "newContact": "Neuer Kontakt"
+    }
+  },
+  "company": {
+    "seo": {
+      "title": "Über uns",
+      "description": "Lernen Sie das Devline-Team kennen — Mission, Erfahrung und Werte."
+    },
+    "header": {
+      "eyebrow": "ABOUT US",
+      "title": "Ingenieure, die Produktion verstehen",
+      "text": "Devline.digital vereint ein Team mit echter Erfahrung in Enterprise-Umgebungen."
+    }
+  },
+  "servicesPage": {
+    "seo": {
+      "title": "Leistungen",
+      "description": "Web- und Mobile-Entwicklung, Jira & JSM-Einrichtung, Design und Marketing — vier Disziplinen, ein Team."
+    },
+    "header": {
+      "eyebrow": "SERVICES",
+      "title": "Leistungen, die den gesamten Zyklus abdecken",
+      "text": "Entwickler, JSM, Designer und Marketer — vier Disziplinen in einem Team, damit nichts durchs Raster fällt."
+    }
+  },
+  "mobilePage": {
+    "seo": {
+      "title": "Mobile Apps",
+      "description": "iOS- und Android-Apps in Flutter mit einer einzigen Codebasis — vom Design bis zur Store-Veröffentlichung."
+    },
+    "header": {
+      "eyebrow": "MOBILE APPS",
+      "title": "Mobile Apps für iOS und Android",
+      "text": "Eine einzige Codebasis in Flutter mit nativem Look and Feel auf beiden Plattformen — vom Design bis zur Veröffentlichung im Store."
+    }
+  },
+  "home": {
+    "seo": {
+      "description": "Entwicklung, JSM & Jira, Design und Marketing — ein Full-Cycle-Digitalstudio in Georgien."
+    }
+  },
+  "notFound": {
+    "seoTitle": "Seite nicht gefunden",
+    "title": "Seite nicht gefunden",
+    "cta": "Zurück zur Startseite"
+  },
+  "common": {
+    "next": "Weiter",
+    "prev": "Zurück",
+    "slides": "Folien",
+    "slide": "Folie {{n}}"
+  },
+  "serviceDetail": {
+    "whatsIncluded": "Was ist enthalten",
+    "related": "Weitere Leistungen in dieser Kategorie",
+    "backToServices": "Alle Leistungen",
+    "notFound": "Leistung nicht gefunden"
+  }
+}
