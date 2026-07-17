@@ -41,6 +41,9 @@ import {
   Zap,
   Clock,
   TrendingUp,
+  Phone,
+  MapPin,
+  Send,
 } from "lucide-react";
 
 const ICONS = {
@@ -48,7 +51,7 @@ const ICONS = {
   Image, Kanban, LifeBuoy, ListChecks, Mail, Megaphone, MessageSquare, Newspaper,
   Palette, PenTool, Repeat, SearchCheck, Smartphone, Star, Ticket, Users, Workflow,
   Check, ChevronDown, Menu, X, ArrowRight, ArrowLeft, Home, List, CirclePlus, Heart, User,
-  MousePointer2, Server, Play, Zap, Clock, TrendingUp,
+  MousePointer2, Server, Play, Zap, Clock, TrendingUp, Phone, MapPin, Send,
 };
 
 export default function Icon({ name, size = 20, strokeWidth = 2, ...props }) {

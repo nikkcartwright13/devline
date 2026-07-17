@@ -1,12 +1,16 @@
 import { useTranslation } from "react-i18next";
-import { T, DARK, mono, display } from "../../theme";
+import { T, DARK, GRAD, mono, display } from "../../theme";
 import Reveal from "../ui/Reveal";
 import Orb from "../ui/Orb";
 import Tilt3D from "../ui/Tilt3D";
 import IllustratorMockup from "../ui/IllustratorMockup";
+import Icon from "../ui/Icon";
+
+const STACK = ["Adobe Illustrator", "Adobe Fonts"];
 
 export default function IllustratorShowcase() {
   const { t } = useTranslation();
+  const features = t("illustrator.features", { returnObjects: true });
 
   return (
     <section style={{ position: "relative", background: DARK, color: "#fff", overflow: "hidden" }}>
@@ -23,6 +27,29 @@ export default function IllustratorShowcase() {
           <p style={{ color: "#B9C6E6", marginTop: 16, lineHeight: 1.8, maxWidth: 480 }}>
             {t("services.items.illustrator.text")}
           </p>
+          <ul style={{ listStyle: "none", padding: 0, margin: "24px 0 0", display: "flex", flexDirection: "column", gap: 12 }}>
+            {features.map((f) => (
+              <li key={f} style={{ display: "flex", alignItems: "flex-start", gap: 10, color: "#DDE5F8", fontSize: 15 }}>
+                <span aria-hidden style={{ width: 20, height: 20, borderRadius: "50%", background: GRAD, display: "inline-flex", alignItems: "center", justifyContent: "center", flexShrink: 0, marginTop: 2 }}>
+                  <Icon name="Check" size={12} color="#fff" />
+                </span>
+                {f}
+              </li>
+            ))}
+          </ul>
+
+          <div style={{ marginTop: 28 }}>
+            <p style={{ ...mono, fontSize: 11.5, letterSpacing: ".1em", color: "#93A5CE" }}>
+              {t("illustrator.builtWith").toUpperCase()}
+            </p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginTop: 10 }}>
+              {STACK.map((tech) => (
+                <span key={tech} style={{ ...mono, fontSize: 12, color: "#DDE5F8", background: "rgba(255,255,255,.08)", border: "1px solid rgba(255,255,255,.18)", borderRadius: 999, padding: "5px 13px" }}>
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
         </Reveal>
 
         {/* mockup */}

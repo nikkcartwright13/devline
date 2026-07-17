@@ -94,9 +94,9 @@
     "items": {
       "web": {
         "title": "Web-Anwendungen",
-        "text": "Schnelle, skalierbare Web-Produkte auf Basis von React.js — von Unternehmenswebsites bis zu komplexen Portalen.",
+        "text": "React-Webanwendungen und WordPress-Websites — schnell, SEO-optimiert und einfach zu pflegen.",
         "features": [
-          "React.js- / Next.js-Architektur",
+          "React.js- / Next.js- oder WordPress-Architektur",
           "Responsives, SEO-freundliches UI",
           "API-Integrationen & Authentifizierung",
           "Leistungsoptimierung & Tests"
@@ -104,7 +104,7 @@
       },
       "mobile": {
         "title": "Mobile Apps",
-        "text": "Plattformübergreifende Anwendungen in Flutter für iOS und Android mit einer einzigen Codebasis.",
+        "text": "Flutter-Apps mit nativem Gefühl auf iOS und Android — ein Code, doppelte Reichweite.",
         "features": [
           "Plattformübergreifende Apps für iOS & Android mit Flutter",
           "Modernes, performantes UI/UX",
@@ -340,7 +340,8 @@
       "eyebrow": "MOBILE APPS",
       "titleA": "Ihre App —",
       "titleB": "auf beiden Plattformen",
-      "text": "Wir schreiben eine einzige Codebasis in Flutter, die auf iOS und Android gleichermaßen natürlich funktioniert — halbe Zeit, doppeltes Publikum. Vom Design bis zur Veröffentlichung im App Store/Play Store kümmern wir uns um alles."
+      "text": "Wir schreiben eine einzige Codebasis in Flutter, die auf iOS und Android gleichermaßen natürlich funktioniert — halbe Zeit, doppeltes Publikum. Vom Design bis zur Veröffentlichung im App Store/Play Store kümmern wir uns um alles.",
+      "builtWith": "Gebaut mit"
     },
     "features": [
       "Eine Codebasis — iOS + Android",
@@ -380,7 +381,9 @@
     "section": {
       "eyebrow": "WEB APPS",
       "title": "Eine Website, die für Ihr Geschäft arbeitet",
-      "text": "Wir entwickeln schnelle, skalierbare Web-Produkte auf React.js — von Unternehmenswebsites bis zu komplexen, datengetriebenen Portalen."
+      "text": "Für komplexe, individuelle Web-Anwendungen entwickeln wir auf React — für Marketing-Websites, Blogs und content-basierte Seiten auf WordPress. So oder so erhalten Sie ein schnelles, SEO-optimiertes Produkt.",
+      "reactLabel": "React-Anwendungen",
+      "wordpressLabel": "WordPress-Websites"
     },
     "features": [
       "React.js — schnelle, SEO-freundliche Web-Anwendungen",
@@ -389,6 +392,60 @@
       "Cloud-Deployment und automatisiertes CI/CD"
     ],
     "cta": "Web-Projekt bestellen →"
+  },
+  "devops": {
+    "features": [
+      "Deployments ohne Ausfallzeit",
+      "Infrastructure as Code",
+      "Automatisches Rollback bei Fehlern",
+      "Echtzeit-Monitoring & Alerts"
+    ],
+    "builtWith": "Gebaut mit"
+  },
+  "infra": {
+    "features": [
+      "Skalierbare Cloud-Architektur",
+      "Tägliche automatische Backups",
+      "Gehärtete Sicherheit & Zugriffskontrolle",
+      "Laufende Kostenüberwachung"
+    ],
+    "builtWith": "Gebaut mit"
+  },
+  "analytics": {
+    "features": [
+      "Echtzeit-Traffic-Dashboards",
+      "Ziel- und Conversion-Tracking",
+      "Individuelles Event-Tracking",
+      "Monatliche Performance-Berichte"
+    ],
+    "builtWith": "Gebaut mit"
+  },
+  "support": {
+    "features": [
+      "Garantierte SLA-Reaktionszeiten",
+      "24/7-Verfügbarkeitsüberwachung",
+      "Priorisierte Fehlerbehebungen",
+      "Dedizierter Support-Kanal"
+    ],
+    "builtWith": "Gebaut mit"
+  },
+  "clickup": {
+    "features": [
+      "Individuelle Spaces, Folders und Lists",
+      "Automatisierte Aufgaben-Workflows",
+      "Dashboards für Echtzeit-Überblick",
+      "Team-Schulung und Einführungsunterstützung"
+    ],
+    "builtWith": "Gebaut mit"
+  },
+  "jsmPortal": {
+    "features": [
+      "Gebrandetes Self-Service-Portal",
+      "SLA-basierte Anfragetypen",
+      "Entlastung durch Wissensdatenbank",
+      "Automatisierte Genehmigungsworkflows"
+    ],
+    "builtWith": "Gebaut mit"
   },
   "jira": {
     "section": {
@@ -403,7 +460,8 @@
       "Customer-Portal-Design und SLA-Einrichtung",
       "Integrationen mit Confluence und Ihren anderen Tools"
     ],
-    "cta": "Jira/JSM-Beratung →"
+    "cta": "Jira/JSM-Beratung →",
+    "builtWith": "Gebaut mit"
   },
   "design": {
     "section": {
@@ -439,6 +497,69 @@
       "active": "Aktiv",
       "planned": "Geplant"
     }
+  },
+  "slack": {
+    "features": [
+      "Organisierte Kanalstruktur",
+      "Individuelle Bots & Automatisierungen",
+      "Integrationen mit anderen Tools",
+      "Störungsfreie Benachrichtigungsregeln"
+    ],
+    "builtWith": "Gebaut mit"
+  },
+  "figma": {
+    "features": [
+      "Von Wireframes zu High-Fidelity-UI",
+      "Wiederverwendbare Design-Systeme",
+      "Interaktive Klick-Prototypen",
+      "Entwicklerfertige Handoff-Spezifikationen"
+    ],
+    "builtWith": "Gebaut mit"
+  },
+  "photoshop": {
+    "features": [
+      "Fotorealistische Retusche",
+      "Grafiken für Social Media & Werbung",
+      "Individuelles Compositing & Bildmanipulation",
+      "Konsistenter visueller Markenstil"
+    ],
+    "builtWith": "Gebaut mit"
+  },
+  "illustrator": {
+    "features": [
+      "Originelles Logo-Design",
+      "Individuelle Icon-Sets",
+      "Druckfertige Vektordateien",
+      "Skalierbare Markenassets"
+    ],
+    "builtWith": "Gebaut mit"
+  },
+  "premiere": {
+    "features": [
+      "Professionelle Farbkorrektur",
+      "Sauberer Ton & Untertitel",
+      "Plattformgerechte Exportformate",
+      "Schnelle Bearbeitung für Social-Media-Content"
+    ],
+    "builtWith": "Gebaut mit"
+  },
+  "metaMarketing": {
+    "features": [
+      "Zielgruppenrecherche & Targeting",
+      "Scroll-stoppendes Anzeigen-Creative",
+      "Kontinuierliches A/B-Testing",
+      "Transparentes ROI-Reporting"
+    ],
+    "builtWith": "Gebaut mit"
+  },
+  "seo": {
+    "features": [
+      "Behebung technischer SEO-Probleme",
+      "Keyword-basierter Content-Plan",
+      "Autoritätsstärkende Backlinks",
+      "Monatliche Ranking- & Traffic-Berichte"
+    ],
+    "builtWith": "Gebaut mit"
   },
   "testimonials": {
     "section": {
@@ -630,6 +751,361 @@
     "whatsIncluded": "Was ist enthalten",
     "related": "Weitere Leistungen in dieser Kategorie",
     "backToServices": "Alle Leistungen",
-    "notFound": "Leistung nicht gefunden"
+    "notFound": "Leistung nicht gefunden",
+    "faqTitle": "Häufig gestellte Fragen",
+    "faq": {
+      "jira": [
+        {
+          "q": "Richten Sie Jira von Grund auf ein, oder bringen Sie Ordnung in ein bestehendes Projekt?",
+          "a": "Beides. Wir können neue Jira-Projekte von Grund auf einrichten oder eine bestehende Konfiguration prüfen und umstrukturieren, die langsam oder unübersichtlich geworden ist."
+        },
+        {
+          "q": "Können Sie Workflows an unseren spezifischen Prozess anpassen?",
+          "a": "Ja — wir erstellen individuelle Status, Übergänge und Automatisierungsregeln, die zu der Arbeitsweise Ihres Teams passen, egal ob Scrum, Kanban oder hybrid."
+        },
+        {
+          "q": "Richten Sie Reporting und Dashboards ein?",
+          "a": "Ja. Wir konfigurieren Dashboards und Berichte (Velocity, Burndown, Cycle Time), damit Leads und Stakeholder Fortschritt sehen, ohne nach Status-Updates zu fragen."
+        },
+        {
+          "q": "Kann Jira mit unseren anderen Tools integriert werden?",
+          "a": "Ja — wir verbinden Jira mit Slack, Bitbucket/GitHub, Confluence und anderen Tools, damit Updates und Benachrichtigungen automatisch fließen."
+        },
+        {
+          "q": "Braucht unser Team Schulungen?",
+          "a": "Wir integrieren Onboarding-Sitzungen und Dokumentation in jede Einrichtung, damit das Team die neue Struktur schnell und konsistent übernimmt."
+        }
+      ],
+      "slack": [
+        {
+          "q": "Können Sie einen unübersichtlichen Slack-Workspace aufräumen?",
+          "a": "Ja — wir prüfen bestehende Kanäle, archivieren Ungenutztes und strukturieren den Workspace neu rund um Teams und Projekte, damit er wieder leicht zu navigieren ist."
+        },
+        {
+          "q": "Können Sie individuelle Slack-Bots bauen?",
+          "a": "Ja. Wir bauen Bots und Workflows für häufige Anfragen — Standup-Erinnerungen, Ticket-Updates, Genehmigungsprozesse — über den nativen Workflow Builder von Slack oder individuelle Integrationen."
+        },
+        {
+          "q": "Kann Slack uns automatisch aus Jira oder ClickUp benachrichtigen?",
+          "a": "Ja — wir richten bidirektionale Integrationen ein, sodass Statusänderungen, Kommentare und Erwähnungen in Jira/ClickUp direkt im richtigen Slack-Kanal erscheinen."
+        },
+        {
+          "q": "Wie verhindern Sie eine Benachrichtigungsflut?",
+          "a": "Wir konfigurieren Benachrichtigungsregeln und Kanal-Standardeinstellungen, sodass Personen nur bei tatsächlich relevanten Themen benachrichtigt werden — weniger Rauschen, schnellere Reaktion."
+        },
+        {
+          "q": "Wie lange dauert eine Slack-Einrichtung?",
+          "a": "Eine typische Workspace-Umstrukturierung und Integrationseinrichtung dauert etwa 1 Woche, abhängig von Teamgröße und Anzahl der verbundenen Tools."
+        }
+      ],
+      "figma": [
+        {
+          "q": "Entwerfen Sie von Grund auf, oder arbeiten Sie mit einer bestehenden Marke?",
+          "a": "Beides. Wir können eine neue visuelle Richtung von Grund auf entwickeln, oder innerhalb Ihrer bestehenden Markenrichtlinien und Ihres Design-Systems arbeiten."
+        },
+        {
+          "q": "Was erhalte ich am Ende — nur Bilder, oder etwas, das Entwickler nutzen können?",
+          "a": "Entwickler erhalten eine vollständig organisierte Figma-Datei mit Komponenten, Auto-Layout und Dev-Mode-Inspektion — damit sie exakte Abstände, Farben und Assets direkt entnehmen können."
+        },
+        {
+          "q": "Können Sie einen interaktiven Prototyp bauen, den ich mit Nutzern testen kann?",
+          "a": "Ja — wir bauen klickbare Prototypen, die reale Navigation und Interaktionen simulieren, damit Sie den Ablauf testen können, bevor eine einzige Zeile Code geschrieben wird."
+        },
+        {
+          "q": "Entwerfen Sie sowohl für Web als auch für Mobile?",
+          "a": "Ja — wir entwerfen responsive Web-Interfaces und nativ wirkende mobile App-Screens, mit demselben Design-System für Konsistenz."
+        },
+        {
+          "q": "Wie lange dauert ein Designprojekt?",
+          "a": "Ein typisches Projekt — von Wireframes bis zum finalen UI — dauert 2–5 Wochen, abhängig von der Anzahl der Screens und Feedback-Runden."
+        }
+      ],
+      "photoshop": [
+        {
+          "q": "Welche Art von Bildern bearbeiten Sie?",
+          "a": "Produktfotos, Porträts, Marketing-Banner, Social-Media-Grafiken und zusammengesetzte Bilder — alles, was Retusche, Farbkorrektur oder Manipulation braucht."
+        },
+        {
+          "q": "Können Sie unsere Social-Media-Grafiken konsistent mit unserer Marke gestalten?",
+          "a": "Ja — wir arbeiten mit Ihren Markenfarben, Schriften und Styleguides (oder helfen, welche zu erstellen), damit jede Grafik wie Teil derselben Marke wirkt."
+        },
+        {
+          "q": "Machen Sie Foto-Compositing — das Kombinieren mehrerer Bilder?",
+          "a": "Ja — von einfachem Hintergrundtausch bis zu komplexen fotorealistischen Composites, die mehrere Ausgangsbilder zu einem nahtlosen Ergebnis verschmelzen."
+        },
+        {
+          "q": "Wie viele Überarbeitungen sind enthalten?",
+          "a": "Unser Standardprozess umfasst Überarbeitungsrunden, bis Sie mit dem Ergebnis zufrieden sind — üblicherweise schließen wir innerhalb von 2–3 Feedback-Runden ab."
+        },
+        {
+          "q": "Wie schnell bearbeiten Sie einen Bilder-Batch?",
+          "a": "Ein Standard-Batch (10–20 Bilder) wird meist innerhalb von 3–5 Werktagen geliefert, abhängig von der Komplexität."
+        }
+      ],
+      "illustrator": [
+        {
+          "q": "Was erhalte ich bei einem Logo-Design-Projekt?",
+          "a": "Ein vollständiges Markenzeichen mit Varianten (horizontal, nur Icon, monochrom), geliefert als Vektordateien (SVG, AI, EPS), plus ein Brandbook mit Farben, Schriften und Nutzungsregeln."
+        },
+        {
+          "q": "Können Sie ein individuelles Icon-Set für unser Produkt oder unsere App gestalten?",
+          "a": "Ja — wir gestalten stimmige Icon-Sets passend zu Ihrem Markenstil, geliefert als skalierbare Vektor-Assets, bereit für den Einsatz in Ihrer App oder Website."
+        },
+        {
+          "q": "Bereiten Sie Dateien für den Druck vor, nicht nur für die digitale Nutzung?",
+          "a": "Ja — wir bereiten druckfertige Dateien mit korrektem Farbmodus (CMYK), Beschnitt und Auflösung vor, für Visitenkarten, Verpackungen, Banner und andere Druckmaterialien."
+        },
+        {
+          "q": "Bleiben die Designs in jeder Größe scharf?",
+          "a": "Ja — alles wird im Vektorformat erstellt, sodass Logos und Icons vom Favicon bis zum Billboard skalieren, ohne an Qualität zu verlieren."
+        },
+        {
+          "q": "Wie lange dauert ein Logo oder Icon-Set?",
+          "a": "Ein Logo-Projekt dauert typischerweise 1–2 Wochen inklusive Überarbeitungen; ein vollständiges Icon-Set dauert ungefähr genauso lange, abhängig von der Anzahl der Icons."
+        }
+      ],
+      "premiere": [
+        {
+          "q": "Welche Art von Videos schneiden Sie?",
+          "a": "Werbevideos, Produktdemos, Social-Media-Clips, Testimonials und motivierende Marken-Inhalte — vom Rohmaterial bis zum fertigen Schnitt."
+        },
+        {
+          "q": "Übernehmen Sie Farbkorrektur und Audio-Bereinigung?",
+          "a": "Ja — jeder Schnitt umfasst Color Grading für einen konsistenten Look und Audiobearbeitung (Rauschunterdrückung, Pegelung), damit das finale Video genauso gut klingt wie es aussieht."
+        },
+        {
+          "q": "Fügen Sie Untertitel oder Captions hinzu?",
+          "a": "Ja — wir fügen präzise Untertitel in Ihrer gewünschten Sprache hinzu, formatiert für Barrierefreiheit und für Plattformen, auf denen Videos stumm automatisch abgespielt werden."
+        },
+        {
+          "q": "Exportieren Sie im richtigen Format für jede Plattform?",
+          "a": "Ja — wir liefern für jedes Ziel optimierte Versionen (Instagram Reels, YouTube, LinkedIn usw.) mit dem passenden Seitenverhältnis und den richtigen Spezifikationen."
+        },
+        {
+          "q": "Wie schnell liefern Sie einen Schnitt?",
+          "a": "Ein Standard-Kurzvideo (unter 2 Minuten) wird meist innerhalb von 3–5 Werktagen geliefert; längere oder komplexere Schnitte dauern etwas länger."
+        }
+      ],
+      "metaMarketing": [
+        {
+          "q": "Übernehmen Sie sowohl die Strategie als auch das Anzeigen-Creative?",
+          "a": "Ja — wir planen die Kampagnenstrategie und das Zielgruppen-Targeting und gestalten auch das Anzeigen-Creative (Bilder, Video, Text), damit von Anfang an alles aufeinander abgestimmt ist."
+        },
+        {
+          "q": "Woher wissen Sie, welche Anzeigen tatsächlich funktionieren?",
+          "a": "Wir richten den Meta Pixel und Conversion-Tracking ein und testen dann kontinuierlich Creative und Zielgruppen per A/B-Test, verstärken, was funktioniert, und streichen, was nicht funktioniert."
+        },
+        {
+          "q": "Welches Budget brauche ich zum Start?",
+          "a": "Wir können mit unterschiedlichen Budgets arbeiten — wir empfehlen ein realistisches Startbudget basierend auf Ihren Zielen und Ihrer Branche in einem kurzen Discovery-Gespräch."
+        },
+        {
+          "q": "Erhalte ich klare Berichte zu Ergebnissen, nicht nur Impressionen?",
+          "a": "Ja — wir berichten über Metriken, die für Ihr Geschäft wichtig sind: Kosten pro Lead/Kauf, ROAS und Conversion-Trends, nicht nur Vanity-Metriken wie Reichweite."
+        },
+        {
+          "q": "Wie lange dauert es, bis wir Ergebnisse sehen?",
+          "a": "Erste Daten kommen innerhalb der ersten 1–2 Wochen; die meisten Kampagnen erreichen nach etwa 4 Wochen Testing eine stabile, optimierte Performance."
+        }
+      ],
+      "seo": [
+        {
+          "q": "Beginnen Sie mit einem technischen Audit?",
+          "a": "Ja — wir beginnen mit einem Audit von Ladegeschwindigkeit, Indexierung, Mobilfreundlichkeit und Struktur und beheben technische Probleme, die Ihr Ranking bremsen, bevor wir uns um alles andere kümmern."
+        },
+        {
+          "q": "Wie wählen Sie die Ziel-Keywords aus?",
+          "a": "Wir recherchieren Keywords basierend auf Ihrer Branche, dem Wettbewerb und der Suchintention, priorisieren dabei Begriffe, die konversionsbereite Besucher bringen, nicht nur Traffic."
+        },
+        {
+          "q": "Schreiben Sie den Content, oder sagen Sie uns nur, was wir schreiben sollen?",
+          "a": "Beide Optionen sind möglich — wir können selbst SEO-optimierten Content schreiben, oder ein detailliertes Content-Briefing für Ihr Team bereitstellen."
+        },
+        {
+          "q": "Ist Linkbuilding Teil der Leistung?",
+          "a": "Ja — wir bauen Autorität durch ethische, nachhaltige Linkbuilding-Strategien auf (keine Spam-Taktiken, die eine Google-Abstrafung riskieren)."
+        },
+        {
+          "q": "Wie lange dauert es, bis sich das Ranking verbessert?",
+          "a": "SEO ist eine mittelfristige Investition — die meisten Websites sehen innerhalb von 3–6 Monaten spürbare Ranking-Bewegungen, technische Fixes zeigen oft schneller Wirkung."
+        }
+      ],
+      "jsmPortal": [
+        {
+          "q": "Was genau ist ein JSM Customer Portal?",
+          "a": "Es ist das Self-Service-Frontend für Jira Service Management — ein gebrandetes Portal, in dem Kunden oder Mitarbeiter Anfragen einreichen, den Status verfolgen und Antworten finden, ohne selbst Jira-Zugang zu benötigen."
+        },
+        {
+          "q": "Können wir unterschiedliche Portale für verschiedene Teams (IT, HR, Facility) haben?",
+          "a": "Ja — wir richten separate Anfragetypen, Warteschlangen und Berechtigungen pro Team ein, sodass jede Abteilung ihren eigenen Workflow innerhalb einer einzigen JSM-Instanz erhält."
+        },
+        {
+          "q": "Richten Sie SLAs ein, damit Anfragen nicht untergehen?",
+          "a": "Ja. Wir konfigurieren SLA-Richtlinien pro Anfragetyp und Priorität, mit automatischer Eskalation und Reporting, damit nichts unbeantwortet bleibt."
+        },
+        {
+          "q": "Kann das Portal einfache Anfragen mit einer Wissensdatenbank abfangen?",
+          "a": "Ja — wir verknüpfen eine durchsuchbare Wissensdatenbank mit dem Portal, sodass häufige Fragen sofort beantwortet werden, statt zu Tickets zu werden."
+        },
+        {
+          "q": "Wie lange dauert die Einrichtung eines JSM Portals?",
+          "a": "Eine Standardeinrichtung — Portal-Branding, Anfragetypen, SLAs und Wissensdatenbank — dauert meist 1–3 Wochen, abhängig von der Anzahl der beteiligten Teams."
+        }
+      ],
+      "clickup": [
+        {
+          "q": "Richten Sie ClickUp von Grund auf ein, oder bringen Sie Ordnung in einen bestehenden, unübersichtlichen Workspace?",
+          "a": "Beides. Wir können eine saubere ClickUp-Struktur von Grund auf aufbauen oder einen bestehenden Workspace prüfen und neu organisieren, der über die Zeit unübersichtlich geworden ist."
+        },
+        {
+          "q": "Können Sie ClickUp mit unseren anderen Tools verbinden?",
+          "a": "Ja — wir richten Integrationen mit Slack, GitHub, Google Drive und anderen Tools ein, über native Integrationen oder Zapier, damit Updates automatisch zwischen den Systemen fließen."
+        },
+        {
+          "q": "Braucht unser Team Schulungen für die neue Einrichtung?",
+          "a": "Wir integrieren Onboarding und Schulungen in jede Einrichtung, damit Ihr Team von Anfang an genau weiß, wie die neuen Spaces, Workflows und Automatisierungen zu nutzen sind."
+        },
+        {
+          "q": "Können Sie wiederkehrende Aufgaben in ClickUp automatisieren?",
+          "a": "Ja — wir richten Automatisierungen für Statusänderungen, Aufgabenzuweisungen, Fälligkeitserinnerungen und wiederkehrende Aufgaben ein, damit Ihr Team weniger Zeit mit manueller Verwaltung verbringt."
+        },
+        {
+          "q": "Wie lange dauert die Einrichtung von ClickUp?",
+          "a": "Eine typische Workspace-Einrichtung dauert 1–2 Wochen, abhängig von der Anzahl der Teams, Projekte und Integrationen."
+        }
+      ],
+      "support": [
+        {
+          "q": "Was ist in einem SLA-Support-Plan enthalten?",
+          "a": "Eine garantierte Reaktionszeit je nach Schweregrad (kritisch, hoch, normal), 24/7-Monitoring, Fehlerbehebungen und ein direkter Support-Kanal — damit Probleme gelöst werden, bevor sie Ihre Nutzer betreffen."
+        },
+        {
+          "q": "Wie schnell reagieren Sie auf kritische Probleme?",
+          "a": "Kritische Vorfälle (Website down, Datenverlustrisiko) erhalten eine Reaktion innerhalb der in Ihrem SLA festgelegten Frist — üblicherweise unter einer Stunde, mit Priorität vor allen anderen Aufgaben."
+        },
+        {
+          "q": "Beheben Sie nur Fehler, oder fügen Sie auch neue Funktionen hinzu?",
+          "a": "Beides. Support-Pläne umfassen standardmäßig Fehlerbehebungen und Monitoring, und wir können zusätzlich laufende Stunden für neue Funktionen und Produktverbesserungen einplanen."
+        },
+        {
+          "q": "Können Sie eine Anwendung unterstützen, die Sie nicht ursprünglich entwickelt haben?",
+          "a": "Ja. Wir beginnen mit einem kurzen Code- und Infrastruktur-Audit, um das System zu verstehen, und übernehmen anschließend Support und Weiterentwicklung."
+        },
+        {
+          "q": "Wie melden wir Probleme oder fordern Änderungen an?",
+          "a": "Über einen dedizierten Kanal — meist Slack oder Jira Service Management — damit jede Anfrage nachverfolgt, priorisiert und für Ihr Team sichtbar ist."
+        }
+      ],
+      "analytics": [
+        {
+          "q": "Richten Sie Google Analytics 4 (GA4) von Grund auf ein?",
+          "a": "Ja — wir konfigurieren GA4 (oder migrieren Sie von Universal Analytics), richten Conversion-Ziele ein und verbinden es mit Google Tag Manager für sauberes, zuverlässiges Event-Tracking."
+        },
+        {
+          "q": "Können Sie bestimmte Aktionen verfolgen, wie Formularabsendungen oder Button-Klicks?",
+          "a": "Ja. Wir richten individuelles Event-Tracking genau für die Aktionen ein, die für Ihr Geschäft wichtig sind — Anmeldungen, Käufe, Downloads, Videoaufrufe und mehr."
+        },
+        {
+          "q": "Erhalte ich regelmäßige Berichte, oder muss ich die Dashboards selbst prüfen?",
+          "a": "Beides. Wir erstellen ein Live-Dashboard, das Sie jederzeit einsehen können, und senden zusätzlich regelmäßige Berichte, die Traffic, Conversions und Trends in einfacher Sprache zusammenfassen."
+        },
+        {
+          "q": "Helfen Sie auch, die Daten zu verstehen, oder richten Sie nur das Tracking ein?",
+          "a": "Beides — wir installieren nicht nur das Tracking, sondern helfen auch, die Daten zu interpretieren, und empfehlen konkrete Änderungen zur Verbesserung von Conversion und Nutzererfahrung."
+        },
+        {
+          "q": "Ist mein Analytics-Setup DSGVO-konform?",
+          "a": "Ja — wir richten einwilligungsbasiertes Tracking und Cookie-Banner ein, damit die Datenerfassung die Datenschutzbestimmungen respektiert."
+        }
+      ],
+      "infra": [
+        {
+          "q": "Mit welchem Cloud-Anbieter arbeiten Sie — AWS, GCP oder Azure?",
+          "a": "Mit allen dreien. Wir wählen den Anbieter, der zu Ihrem Budget und Ihrer bestehenden Einrichtung passt, oder arbeiten mit dem, den Sie bereits nutzen — eine Migration ist für die Zusammenarbeit mit uns nicht nötig."
+        },
+        {
+          "q": "Verwalten Sie auch On-Premise- oder Self-Hosted-Server?",
+          "a": "Ja. Neben Cloud-Umgebungen administrieren wir On-Prem- und Self-Hosted-Infrastruktur (VPS, dedizierte Server) — einschließlich Linux-Administration und Nginx-/IIS-Konfiguration."
+        },
+        {
+          "q": "Wie gehen Sie mit Sicherheit und Backups um?",
+          "a": "Wir härten den Serverzugriff, richten Firewalls und Least-Privilege-Richtlinien ein und konfigurieren automatische tägliche Backups mit getesteten Wiederherstellungsverfahren — damit ein Ausfall nie zu Datenverlust führt."
+        },
+        {
+          "q": "Können Sie helfen, unsere Cloud-Kosten zu senken?",
+          "a": "Ja — wir prüfen Ihre aktuelle Nutzung, passen Ressourcen richtig an, richten Autoscaling ein und entfernen ungenutzte oder überdimensionierte Dienste. Die meisten Kunden sehen eine spürbare Reduzierung ihrer monatlichen Rechnung."
+        },
+        {
+          "q": "Bieten Sie laufenden Infrastruktur-Support nach der Einrichtung an?",
+          "a": "Ja — wir bieten laufendes Monitoring, Wartung und Bereitschaftssupport, damit Ihre Infrastruktur zuverlässig läuft, während Traffic und Team wachsen."
+        }
+      ],
+      "devops": [
+        {
+          "q": "Richten Sie CI/CD von Grund auf ein oder arbeiten Sie mit unserer bestehenden Pipeline?",
+          "a": "Beides. Wir können eine CI/CD-Pipeline von Grund auf aufbauen oder eine bestehende GitLab-/GitHub-Actions-Einrichtung prüfen und verbessern — mit kürzeren Build-Zeiten, besserer Testabdeckung und sichereren Deployments."
+        },
+        {
+          "q": "Verursachen Deployments Ausfallzeiten?",
+          "a": "Nein. Wir richten Zero-Downtime-Deployment-Strategien ein (Rolling Updates, Blue-Green oder Canary Releases), sodass Ihre Nutzer während eines Releases nie einen Ausfall bemerken."
+        },
+        {
+          "q": "Was passiert, wenn ein Deployment fehlschlägt?",
+          "a": "Automatisches Rollback. Wenn ein Health-Check oder Test nach dem Deployment fehlschlägt, kehrt die Pipeline automatisch zur letzten stabilen Version zurück — ohne manuelles Eingreifen."
+        },
+        {
+          "q": "Übernehmen Sie auch Monitoring und Alerting?",
+          "a": "Ja — wir richten Monitoring ein (Datadog, Grafana oder Ähnliches) mit Alerts an Slack oder E-Mail, damit Ihr Team von Problemen erfährt, bevor es Ihre Nutzer tun."
+        },
+        {
+          "q": "Wie lange dauert die Einrichtung einer vollständigen CI/CD-Pipeline?",
+          "a": "Eine Standard-Pipeline — Build, Test, Deployment, Monitoring — ist meist innerhalb von 2–3 Wochen fertig, abhängig von Ihrer Infrastruktur und der Anzahl der Umgebungen."
+        }
+      ],
+      "web": [
+        {
+          "q": "Arbeiten Sie mit React oder mit WordPress?",
+          "a": "Beides — die richtige Wahl hängt vom Projekt ab. React/Next.js eignet sich für komplexe, individuelle Web-Anwendungen und Portale; WordPress eignet sich für Marketing-Websites, Blogs und content-basierte Seiten, die Ihr Team selbstständig aktualisieren möchte."
+        },
+        {
+          "q": "Wie weiß ich, was ich brauche?",
+          "a": "Wenn Sie individuelle Logik, Dashboards oder umfangreiche Integrationen benötigen, ist React die bessere Wahl. Wenn Sie hauptsächlich eine inhaltsgetriebene Website benötigen, die Ihr Team ohne Entwickler bearbeiten kann, ist WordPress schneller und kostengünstiger."
+        },
+        {
+          "q": "Kann ich mit WordPress starten und später zu React wechseln?",
+          "a": "Ja. Viele Kunden starten mit einer WordPress-Website und wechseln zu einer individuellen React-Anwendung, sobald ihr Produkt oder Traffic darüber hinauswächst. Wir planen die Architektur von Anfang an mit diesem Weg im Hinterkopf."
+        },
+        {
+          "q": "Bauen Sie auch Online-Shops?",
+          "a": "Ja — WooCommerce auf WordPress für die meisten Shops, oder ein individueller React-Storefront, wenn Sie mehr Kontrolle über Checkout, Integrationen oder Performance im großen Maßstab benötigen."
+        },
+        {
+          "q": "Wie lange dauert die Entwicklung einer Website?",
+          "a": "Eine WordPress-Website startet in der Regel innerhalb von 2–4 Wochen. Eine individuelle React-Anwendung dauert meist 6–12 Wochen, je nach Umfang und Integrationen."
+        }
+      ],
+      "mobile": [
+        {
+          "q": "Bauen Sie vollständig native Apps oder verwenden Sie Flutter?",
+          "a": "Wir entwickeln mit Flutter — eine einzige Codebasis, die zu vollständig nativen iOS- und Android-Apps kompiliert wird, sodass Sie native Performance und plattformspezifisches UI erhalten, ohne zwei separate Teams zu bezahlen."
+        },
+        {
+          "q": "Wie lange dauert die Entwicklung einer mobilen App?",
+          "a": "Die meisten MVP-Apps starten innerhalb von 6–10 Wochen, abhängig von Funktionen und Integrationen. Einen konkreten Zeitplan bestätigen wir nach einem kurzen Discovery-Gespräch."
+        },
+        {
+          "q": "Fühlt sich die App auf iOS und Android gleich an?",
+          "a": "Ja. Flutter rendert seine eigene UI-Engine, sodass Ihre App auf beiden Plattformen konsistent — und nativ — aussieht und funktioniert, aus einer einzigen Codebasis."
+        },
+        {
+          "q": "Übernehmen Sie die Veröffentlichung im App Store und bei Google Play?",
+          "a": "Ja — wir übernehmen den gesamten Einreichungsprozess: Entwicklerkonten, Store-Einträge, Screenshots und Review-Anforderungen für beide Stores."
+        },
+        {
+          "q": "Was passiert nach dem Launch der App?",
+          "a": "Wir bieten laufenden Support: Fehlerbehebungen, Updates für neue Betriebssystemversionen, Analytics-Monitoring und neue Funktionen, während Ihr Produkt wächst."
+        }
+      ]
+    }
   }
 }

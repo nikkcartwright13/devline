@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import Seo from "../Seo";
 import CTA from "./CTA";
+import FAQ from "./FAQ";
 import Reveal from "../ui/Reveal";
 import Icon from "../ui/Icon";
 import { T, GRAD, mono, display } from "../../theme";
@@ -15,6 +16,7 @@ export default function ServiceDetailTemplate({ slug, children }) {
   const title = t(`services.items.${slug}.title`);
   const text = t(`services.items.${slug}.text`);
   const features = t(`services.items.${slug}.features`, { returnObjects: true });
+  const faqItems = t(`serviceDetail.faq.${slug}`, { returnObjects: true, defaultValue: [] });
 
   return (
     <>
@@ -38,6 +40,14 @@ export default function ServiceDetailTemplate({ slug, children }) {
             ))}
           </div>
         </Reveal>
+
+        {faqItems.length > 0 && (
+          <Reveal delay={100}>
+            <div style={{ marginTop: 64 }}>
+              <FAQ eyebrow={t("serviceDetail.faqTitle")} items={faqItems} />
+            </div>
+          </Reveal>
+        )}
 
         {related.length > 0 && (
           <Reveal delay={100}>

@@ -77,6 +77,26 @@
 
 .dl-btn { transition: transform .2s ease, box-shadow .2s ease, opacity .2s ease; }
 .dl-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(79,140,255,.35); }
+.dl-btn:hover .dl-btn-arrow { transform: translateX(4px); }
+.dl-btn-arrow { transition: transform .2s ease; display: inline-flex; }
+
+.dl-input {
+  transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+}
+.dl-input:focus {
+  outline: none;
+  border-color: #4F8CFF !important;
+  box-shadow: 0 0 0 4px rgba(79,140,255,.14);
+}
+.dl-input:hover { border-color: #C7D6F5; }
+
+.dl-contact-icon {
+  transition: transform .3s cubic-bezier(.2,.7,.3,1), box-shadow .3s ease;
+}
+.dl-contact-row:hover .dl-contact-icon {
+  transform: scale(1.1) rotate(-6deg);
+  box-shadow: 0 10px 20px rgba(79,140,255,.35);
+}
 
 a:focus-visible, button:focus-visible {
   outline: 3px solid #4F8CFF;

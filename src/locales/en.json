@@ -94,9 +94,9 @@
     "items": {
       "web": {
         "title": "Web Applications",
-        "text": "Fast, scalable web products built on React.js — from corporate sites to complex portals.",
+        "text": "React web apps and WordPress sites — built for speed, SEO, and easy content management.",
         "features": [
-          "React.js / Next.js architecture",
+          "React.js / Next.js or WordPress architecture",
           "Responsive, SEO-friendly UI",
           "API integrations & authentication",
           "Performance optimization & testing"
@@ -104,7 +104,7 @@
       },
       "mobile": {
         "title": "Mobile Apps",
-        "text": "Cross-platform applications written in Flutter for iOS and Android with a single codebase.",
+        "text": "Flutter apps that feel native on iOS and Android — one codebase, twice the reach.",
         "features": [
           "Cross-platform apps for iOS & Android with Flutter",
           "Modern, high-performance UI/UX",
@@ -340,7 +340,8 @@
       "eyebrow": "MOBILE APPS",
       "titleA": "Your app —",
       "titleB": "on both platforms",
-      "text": "We write a single codebase in Flutter that works just as naturally on iOS and Android — half the time, double the audience. We take care of everything from design to publishing on the App Store/Play Store."
+      "text": "We write a single codebase in Flutter that works just as naturally on iOS and Android — half the time, double the audience. We take care of everything from design to publishing on the App Store/Play Store.",
+      "builtWith": "Built with"
     },
     "features": [
       "One codebase — iOS + Android",
@@ -380,7 +381,9 @@
     "section": {
       "eyebrow": "WEB APPS",
       "title": "A website that puts your business to work",
-      "text": "We build fast, scalable web products on React.js — from corporate sites to complex, data-driven portals."
+      "text": "For complex, custom web apps we build on React — for marketing sites, blogs, and content-managed pages we build on WordPress. Either way, you get a fast, SEO-ready product.",
+      "reactLabel": "React apps",
+      "wordpressLabel": "WordPress sites"
     },
     "features": [
       "React.js — fast, SEO-friendly web applications",
@@ -389,6 +392,60 @@
       "Cloud deployment and automated CI/CD"
     ],
     "cta": "Order a web project →"
+  },
+  "devops": {
+    "features": [
+      "Zero-downtime deployments",
+      "Infrastructure as code",
+      "Automatic rollback on failure",
+      "Real-time monitoring & alerts"
+    ],
+    "builtWith": "Built with"
+  },
+  "infra": {
+    "features": [
+      "Scalable cloud architecture",
+      "Daily automated backups",
+      "Hardened security & access control",
+      "Ongoing cost monitoring"
+    ],
+    "builtWith": "Built with"
+  },
+  "analytics": {
+    "features": [
+      "Real-time traffic dashboards",
+      "Goal & conversion tracking",
+      "Custom event tracking",
+      "Monthly performance reports"
+    ],
+    "builtWith": "Built with"
+  },
+  "support": {
+    "features": [
+      "Guaranteed SLA response times",
+      "24/7 uptime monitoring",
+      "Priority bug fixes",
+      "Dedicated support channel"
+    ],
+    "builtWith": "Built with"
+  },
+  "clickup": {
+    "features": [
+      "Custom Spaces, Folders & Lists",
+      "Automated task workflows",
+      "Dashboards for real-time visibility",
+      "Team training & adoption support"
+    ],
+    "builtWith": "Built with"
+  },
+  "jsmPortal": {
+    "features": [
+      "Branded self-service portal",
+      "SLA-driven request types",
+      "Knowledge base deflection",
+      "Automated approval workflows"
+    ],
+    "builtWith": "Built with"
   },
   "jira": {
     "section": {
@@ -403,7 +460,8 @@
       "Customer Portal design and SLA setup",
       "Integrations with Confluence and your other tools"
     ],
-    "cta": "Jira/JSM consultation →"
+    "cta": "Jira/JSM consultation →",
+    "builtWith": "Built with"
   },
   "design": {
     "section": {
@@ -439,6 +497,69 @@
       "active": "Active",
       "planned": "Planned"
     }
+  },
+  "slack": {
+    "features": [
+      "Organized channel structure",
+      "Custom bots & automations",
+      "Cross-tool integrations",
+      "Noise-free notification rules"
+    ],
+    "builtWith": "Built with"
+  },
+  "figma": {
+    "features": [
+      "Wireframes to high-fidelity UI",
+      "Reusable design systems",
+      "Interactive click-through prototypes",
+      "Dev-ready handoff specs"
+    ],
+    "builtWith": "Built with"
+  },
+  "photoshop": {
+    "features": [
+      "Photorealistic retouching",
+      "Social media & ad graphics",
+      "Custom compositing & manipulation",
+      "Consistent brand visual style"
+    ],
+    "builtWith": "Built with"
+  },
+  "illustrator": {
+    "features": [
+      "Original logo design",
+      "Custom icon sets",
+      "Print-ready vector files",
+      "Scalable brand assets"
+    ],
+    "builtWith": "Built with"
+  },
+  "premiere": {
+    "features": [
+      "Professional color grading",
+      "Clean audio & subtitles",
+      "Platform-ready export formats",
+      "Fast turnaround for social content"
+    ],
+    "builtWith": "Built with"
+  },
+  "metaMarketing": {
+    "features": [
+      "Audience research & targeting",
+      "Scroll-stopping ad creative",
+      "Continuous A/B testing",
+      "Transparent ROI reporting"
+    ],
+    "builtWith": "Built with"
+  },
+  "seo": {
+    "features": [
+      "Technical SEO fixes",
+      "Keyword-driven content plan",
+      "Authority-building backlinks",
+      "Monthly rankings & traffic reports"
+    ],
+    "builtWith": "Built with"
   },
   "testimonials": {
     "section": {
@@ -630,6 +751,361 @@
     "whatsIncluded": "What's included",
     "related": "Other services in this category",
     "backToServices": "All services",
-    "notFound": "Service not found"
+    "notFound": "Service not found",
+    "faqTitle": "Frequently asked questions",
+    "faq": {
+      "jira": [
+        {
+          "q": "Do you set up Jira from scratch, or fix an existing project?",
+          "a": "Both. We can configure new Jira projects from zero, or audit and restructure an existing setup that's become slow or confusing to use."
+        },
+        {
+          "q": "Can you customize workflows for our specific process?",
+          "a": "Yes — we build custom statuses, transitions, and automation rules that match how your team actually works, whether that's Scrum, Kanban, or a hybrid."
+        },
+        {
+          "q": "Do you set up reporting and dashboards?",
+          "a": "Yes. We configure dashboards and reports (velocity, burndown, cycle time) so leads and stakeholders see progress without asking for status updates."
+        },
+        {
+          "q": "Can Jira integrate with our other tools?",
+          "a": "Yes — we connect Jira with Slack, Bitbucket/GitHub, Confluence, and other tools so updates and notifications flow automatically."
+        },
+        {
+          "q": "Will our team need training?",
+          "a": "We include onboarding sessions and documentation as part of every setup, so the team adopts the new structure quickly and consistently."
+        }
+      ],
+      "slack": [
+        {
+          "q": "Can you clean up a messy Slack workspace?",
+          "a": "Yes — we audit existing channels, archive what's unused, and restructure the workspace around teams and projects so it's easy to navigate again."
+        },
+        {
+          "q": "Can you build custom Slack bots?",
+          "a": "Yes. We build bots and workflows for common requests — standup reminders, ticket updates, approval flows — using Slack's native Workflow Builder or custom integrations."
+        },
+        {
+          "q": "Can Slack notify us automatically from Jira or ClickUp?",
+          "a": "Yes — we set up two-way integrations so status changes, comments, and mentions in Jira/ClickUp post directly into the right Slack channel."
+        },
+        {
+          "q": "How do you prevent notification overload?",
+          "a": "We configure notification rules and channel defaults so people only get pinged for what's actually relevant to them — less noise, faster response."
+        },
+        {
+          "q": "How long does a Slack setup take?",
+          "a": "A typical workspace restructuring and integration setup takes about 1 week, depending on team size and number of tools connected."
+        }
+      ],
+      "figma": [
+        {
+          "q": "Do you design from scratch, or work with an existing brand?",
+          "a": "Both. We can create a new visual direction from scratch, or design within your existing brand guidelines and design system."
+        },
+        {
+          "q": "What do I receive at the end — just images, or something developers can use?",
+          "a": "Developers get a fully organized Figma file with components, auto-layout, and Dev Mode inspection — so they can pull exact spacing, colors, and assets directly."
+        },
+        {
+          "q": "Can you build an interactive prototype I can test with users?",
+          "a": "Yes — we build clickable prototypes that simulate real navigation and interactions, so you can test the flow before a single line of code is written."
+        },
+        {
+          "q": "Do you design for both web and mobile?",
+          "a": "Yes — we design responsive web interfaces and native-feeling mobile app screens, using the same design system for consistency."
+        },
+        {
+          "q": "How long does a design project take?",
+          "a": "A typical project — wireframes through final UI — takes 2–5 weeks depending on the number of screens and rounds of feedback."
+        }
+      ],
+      "photoshop": [
+        {
+          "q": "What kind of images do you edit?",
+          "a": "Product photos, portraits, marketing banners, social media graphics, and composite images — anything that needs retouching, color correction, or manipulation."
+        },
+        {
+          "q": "Can you make our social media graphics consistent with our brand?",
+          "a": "Yes — we work from your brand colors, fonts, and style guide (or help create one) so every graphic looks like it belongs to the same brand."
+        },
+        {
+          "q": "Do you do photo compositing — combining multiple images?",
+          "a": "Yes — from simple background swaps to complex photorealistic composites blending several source images into one seamless result."
+        },
+        {
+          "q": "How many revisions are included?",
+          "a": "Our standard process includes revision rounds until you're happy with the result — we typically finalize within 2–3 rounds of feedback."
+        },
+        {
+          "q": "How fast can you turn around a batch of images?",
+          "a": "A standard batch (10–20 images) is usually delivered within 3–5 business days, depending on complexity."
+        }
+      ],
+      "illustrator": [
+        {
+          "q": "What do I get with a logo design project?",
+          "a": "A complete brand mark with variations (horizontal, icon-only, monochrome), delivered as vector files (SVG, AI, EPS) plus a brand book covering colors, fonts, and usage rules."
+        },
+        {
+          "q": "Can you design a custom icon set for our product or app?",
+          "a": "Yes — we design cohesive icon sets that match your brand style, delivered as scalable vector assets ready to drop into your app or website."
+        },
+        {
+          "q": "Do you prepare files for print, not just digital use?",
+          "a": "Yes — we prepare print-ready files with correct color modes (CMYK), bleed, and resolution for business cards, packaging, banners, and other printed materials."
+        },
+        {
+          "q": "Will the designs stay sharp at any size?",
+          "a": "Yes — everything is built in vector format, so logos and icons scale from a favicon to a billboard without losing quality."
+        },
+        {
+          "q": "How long does a logo or icon set take?",
+          "a": "A logo project typically takes 1–2 weeks including revisions; a full icon set usually takes about the same, depending on the number of icons."
+        }
+      ],
+      "premiere": [
+        {
+          "q": "What types of videos do you edit?",
+          "a": "Promotional videos, product demos, social media clips, testimonials, and motivational/brand content — from raw footage to a polished final cut."
+        },
+        {
+          "q": "Do you handle color correction and audio cleanup?",
+          "a": "Yes — every edit includes color grading for a consistent look and audio processing (noise reduction, leveling) so the final video sounds as good as it looks."
+        },
+        {
+          "q": "Can you add subtitles or captions?",
+          "a": "Yes — we add accurate subtitles in your language(s) of choice, formatted for accessibility and for platforms where videos autoplay muted."
+        },
+        {
+          "q": "Do you export in the right format for each platform?",
+          "a": "Yes — we deliver versions optimized for each destination (Instagram Reels, YouTube, LinkedIn, etc.), matching the right aspect ratio and specs."
+        },
+        {
+          "q": "How fast can you turn around an edit?",
+          "a": "A standard short-form video (under 2 minutes) is usually delivered in 3–5 business days; longer or more complex edits take a bit more."
+        }
+      ],
+      "metaMarketing": [
+        {
+          "q": "Do you handle both the strategy and the ad creative?",
+          "a": "Yes — we plan the campaign strategy and audience targeting, and also design the ad creative (images, video, copy) so everything is aligned from day one."
+        },
+        {
+          "q": "How do you know which ads are actually working?",
+          "a": "We set up the Meta Pixel and conversion tracking, then continuously A/B test creative and audiences, doubling down on what performs and cutting what doesn't."
+        },
+        {
+          "q": "What budget do I need to start?",
+          "a": "We can work with a range of budgets — we'll recommend a realistic starting budget based on your goals and industry during a short discovery call."
+        },
+        {
+          "q": "Will I get clear reports on results, not just impressions?",
+          "a": "Yes — we report on metrics that matter to your business: cost per lead/purchase, ROAS, and conversion trends, not just vanity metrics like reach."
+        },
+        {
+          "q": "How long before we see results?",
+          "a": "Initial data comes in within the first 1–2 weeks; most campaigns reach stable, optimized performance after about 4 weeks of testing."
+        }
+      ],
+      "seo": [
+        {
+          "q": "Do you start with a technical audit?",
+          "a": "Yes — we start by auditing site speed, indexing, mobile-friendliness, and structure, and fix technical issues that are holding your rankings back before anything else."
+        },
+        {
+          "q": "How do you choose which keywords to target?",
+          "a": "We research keywords based on your industry, competition, and search intent, prioritizing terms that bring in visitors who are ready to convert, not just traffic."
+        },
+        {
+          "q": "Do you write the content, or just tell us what to write?",
+          "a": "Both options are available — we can write SEO-optimized content ourselves, or provide a detailed content brief for your team to execute."
+        },
+        {
+          "q": "Is link building part of the service?",
+          "a": "Yes — we build authority through ethical, sustainable link-building strategies (no spammy tactics that risk a Google penalty)."
+        },
+        {
+          "q": "How long until we see ranking improvements?",
+          "a": "SEO is a medium-term investment — most sites see meaningful ranking movement within 3–6 months, with technical fixes often showing impact sooner."
+        }
+      ],
+      "jsmPortal": [
+        {
+          "q": "What is a JSM Customer Portal, exactly?",
+          "a": "It's the self-service front-end for Jira Service Management — a branded portal where customers or employees submit requests, track status, and find answers, without needing Jira access themselves."
+        },
+        {
+          "q": "Can we have different portals for different teams (IT, HR, facilities)?",
+          "a": "Yes — we set up separate request types, queues, and permissions per team, so each department gets its own workflow inside a single JSM instance."
+        },
+        {
+          "q": "Do you set up SLAs so requests don't fall through the cracks?",
+          "a": "Yes. We configure SLA policies per request type and priority, with automatic escalation and reporting so nothing sits unanswered."
+        },
+        {
+          "q": "Can the portal deflect simple requests with a knowledge base?",
+          "a": "Yes — we link a searchable knowledge base to the portal, so common questions get answered instantly instead of becoming tickets."
+        },
+        {
+          "q": "How long does a JSM Portal setup take?",
+          "a": "A standard setup — portal branding, request types, SLAs, and knowledge base — typically takes 1–3 weeks depending on the number of teams involved."
+        }
+      ],
+      "clickup": [
+        {
+          "q": "Do you set up ClickUp from scratch, or fix an existing messy workspace?",
+          "a": "Both. We can build a clean ClickUp structure from zero, or audit and reorganize an existing workspace that's grown disorganized over time."
+        },
+        {
+          "q": "Can you connect ClickUp to our other tools?",
+          "a": "Yes — we set up integrations with Slack, GitHub, Google Drive, and other tools via native integrations or Zapier, so updates flow automatically between systems."
+        },
+        {
+          "q": "Will our team need training to use the new setup?",
+          "a": "We include onboarding and training as part of every setup, so your team knows exactly how to use the new Spaces, workflows, and automations from day one."
+        },
+        {
+          "q": "Can you automate repetitive tasks in ClickUp?",
+          "a": "Yes — we set up automations for status changes, task assignments, due-date reminders, and recurring tasks, so your team spends less time on manual admin work."
+        },
+        {
+          "q": "How long does a ClickUp setup take?",
+          "a": "A typical workspace setup takes 1–2 weeks, depending on the number of teams, projects, and integrations involved."
+        }
+      ],
+      "support": [
+        {
+          "q": "What's included in an SLA support plan?",
+          "a": "A guaranteed response time based on severity (critical, high, normal), 24/7 monitoring, bug fixes, and a direct support channel — so problems get resolved before they affect your users."
+        },
+        {
+          "q": "How fast do you respond to critical issues?",
+          "a": "Critical incidents (site down, data loss risk) get a response within the timeframe defined in your SLA — typically under 1 hour, with resolution prioritized over all other work."
+        },
+        {
+          "q": "Do you only fix bugs, or also add new features?",
+          "a": "Both. Support plans cover bug fixes and monitoring by default, and we can also allocate ongoing hours for new features and product improvements."
+        },
+        {
+          "q": "Can you support an application you didn't originally build?",
+          "a": "Yes. We start with a short codebase and infrastructure audit to understand the system, then take over support and development from there."
+        },
+        {
+          "q": "How do we report issues or request changes?",
+          "a": "Through a dedicated channel — usually Slack or Jira Service Management — so every request is tracked, prioritized, and visible to your team."
+        }
+      ],
+      "analytics": [
+        {
+          "q": "Do you set up Google Analytics 4 (GA4) from scratch?",
+          "a": "Yes — we configure GA4 (or migrate you from Universal Analytics), set up conversion goals, and connect it to Google Tag Manager for clean, reliable event tracking."
+        },
+        {
+          "q": "Can you track specific actions, like form submissions or button clicks?",
+          "a": "Yes. We set up custom event tracking for exactly the actions that matter to your business — signups, purchases, downloads, video plays, and more."
+        },
+        {
+          "q": "Will I get regular reports, or do I have to check dashboards myself?",
+          "a": "Both. We build a live dashboard you can check anytime, and also send periodic reports summarizing traffic, conversions, and trends in plain language."
+        },
+        {
+          "q": "Do you help make sense of the data, or just set up tracking?",
+          "a": "Both — we don't just install tracking, we help interpret what the data means and recommend concrete changes to improve conversion and user experience."
+        },
+        {
+          "q": "Is my analytics setup GDPR-compliant?",
+          "a": "Yes — we configure consent-aware tracking and cookie banners so data collection respects user privacy regulations."
+        }
+      ],
+      "infra": [
+        {
+          "q": "Which cloud provider do you work with — AWS, GCP, or Azure?",
+          "a": "All three. We choose the provider that fits your budget and existing setup, or work within the one you already use — no need to migrate just to work with us."
+        },
+        {
+          "q": "Do you also manage on-premise or self-hosted servers?",
+          "a": "Yes. Alongside cloud environments, we administer on-prem and self-hosted (VPS, dedicated servers) infrastructure — including Linux administration and Nginx/IIS configuration."
+        },
+        {
+          "q": "How do you handle security and backups?",
+          "a": "We harden server access, set up firewalls and least-privilege policies, and configure automated daily backups with tested restore procedures — so a failure never means data loss."
+        },
+        {
+          "q": "Can you help reduce our cloud costs?",
+          "a": "Yes — we audit your current usage and right-size resources, set up autoscaling, and eliminate idle or over-provisioned services. Most clients see a meaningful reduction in their monthly bill."
+        },
+        {
+          "q": "Do you provide ongoing infrastructure support after setup?",
+          "a": "Yes — we offer ongoing monitoring, maintenance, and on-call support, so your infrastructure keeps running reliably as your traffic and team grow."
+        }
+      ],
+      "devops": [
+        {
+          "q": "Do you set up CI/CD from scratch or work with our existing pipeline?",
+          "a": "Both. We can build a CI/CD pipeline from zero, or audit and improve an existing GitLab/GitHub Actions setup — tightening build times, test coverage, and deployment safety."
+        },
+        {
+          "q": "Will deployments cause downtime?",
+          "a": "No. We set up zero-downtime deployment strategies (rolling updates, blue-green, or canary releases) so your users never see an outage during a release."
+        },
+        {
+          "q": "What happens if a deployment fails?",
+          "a": "Automatic rollback. If a health check or test fails after deploy, the pipeline reverts to the last stable version without anyone needing to intervene manually."
+        },
+        {
+          "q": "Do you handle monitoring and alerting too?",
+          "a": "Yes — we set up monitoring (Datadog, Grafana, or similar) with alerts routed to Slack or email, so your team knows about issues before your users do."
+        },
+        {
+          "q": "How long does it take to set up a full CI/CD pipeline?",
+          "a": "A standard pipeline — build, test, deploy, monitoring — is typically ready in 2–3 weeks, depending on your infrastructure and number of environments."
+        }
+      ],
+      "web": [
+        {
+          "q": "Do you build with React or WordPress?",
+          "a": "Both — the right fit depends on your project. React/Next.js suits complex, custom web apps and portals; WordPress suits marketing sites, blogs, and content-managed pages that your team wants to update independently."
+        },
+        {
+          "q": "How do I know which one I need?",
+          "a": "If you need custom logic, dashboards, or heavy integrations, React is the better fit. If you mainly need a content-driven site your team can edit without a developer, WordPress is faster and more cost-effective."
+        },
+        {
+          "q": "Can I start on WordPress and move to React later?",
+          "a": "Yes. Many clients start with a WordPress site and migrate to a custom React application once their product or traffic outgrows it. We plan the architecture with that path in mind from day one."
+        },
+        {
+          "q": "Do you build e-commerce sites?",
+          "a": "Yes — WooCommerce on WordPress for most stores, or a custom React storefront when you need more control over checkout, integrations, or performance at scale."
+        },
+        {
+          "q": "How long does a website take to build?",
+          "a": "A WordPress site typically launches in 2–4 weeks. A custom React application usually takes 6–12 weeks, depending on scope and integrations."
+        }
+      ],
+      "mobile": [
+        {
+          "q": "Do you build fully native apps, or use Flutter?",
+          "a": "We build with Flutter — a single codebase that compiles to fully native iOS and Android apps, so you get native performance and platform UI without paying for two separate teams."
+        },
+        {
+          "q": "How long does it take to build a mobile app?",
+          "a": "Most MVP-scope apps launch in 6–10 weeks depending on features and integrations. We'll confirm a concrete timeline after a short discovery call."
+        },
+        {
+          "q": "Will the app feel the same on iOS and Android?",
+          "a": "Yes. Flutter renders its own UI engine, so your app looks and behaves consistently — and natively — on both platforms from one codebase."
+        },
+        {
+          "q": "Do you handle App Store and Google Play publishing?",
+          "a": "Yes — we manage the entire submission process: developer accounts, store listings, screenshots, and review requirements for both stores."
+        },
+        {
+          "q": "What happens after the app launches?",
+          "a": "We offer ongoing support: bug fixes, OS-version updates, analytics monitoring, and new features as your product grows."
+        }
+      ]
+    }
   }
 }

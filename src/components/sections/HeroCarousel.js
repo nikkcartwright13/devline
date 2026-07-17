@@ -23,7 +23,7 @@ export default function HeroCarousel() {
   ];
 
   return (
-    <section id="top" style={{ position: "relative", background: DARK, color: "#fff", overflow: "hidden" }}>
+    <section id="top" style={{ position: "relative", background: DARK, color: "#fff", overflow: "hidden", marginTop: -90 }}>
       <Orb size={420} top="-120px" left="-100px" colors={[T.blue, "transparent"]} dur={14} />
       <Orb size={360} bottom="-140px" right="-80px" colors={[T.violet, "transparent"]} dur={11} delay={1} />
       <Orb size={220} top="30%" right="18%" colors={["#22D3EE", "transparent"]} dur={9} delay={0.5} opacity={0.35} />
