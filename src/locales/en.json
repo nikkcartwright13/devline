@@ -658,27 +658,68 @@
       "title": "Our Projects",
       "description": "A look at the projects Devline has delivered — web, mobile, and more."
     },
+    "categories": {
+      "web": "Web Applications",
+      "mobile": "Mobile Apps",
+      "design": "Design",
+      "marketing": "Marketing"
+    },
     "items": [
       {
         "slug": "placeholder-project-1",
+        "category": "web",
         "name": "[Project Name]",
-        "category": "[Category]",
         "summary": "[A short description of what was built and the problem it solves.]",
         "tags": ["React", "Node.js"]
       },
       {
         "slug": "placeholder-project-2",
+        "category": "web",
         "name": "[Project Name]",
-        "category": "[Category]",
         "summary": "[A short description of what was built and the problem it solves.]",
-        "tags": ["React Native", "Firebase"]
+        "tags": ["Next.js", "PostgreSQL"]
       },
       {
         "slug": "placeholder-project-3",
+        "category": "mobile",
         "name": "[Project Name]",
-        "category": "[Category]",
         "summary": "[A short description of what was built and the problem it solves.]",
-        "tags": ["Jira", "Automation"]
+        "tags": ["Flutter", "Firebase"]
+      },
+      {
+        "slug": "placeholder-project-4",
+        "category": "mobile",
+        "name": "[Project Name]",
+        "summary": "[A short description of what was built and the problem it solves.]",
+        "tags": ["React Native", "GraphQL"]
+      },
+      {
+        "slug": "placeholder-project-5",
+        "category": "design",
+        "name": "[Project Name]",
+        "summary": "[A short description of what was built and the problem it solves.]",
+        "tags": ["Figma", "Design System"]
+      },
+      {
+        "slug": "placeholder-project-6",
+        "category": "design",
+        "name": "[Project Name]",
+        "summary": "[A short description of what was built and the problem it solves.]",
+        "tags": ["Illustrator", "Branding"]
+      },
+      {
+        "slug": "placeholder-project-7",
+        "category": "marketing",
+        "name": "[Project Name]",
+        "summary": "[A short description of what was built and the problem it solves.]",
+        "tags": ["Meta Ads", "Analytics"]
+      },
+      {
+        "slug": "placeholder-project-8",
+        "category": "marketing",
+        "name": "[Project Name]",
+        "summary": "[A short description of what was built and the problem it solves.]",
+        "tags": ["SEO", "Content Strategy"]
       }
     ]
   },

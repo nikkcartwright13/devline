@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 
-export default function Tilt3D({ children, max = 12, scale = 1.03, style = {} }) {
+export default function Tilt3D({ children, max = 12, style = {} }) {
   const ref = useRef(null);
   const reduced = useState(() => window.matchMedia("(prefers-reduced-motion: reduce)").matches)[0];
   const [t, setT] = useState({ rx: 0, ry: 0, active: false });
@@ -25,7 +25,7 @@ export default function Tilt3D({ children, max = 12, scale = 1.03, style = {} })
       <div
         style={{
           position: "relative",
-          transform: `rotateX(${t.rx}deg) rotateY(${t.ry}deg) scale(${t.active ? scale : 1})`,
+          transform: `rotateX(${t.rx}deg) rotateY(${t.ry}deg)`,
           transition: t.active ? "transform .08s linear" : "transform .6s cubic-bezier(.2,.7,.3,1)",
           transformStyle: "preserve-3d",
         }}

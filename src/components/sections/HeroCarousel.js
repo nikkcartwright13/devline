@@ -88,7 +88,7 @@ export default function HeroCarousel() {
           <span aria-hidden className="dl-hero-glow-a" style={{ position: "absolute", borderRadius: "50%", background: "radial-gradient(circle, rgba(79,140,255,.35), transparent 70%)", filter: "blur(30px)" }} />
           <span aria-hidden className="dl-hero-glow-b" style={{ position: "absolute", borderRadius: "50%", background: "radial-gradient(circle, rgba(139,92,246,.32), transparent 70%)", filter: "blur(26px)" }} />
 
-          <Tilt3D max={16} scale={1.05}>
+          <Tilt3D max={16}>
             <div className="dl-hero-mockup" style={{ transform: "translateZ(0px)" }}>
               <WebsiteMockup />
             </div>

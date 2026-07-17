@@ -658,27 +658,68 @@
       "title": "ჩვენი პროექტები",
       "description": "გადახედეთ პროექტებს, რომლებიც Devline-მა განახორციელა — ვები, მობაილი და სხვა."
     },
+    "categories": {
+      "web": "ვებ-აპლიკაციები",
+      "mobile": "მობილური აპები",
+      "design": "დიზაინი",
+      "marketing": "მარკეტინგი"
+    },
     "items": [
       {
         "slug": "placeholder-project-1",
+        "category": "web",
         "name": "[პროექტის სახელი]",
-        "category": "[კატეგორია]",
         "summary": "[მოკლე აღწერა იმისა, თუ რა შეიქმნა და რა პრობლემა მოგვარდა.]",
         "tags": ["React", "Node.js"]
       },
       {
         "slug": "placeholder-project-2",
+        "category": "web",
         "name": "[პროექტის სახელი]",
-        "category": "[კატეგორია]",
         "summary": "[მოკლე აღწერა იმისა, თუ რა შეიქმნა და რა პრობლემა მოგვარდა.]",
-        "tags": ["React Native", "Firebase"]
+        "tags": ["Next.js", "PostgreSQL"]
       },
       {
         "slug": "placeholder-project-3",
+        "category": "mobile",
         "name": "[პროექტის სახელი]",
-        "category": "[კატეგორია]",
         "summary": "[მოკლე აღწერა იმისა, თუ რა შეიქმნა და რა პრობლემა მოგვარდა.]",
-        "tags": ["Jira", "Automation"]
+        "tags": ["Flutter", "Firebase"]
+      },
+      {
+        "slug": "placeholder-project-4",
+        "category": "mobile",
+        "name": "[პროექტის სახელი]",
+        "summary": "[მოკლე აღწერა იმისა, თუ რა შეიქმნა და რა პრობლემა მოგვარდა.]",
+        "tags": ["React Native", "GraphQL"]
+      },
+      {
+        "slug": "placeholder-project-5",
+        "category": "design",
+        "name": "[პროექტის სახელი]",
+        "summary": "[მოკლე აღწერა იმისა, თუ რა შეიქმნა და რა პრობლემა მოგვარდა.]",
+        "tags": ["Figma", "Design System"]
+      },
+      {
+        "slug": "placeholder-project-6",
+        "category": "design",
+        "name": "[პროექტის სახელი]",
+        "summary": "[მოკლე აღწერა იმისა, თუ რა შეიქმნა და რა პრობლემა მოგვარდა.]",
+        "tags": ["Illustrator", "Branding"]
+      },
+      {
+        "slug": "placeholder-project-7",
+        "category": "marketing",
+        "name": "[პროექტის სახელი]",
+        "summary": "[მოკლე აღწერა იმისა, თუ რა შეიქმნა და რა პრობლემა მოგვარდა.]",
+        "tags": ["Meta Ads", "Analytics"]
+      },
+      {
+        "slug": "placeholder-project-8",
+        "category": "marketing",
+        "name": "[პროექტის სახელი]",
+        "summary": "[მოკლე აღწერა იმისა, თუ რა შეიქმნა და რა პრობლემა მოგვარდა.]",
+        "tags": ["SEO", "Content Strategy"]
       }
     ]
   },

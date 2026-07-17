@@ -658,27 +658,68 @@
       "title": "Наши проекты",
       "description": "Проекты, которые реализовала Devline — веб, мобильные приложения и не только."
     },
+    "categories": {
+      "web": "Веб-приложения",
+      "mobile": "Мобильные приложения",
+      "design": "Дизайн",
+      "marketing": "Маркетинг"
+    },
     "items": [
       {
         "slug": "placeholder-project-1",
+        "category": "web",
         "name": "[Название проекта]",
-        "category": "[Категория]",
         "summary": "[Краткое описание того, что было создано, и какую проблему это решает.]",
         "tags": ["React", "Node.js"]
       },
       {
         "slug": "placeholder-project-2",
+        "category": "web",
         "name": "[Название проекта]",
-        "category": "[Категория]",
         "summary": "[Краткое описание того, что было создано, и какую проблему это решает.]",
-        "tags": ["React Native", "Firebase"]
+        "tags": ["Next.js", "PostgreSQL"]
       },
       {
         "slug": "placeholder-project-3",
+        "category": "mobile",
         "name": "[Название проекта]",
-        "category": "[Категория]",
         "summary": "[Краткое описание того, что было создано, и какую проблему это решает.]",
-        "tags": ["Jira", "Automation"]
+        "tags": ["Flutter", "Firebase"]
+      },
+      {
+        "slug": "placeholder-project-4",
+        "category": "mobile",
+        "name": "[Название проекта]",
+        "summary": "[Краткое описание того, что было создано, и какую проблему это решает.]",
+        "tags": ["React Native", "GraphQL"]
+      },
+      {
+        "slug": "placeholder-project-5",
+        "category": "design",
+        "name": "[Название проекта]",
+        "summary": "[Краткое описание того, что было создано, и какую проблему это решает.]",
+        "tags": ["Figma", "Design System"]
+      },
+      {
+        "slug": "placeholder-project-6",
+        "category": "design",
+        "name": "[Название проекта]",
+        "summary": "[Краткое описание того, что было создано, и какую проблему это решает.]",
+        "tags": ["Illustrator", "Branding"]
+      },
+      {
+        "slug": "placeholder-project-7",
+        "category": "marketing",
+        "name": "[Название проекта]",
+        "summary": "[Краткое описание того, что было создано, и какую проблему это решает.]",
+        "tags": ["Meta Ads", "Analytics"]
+      },
+      {
+        "slug": "placeholder-project-8",
+        "category": "marketing",
+        "name": "[Название проекта]",
+        "summary": "[Краткое описание того, что было создано, и какую проблему это решает.]",
+        "tags": ["SEO", "Content Strategy"]
       }
     ]
   },
