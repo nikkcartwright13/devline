@@ -18,9 +18,30 @@ export default function ServiceDetailTemplate({ slug, children }) {
   const features = t(`services.items.${slug}.features`, { returnObjects: true });
   const faqItems = t(`serviceDetail.faq.${slug}`, { returnObjects: true, defaultValue: [] });
 
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      name: title,
+      description: text,
+      provider: { "@type": "Organization", name: "Devline.digital", url: "https://devline.digital" },
+    },
+  ];
+  if (faqItems.length > 0) {
+    jsonLd.push({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: faqItems.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    });
+  }
+
   return (
     <>
-      <Seo title={title} description={text} />
+      <Seo title={title} description={text} jsonLd={jsonLd} />
 
       {children}
 

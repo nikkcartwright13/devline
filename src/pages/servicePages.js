@@ -1,19 +1,21 @@
-import WebAplications from "./WebAplications";
-import MobileApps from "./MobileApps";
-import Devops from "./Devops";
-import Infra from "./Infra";
-import Analytics from "./Analytics";
-import Support from "./Support";
-import ClickUp from "./ClickUp";
-import JsmPortal from "./JsmPortal";
-import Jira from "./Jira";
-import Slack from "./Slack";
-import Figma from "./Figma";
-import Photoshop from "./Photoshop";
-import Illustrator from "./Illustrator";
-import Premiere from "./Premiere";
-import MetaMarketing from "./MetaMarketing";
-import SeoService from "./SeoService";
+import { lazy } from "react";
+
+const WebAplications = lazy(() => import("./WebAplications"));
+const MobileApps = lazy(() => import("./MobileApps"));
+const Devops = lazy(() => import("./Devops"));
+const Infra = lazy(() => import("./Infra"));
+const Analytics = lazy(() => import("./Analytics"));
+const Support = lazy(() => import("./Support"));
+const ClickUp = lazy(() => import("./ClickUp"));
+const JsmPortal = lazy(() => import("./JsmPortal"));
+const Jira = lazy(() => import("./Jira"));
+const Slack = lazy(() => import("./Slack"));
+const Figma = lazy(() => import("./Figma"));
+const Photoshop = lazy(() => import("./Photoshop"));
+const Illustrator = lazy(() => import("./Illustrator"));
+const Premiere = lazy(() => import("./Premiere"));
+const MetaMarketing = lazy(() => import("./MetaMarketing"));
+const SeoService = lazy(() => import("./SeoService"));
 
 export const SERVICE_PAGES = [
   { slug: "web", Component: WebAplications },

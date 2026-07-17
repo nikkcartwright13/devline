@@ -64,12 +64,12 @@ export default function ContactPage() {
                     <span aria-hidden className="dl-contact-icon" style={{ width: 42, height: 42, borderRadius: 12, flexShrink: 0, display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", background: GRAD }}>
                       <Icon name={row.icon} size={19} />
                     </span>
-                    <div>
+                    <div style={{ flex: 1, minWidth: 0 }}>
                       <div style={{ ...mono, fontSize: 11.5, color: T.muted, letterSpacing: ".08em" }}>{t(`contact.getInTouch.${row.key}Label`)}</div>
                       {row.href ? (
-                        <a href={row.href} style={{ ...display, fontWeight: 600, fontSize: 16.5, color: T.ink, textDecoration: "none" }}>{row.value}</a>
+                        <a href={row.href} style={{ ...display, fontWeight: 600, fontSize: "clamp(14px,4vw,16.5px)", color: T.ink, textDecoration: "none", wordBreak: "break-word" }}>{row.value}</a>
                       ) : (
-                        <div style={{ ...display, fontWeight: 600, fontSize: 16.5, color: T.ink }}>{t("contact.getInTouch.addressValue")}</div>
+                        <div style={{ ...display, fontWeight: 600, fontSize: "clamp(14px,4vw,16.5px)", color: T.ink, wordBreak: "break-word" }}>{t("contact.getInTouch.addressValue")}</div>
                       )}
                     </div>
                   </div>

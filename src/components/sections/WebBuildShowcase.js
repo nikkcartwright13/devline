@@ -37,9 +37,9 @@ export default function WebBuildShowcase() {
         {/* text */}
         <Reveal>
           <p style={{ ...mono, fontSize: 13, letterSpacing: ".12em", color: "#7FB0FF" }}>{t("web.section.eyebrow")}</p>
-          <h2 style={{ ...display, fontWeight: 700, fontSize: "clamp(26px,4vw,42px)", marginTop: 10, lineHeight: 1.15 }}>
+          <h1 style={{ ...display, fontWeight: 700, fontSize: "clamp(26px,4vw,42px)", marginTop: 10, lineHeight: 1.15 }}>
             {t("web.section.title")}
-          </h2>
+          </h1>
           <p style={{ color: "#B9C6E6", marginTop: 16, lineHeight: 1.8, maxWidth: 480 }}>
             {t("web.section.text")}
           </p>

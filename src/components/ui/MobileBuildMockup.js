@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { useTranslation } from "react-i18next";
 import { GRAD, DARK, mono } from "../../theme";
 import Icon from "./Icon";
 
@@ -16,8 +15,8 @@ const CODE_LINES = [
   [{ t: "kw", v: "export default function " }, { t: "fn", v: "App" }, { t: "p", v: "() {" }],
   [{ t: "p", v: "  return (" }],
   [{ t: "tag", v: "    <View " }, { t: "attr", v: "style" }, { t: "p", v: "=" }, { t: "str", v: "styles.card" }, { t: "tag", v: ">" }],
-  [{ t: "tag", v: "      <Text>" }, { t: "str", v: "Hi, Cartwright 👋" }, { t: "tag", v: "</Text>" }],
-  [{ t: "tag", v: "      <StatCard " }, { t: "attr", v: "value" }, { t: "p", v: "=" }, { t: "str", v: '"12"' }, { t: "tag", v: "/>" }],
+  [{ t: "tag", v: "      <Text>" }, { t: "str", v: "Dashboard" }, { t: "tag", v: "</Text>" }],
+  [{ t: "tag", v: "      <StatCard " }, { t: "attr", v: "value" }, { t: "p", v: "=" }, { t: "str", v: '"2,481"' }, { t: "tag", v: "/>" }],
   [{ t: "tag", v: "    </View>" }],
   [{ t: "p", v: "  );" }],
   [{ t: "p", v: "}" }],
@@ -29,7 +28,6 @@ const PHASE_DURATION = { coding: 2800, building: 1300, hold: 2200 };
 const TAB_ICONS = ["Home", "List", "CirclePlus", "Heart", "User"];
 
 export default function MobileBuildMockup() {
-  const { t } = useTranslation();
   const [phase, setPhase] = useState("coding");
   const [loop, setLoop] = useState(0);
 
@@ -107,8 +105,8 @@ export default function MobileBuildMockup() {
               </div>
 
               <div style={{ padding: "14px 12px 0", animation: "dl-fade .4s ease both", animationDelay: ".15s" }}>
-                <div style={{ ...mono, fontSize: 6.5, letterSpacing: ".12em", color: "#7FB0FF" }}>DAPET APP</div>
-                <div style={{ fontWeight: 700, fontSize: 12.5, color: "#fff", marginTop: 4 }}>{t("mobile.app.greeting")}</div>
+                <div style={{ ...mono, fontSize: 6.5, letterSpacing: ".12em", color: "#7FB0FF" }}>YOUR APP</div>
+                <div style={{ fontWeight: 700, fontSize: 12.5, color: "#fff", marginTop: 4 }}>Dashboard</div>
               </div>
 
               <div
@@ -117,8 +115,8 @@ export default function MobileBuildMockup() {
                   animation: "dl-ticket-pop .4s cubic-bezier(.34,1.56,.64,1) both", animationDelay: ".35s",
                 }}
               >
-                <div style={{ fontSize: 7, opacity: 0.85 }}>{t("mobile.app.statLabel")}</div>
-                <div style={{ fontWeight: 700, fontSize: 17, marginTop: 2 }}>12</div>
+                <div style={{ fontSize: 7, opacity: 0.85 }}>Overview</div>
+                <div style={{ fontWeight: 700, fontSize: 17, marginTop: 2 }}>2,481</div>
                 <div style={{ display: "flex", gap: 3, marginTop: 10 }}>
                   {[8, 14, 10, 18, 12, 16, 20].map((h, i) => (
                     <span key={i} style={{ width: 4, height: h, background: "rgba(255,255,255,.75)", borderRadius: 2, alignSelf: "flex-end" }} />

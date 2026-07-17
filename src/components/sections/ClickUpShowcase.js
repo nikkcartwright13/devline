@@ -21,9 +21,9 @@ export default function ClickUpShowcase() {
         {/* text */}
         <Reveal>
           <p style={{ ...mono, fontSize: 13, letterSpacing: ".12em", color: "#7FB0FF" }}>{t("services.items.clickup.eyebrow")}</p>
-          <h2 style={{ ...display, fontWeight: 700, fontSize: "clamp(26px,4vw,42px)", marginTop: 10, lineHeight: 1.15 }}>
+          <h1 style={{ ...display, fontWeight: 700, fontSize: "clamp(26px,4vw,42px)", marginTop: 10, lineHeight: 1.15 }}>
             {t("services.items.clickup.title")}
-          </h2>
+          </h1>
           <p style={{ color: "#B9C6E6", marginTop: 16, lineHeight: 1.8, maxWidth: 480 }}>
             {t("services.items.clickup.text")}
           </p>

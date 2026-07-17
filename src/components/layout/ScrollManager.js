@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { trackPageview } from "../../lib/analytics";
 
 export default function ScrollManager() {
   const { pathname, hash } = useLocation();
@@ -14,6 +15,10 @@ export default function ScrollManager() {
     }
     window.scrollTo(0, 0);
   }, [pathname, hash]);
+
+  useEffect(() => {
+    trackPageview(pathname);
+  }, [pathname]);
 
   return null;
 }

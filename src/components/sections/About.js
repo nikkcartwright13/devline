@@ -24,9 +24,9 @@ export default function About({ ctaHref = "/company", ctaLabel }) {
           </Link>
         </Reveal>
         <Reveal delay={150}>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {ABOUT_HIGHLIGHTS.map((key, i) => (
-              <div key={key} className="dl-card" style={{ background: T.panel, border: `1px solid ${T.border}`, borderRadius: 16, padding: "22px 20px", transform: i % 2 ? "translateY(16px)" : "none" }}>
+              <div key={key} className={`dl-card ${i % 2 ? "sm:translate-y-4" : ""}`} style={{ background: T.panel, border: `1px solid ${T.border}`, borderRadius: 16, padding: "22px 20px" }}>
                 <div style={{ ...display, fontWeight: 700, fontSize: 17 }}>{t(`about.highlights.${key}.title`)}</div>
                 <div style={{ fontSize: 13.5, color: T.muted, marginTop: 6, lineHeight: 1.6 }}>{t(`about.highlights.${key}.text`)}</div>
               </div>

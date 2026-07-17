@@ -268,6 +268,19 @@
       }
     }
   },
+  "team": {
+    "section": {
+      "eyebrow": "OUR TEAM",
+      "title": "The people behind the product",
+      "text": "A small, senior team — engineers, designers, and marketers who've worked in production environments before."
+    },
+    "items": {
+      "member1": { "name": "[Team Member]", "role": "[Lead Engineer]" },
+      "member2": { "name": "[Team Member]", "role": "[Product Designer]" },
+      "member3": { "name": "[Team Member]", "role": "[DevOps Engineer]" },
+      "member4": { "name": "[Team Member]", "role": "[Marketing Lead]" }
+    }
+  },
   "practices": {
     "section": {
       "eyebrow": "PRACTICES",
@@ -670,6 +683,11 @@
     "text": "Send us your idea and we'll get back to you within 24 hours with a concrete vision and estimate."
   },
   "placeholderBadge": "Placeholder content",
+  "cookieConsent": {
+    "text": "We use cookies to understand how visitors use this site. No data is collected until you accept.",
+    "accept": "Accept",
+    "decline": "Decline"
+  },
   "contact": {
     "seo": {
       "title": "Contact",

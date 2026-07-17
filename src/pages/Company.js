@@ -3,6 +3,7 @@ import Seo from "../components/Seo";
 import PageHeader from "../components/sections/PageHeader";
 import About from "../components/sections/About";
 import StatsImpact from "../components/sections/StatsImpact";
+import Team from "../components/sections/Team";
 import Practices from "../components/sections/Practices";
 import CTA from "../components/sections/CTA";
 
@@ -18,6 +19,7 @@ export default function CompanyPage() {
       />
       <About ctaHref="/contact" ctaLabel={t("about.ctaContact")} />
       <StatsImpact />
+      <Team />
       <Practices />
       <CTA />
     </>

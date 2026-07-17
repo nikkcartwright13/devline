@@ -19,11 +19,11 @@ export default function CTA() {
             <p style={{ color: "#B9C6E6", maxWidth: 480, marginTop: 14, lineHeight: 1.7 }}>
               {t("cta.text")}
             </p>
-            <div className="flex flex-wrap gap-4 mt-9">
-              <a href="mailto:hello@devline.digital" className="dl-btn" style={{ fontSize: 15, fontWeight: 600, background: "#fff", color: T.ink, padding: "14px 30px", borderRadius: 999, textDecoration: "none" }}>
+            <div className="flex flex-col sm:flex-row flex-wrap gap-4 mt-9">
+              <a href="mailto:hello@devline.digital" className="dl-btn" style={{ fontSize: "clamp(13px,3.6vw,15px)", fontWeight: 600, background: "#fff", color: T.ink, padding: "14px 24px", borderRadius: 999, textDecoration: "none", textAlign: "center", wordBreak: "break-word" }}>
                 hello@devline.digital
               </a>
-              <a href="tel:+995555000000" className="dl-btn" style={{ fontSize: 15, fontWeight: 500, border: "1px solid rgba(255,255,255,.3)", color: "#fff", padding: "14px 30px", borderRadius: 999, textDecoration: "none" }}>
+              <a href="tel:+995555000000" className="dl-btn" style={{ fontSize: "clamp(13px,3.6vw,15px)", fontWeight: 500, border: "1px solid rgba(255,255,255,.3)", color: "#fff", padding: "14px 24px", borderRadius: 999, textDecoration: "none", textAlign: "center", wordBreak: "break-word" }}>
                 +995 555 00 00 00
               </a>
             </div>

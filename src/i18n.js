@@ -5,6 +5,7 @@ import ka from "./locales/ka.json";
 import en from "./locales/en.json";
 import ru from "./locales/ru.json";
 import de from "./locales/de.json";
+import { applyGeoLanguage } from "./lib/geoLanguage";
 
 i18n
   .use(LanguageDetector)
@@ -25,5 +26,10 @@ i18n
       caches: ["localStorage"],
     },
   });
+
+// First-time visitors only: correct the initial language guess based on the
+// visitor's country (Georgia -> ka, everywhere else -> en) once the geo
+// lookup resolves. Returning visitors keep whatever language is already saved.
+applyGeoLanguage(i18n);
 
 export default i18n;

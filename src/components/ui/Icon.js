@@ -44,6 +44,16 @@ import {
   Phone,
   MapPin,
   Send,
+  Plus,
+  Bell,
+  Search,
+  PawPrint,
+  Stethoscope,
+  Store,
+  Scissors,
+  Building2,
+  Footprints,
+  Bookmark,
 } from "lucide-react";
 
 const ICONS = {
@@ -52,6 +62,7 @@ const ICONS = {
   Palette, PenTool, Repeat, SearchCheck, Smartphone, Star, Ticket, Users, Workflow,
   Check, ChevronDown, Menu, X, ArrowRight, ArrowLeft, Home, List, CirclePlus, Heart, User,
   MousePointer2, Server, Play, Zap, Clock, TrendingUp, Phone, MapPin, Send,
+  Plus, Bell, Search, PawPrint, Stethoscope, Store, Scissors, Building2, Footprints, Bookmark,
 };
 
 export default function Icon({ name, size = 20, strokeWidth = 2, ...props }) {

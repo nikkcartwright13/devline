@@ -13,8 +13,7 @@ import PhoneMockup from "../ui/PhoneMockup";
 export default function HeroCarousel() {
   const { t } = useTranslation();
   const { index, setIndex } = useCarousel(HERO_HREFS.length, { interval: 7000 });
-  const slide = t("hero.slides", { returnObjects: true })[index];
-  const hrefs = HERO_HREFS[index];
+  const slides = t("hero.slides", { returnObjects: true });
 
   const stats = [
     [30, "+", t("hero.stats.projects")],
@@ -30,26 +29,39 @@ export default function HeroCarousel() {
 
       <div className="max-w-6xl mx-auto px-5 pt-24 pb-28 md:pt-32 md:pb-36 relative grid xl:grid-cols-[1fr_380px] gap-10 items-center">
         <div>
-          <div style={{ display: "flex", alignItems: "flex-start", gap: 16 }}>
-            <div key={index} className="dl-fade-in" style={{ flex: 1, minWidth: 0 }}>
-              <span style={{ ...mono, fontSize: 13, letterSpacing: ".12em", color: "#A5B8E8", border: "1px solid rgba(255,255,255,.18)", borderRadius: 999, padding: "7px 16px", display: "inline-block" }}>
-                {slide.eyebrow}
-              </span>
-              <h1 style={{ ...display, fontWeight: 700, fontSize: 30, lineHeight: 1.1, marginTop: 26 }}>
-                {slide.title}
-              </h1>
-              <p style={{ fontSize: 18, color: "#B9C6E6", maxWidth: 560, marginTop: 22, lineHeight: 1.75 }}>
-                {slide.text}
-              </p>
-              <div className="flex flex-wrap gap-4 mt-10">
-                <Link to={hrefs.primary} className="dl-btn" style={{ fontSize: 15, fontWeight: 600, background: GRAD, color: "#fff", padding: "14px 30px", borderRadius: 999, textDecoration: "none" }}>
-                  {slide.primary}
-                </Link>
-                <Link to={hrefs.secondary} className="dl-btn" style={{ fontSize: 15, fontWeight: 500, border: "1px solid rgba(255,255,255,.3)", color: "#fff", padding: "14px 30px", borderRadius: 999, textDecoration: "none" }}>
-                  {slide.secondary}
-                </Link>
+          <div style={{ display: "grid" }}>
+            {slides.map((s, i) => (
+              <div
+                key={i}
+                inert={i !== index ? "" : undefined}
+                aria-hidden={i !== index}
+                style={{
+                  gridArea: "1 / 1",
+                  minWidth: 0,
+                  opacity: i === index ? 1 : 0,
+                  pointerEvents: i === index ? "auto" : "none",
+                  transition: "opacity .4s ease",
+                }}
+              >
+                <span style={{ ...mono, fontSize: 13, letterSpacing: ".12em", color: "#A5B8E8", border: "1px solid rgba(255,255,255,.18)", borderRadius: 999, padding: "7px 16px", display: "inline-block" }}>
+                  {s.eyebrow}
+                </span>
+                <h1 style={{ ...display, fontWeight: 700, fontSize: "clamp(26px,6vw,40px)", lineHeight: 1.1, marginTop: 26 }}>
+                  {s.title}
+                </h1>
+                <p style={{ fontSize: 18, color: "#B9C6E6", maxWidth: 560, marginTop: 22, lineHeight: 1.75 }}>
+                  {s.text}
+                </p>
+                <div className="flex flex-wrap gap-4 mt-10">
+                  <Link to={HERO_HREFS[i].primary} className="dl-btn" style={{ fontSize: 15, fontWeight: 600, background: GRAD, color: "#fff", padding: "14px 30px", borderRadius: 999, textDecoration: "none" }}>
+                    {s.primary}
+                  </Link>
+                  <Link to={HERO_HREFS[i].secondary} className="dl-btn" style={{ fontSize: 15, fontWeight: 500, border: "1px solid rgba(255,255,255,.3)", color: "#fff", padding: "14px 30px", borderRadius: 999, textDecoration: "none" }}>
+                    {s.secondary}
+                  </Link>
+                </div>
               </div>
-            </div>
+            ))}
           </div>
 
           <div style={{ marginTop: 28 }}>
@@ -57,13 +69,13 @@ export default function HeroCarousel() {
           </div>
 
           {/* stats row */}
-          <div className="grid grid-cols-3 gap-6 mt-16 max-w-lg">
+          <div className="grid grid-cols-3 gap-3 sm:gap-6 mt-16 max-w-lg">
             {stats.map(([n, s, l]) => (
               <div key={l}>
                 <div style={{ ...display, fontWeight: 700, fontSize: "clamp(26px,4vw,38px)", ...gradientText }}>
                   <Counter to={n} suffix={s} />
                 </div>
-                <div style={{ fontSize: 13, color: "#93A5CE", marginTop: 4 }}>{l}</div>
+                <div style={{ fontSize: "clamp(10.5px,3vw,13px)", color: "#93A5CE", marginTop: 4, lineHeight: 1.3 }}>{l}</div>
               </div>
             ))}
           </div>

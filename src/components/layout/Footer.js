@@ -43,8 +43,8 @@ export default function Footer() {
           <div>
             <div style={{ ...mono, fontSize: 12, letterSpacing: ".08em", color: T.muted, marginBottom: 14 }}>{t("footer.contactHeading")}</div>
             <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-              <a href="mailto:hello@devline.digital" className="dl-navlink" style={{ fontSize: 13.5, color: T.ink, textDecoration: "none" }}>hello@devline.digital</a>
-              <a href="tel:+995555000000" className="dl-navlink" style={{ fontSize: 13.5, color: T.ink, textDecoration: "none" }}>+995 555 00 00 00</a>
+              <a href="mailto:hello@devline.digital" className="dl-navlink" style={{ fontSize: 13.5, color: T.ink, textDecoration: "none", wordBreak: "break-word" }}>hello@devline.digital</a>
+              <a href="tel:+995555000000" className="dl-navlink" style={{ fontSize: 13.5, color: T.ink, textDecoration: "none", wordBreak: "break-word" }}>+995 555 00 00 00</a>
               <span style={{ fontSize: 13.5, color: T.muted }}>{t("footer.address")}</span>
             </div>
           </div>

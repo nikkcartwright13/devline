@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://devline.digital/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://devline.digital/services</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://devline.digital/services/web</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://devline.digital/services/mobile</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://devline.digital/services/devops</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://devline.digital/services/infra</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://devline.digital/services/analytics</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://devline.digital/services/support</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://devline.digital/services/clickup</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://devline.digital/services/jsmPortal</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://devline.digital/services/jira</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://devline.digital/services/slack</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://devline.digital/services/figma</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://devline.digital/services/photoshop</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://devline.digital/services/illustrator</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://devline.digital/services/premiere</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://devline.digital/services/metaMarketing</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://devline.digital/services/seo</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://devline.digital/mobile</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://devline.digital/company</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://devline.digital/our-projects</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://devline.digital/customer-stories</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://devline.digital/contact</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+</urlset>

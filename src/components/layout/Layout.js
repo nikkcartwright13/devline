@@ -3,6 +3,7 @@ import { T, body } from "../../theme";
 import Header from "./Header";
 import Footer from "./Footer";
 import ScrollManager from "./ScrollManager";
+import CookieConsentBanner from "../ui/CookieConsentBanner";
 
 export default function Layout() {
   return (
@@ -11,6 +12,7 @@ export default function Layout() {
       <Header />
       <Outlet />
       <Footer />
+      <CookieConsentBanner />
     </div>
   );
 }
