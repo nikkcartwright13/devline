@@ -64,6 +64,10 @@
       "projects": "Projekte",
       "experience": "Jahre Erfahrung",
       "uptime": "Uptime SLA"
+    },
+    "cta": {
+      "primary": "Projekt starten →",
+      "secondary": "Leistungen ansehen"
     }
   },
   "services": {

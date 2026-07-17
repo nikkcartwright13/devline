@@ -17,7 +17,7 @@ export default function Practices() {
           {t("practices.section.text")}
         </p>
       </Reveal>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-12">
         {PRACTICES.map((p, i) => (
           <Reveal key={p.key} delay={i * 80}>
             <div className="dl-card" style={{ background: T.panel, border: `1px solid ${T.border}`, borderRadius: 16, padding: "26px 24px", height: "100%" }}>

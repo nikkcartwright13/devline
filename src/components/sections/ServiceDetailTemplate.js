@@ -50,7 +50,7 @@ export default function ServiceDetailTemplate({ slug, children }) {
           <p style={{ ...mono, fontSize: 13, letterSpacing: ".1em", color: T.blue }}>
             {t("serviceDetail.whatsIncluded").toUpperCase()}
           </p>
-          <div className="grid sm:grid-cols-2 gap-5 mt-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-8">
             {features.map((f, i) => (
               <div key={i} className="dl-card" style={{ display: "flex", gap: 14, alignItems: "flex-start", background: T.panel, border: `1px solid ${T.border}`, borderRadius: 16, padding: "20px 22px" }}>
                 <span aria-hidden style={{ width: 34, height: 34, borderRadius: 10, flexShrink: 0, display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", background: GRAD }}>
@@ -76,7 +76,7 @@ export default function ServiceDetailTemplate({ slug, children }) {
               <p style={{ ...mono, fontSize: 13, letterSpacing: ".1em", color: T.blue }}>
                 {t("serviceDetail.related").toUpperCase()}
               </p>
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-8">
                 {related.map((s) => (
                   <Link
                     key={s.slug}

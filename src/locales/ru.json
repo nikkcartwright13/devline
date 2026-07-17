@@ -64,6 +64,10 @@
       "projects": "проектов",
       "experience": "лет опыта",
       "uptime": "uptime SLA"
+    },
+    "cta": {
+      "primary": "Начать проект →",
+      "secondary": "Смотреть услуги"
     }
   },
   "services": {

@@ -16,7 +16,7 @@ export default function MobileShowcase({ grouped = false }) {
       <Orb size={380} top="-100px" right="-80px" colors={[T.violet, "transparent"]} dur={12} opacity={0.4} />
       <Orb size={300} bottom="-120px" left="-60px" colors={[T.blue, "transparent"]} dur={15} opacity={0.4} />
 
-      <div className="max-w-6xl mx-auto px-5 py-20 md:py-28 relative grid lg:grid-cols-2 gap-14 items-center">
+      <div className="max-w-6xl mx-auto px-5 py-20 md:py-28 relative grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
         {/* text */}
         <Reveal>
           <p style={{ ...mono, fontSize: 13, letterSpacing: ".12em", color: "#7FB0FF" }}>{t("mobile.section.eyebrow")}</p>
@@ -45,7 +45,7 @@ export default function MobileShowcase({ grouped = false }) {
         {/* phones */}
         <Reveal delay={150}>
           <Tilt3D max={8}>
-            <div className="flex justify-center items-center" style={{ position: "relative", minHeight: 560, padding: "20px 0" }}>
+            <div className="flex justify-center items-center dl-mockup-scale" style={{ position: "relative", minHeight: 560, padding: "20px 0" }}>
               {/* glow behind phones */}
               <span aria-hidden style={{ position: "absolute", width: 340, height: 340, borderRadius: "50%", background: "radial-gradient(circle, rgba(79,140,255,.35), transparent 70%)", filter: "blur(30px)" }} />
               <div className="hidden sm:block" style={{ position: "relative", right: -30, zIndex: 1, opacity: 0.85 }}>

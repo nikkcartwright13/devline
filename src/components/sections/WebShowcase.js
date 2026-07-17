@@ -12,10 +12,10 @@ export default function WebShowcase() {
 
   return (
     <section style={{ background: T.panel, borderBottom: `1px solid ${T.border}`, overflow: "hidden" }}>
-      <div className="max-w-6xl mx-auto px-5 py-20 md:py-28 grid lg:grid-cols-2 gap-14 items-center">
+      <div className="max-w-6xl mx-auto px-5 py-20 md:py-28 grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
         {/* mockup */}
         <Reveal>
-          <div className="flex justify-center" style={{ padding: "10px 0" }}>
+          <div className="flex justify-center dl-mockup-scale" style={{ padding: "10px 0" }}>
             <Tilt3D max={10}>
               <WebsiteMockup />
             </Tilt3D>

@@ -112,6 +112,7 @@ export default function PhoneMockup({ variant = "front" }) {
       aria-hidden
       style={{
         width: isFront ? 268 : 230,
+        maxWidth: "100%",
         height: isFront ? 552 : 474,
         borderRadius: 44,
         background: "#0B0F1E",

@@ -23,7 +23,7 @@ export default function ServiceCategorySection({ category }) {
         <p style={{ color: T.muted, marginTop: 14, maxWidth: 600, lineHeight: 1.7 }}>{t(`services.categories.${category.key}.blurb`)}</p>
       </Reveal>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
         {category.services.map((s, i) => (
           <Reveal key={s.slug} delay={i * 80}>
             <Link

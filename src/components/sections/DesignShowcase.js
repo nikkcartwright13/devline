@@ -16,7 +16,7 @@ export default function DesignShowcase({ grouped = false }) {
       <Orb size={340} top="-100px" left="-80px" colors={[T.violet, "transparent"]} dur={12} opacity={0.4} />
       <Orb size={280} bottom="-120px" right="-60px" colors={["#22D3EE", "transparent"]} dur={15} opacity={0.35} />
 
-      <div className="max-w-6xl mx-auto px-5 py-20 md:py-28 relative grid lg:grid-cols-2 gap-14 items-center">
+      <div className="max-w-6xl mx-auto px-5 py-20 md:py-28 relative grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
         {/* text */}
         <Reveal>
           <p style={{ ...mono, fontSize: 13, letterSpacing: ".12em", color: "#7FB0FF" }}>{t("design.section.eyebrow")}</p>
@@ -44,7 +44,7 @@ export default function DesignShowcase({ grouped = false }) {
 
         {/* mockup */}
         <Reveal delay={150}>
-          <div className="flex justify-center" style={{ padding: "10px 0" }}>
+          <div className="flex justify-center dl-mockup-scale" style={{ padding: "10px 0" }}>
             <Tilt3D max={10}>
               <DesignMockup />
             </Tilt3D>

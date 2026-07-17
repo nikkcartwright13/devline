@@ -24,7 +24,7 @@ export default function CustomerStoriesPreview() {
             </Link>
           </div>
         </Reveal>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-12">
           {items.map((s, i) => (
             <Reveal key={s.slug} delay={i * 80}>
               <StoryCard story={s} />

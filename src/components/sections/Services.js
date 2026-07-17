@@ -34,7 +34,7 @@ export default function Services({ viewAllHref }) {
           )}
         </div>
       </Reveal>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-12">
         {SERVICE_CATEGORIES.map((cat, i) => (
           <Reveal key={cat.key} delay={i * 80}>
             <Link

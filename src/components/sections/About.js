@@ -10,7 +10,7 @@ export default function About({ ctaHref = "/company", ctaLabel }) {
 
   return (
     <section id="about" className="max-w-6xl mx-auto px-5 py-20 md:py-24">
-      <div className="grid md:grid-cols-2 gap-12 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <Reveal>
           <p style={{ ...mono, fontSize: 13, letterSpacing: ".12em", color: T.blue }}>{t("about.section.eyebrow")}</p>
           <h2 style={{ ...display, fontWeight: 700, fontSize: "clamp(26px,4vw,40px)", marginTop: 10 }}>

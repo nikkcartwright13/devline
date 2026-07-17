@@ -16,10 +16,10 @@ export default function JiraShowcase({ grouped = false }) {
       <Orb size={340} top="-100px" right="-80px" colors={["#22D3EE", "transparent"]} dur={13} opacity={0.35} />
       <Orb size={300} bottom="-120px" left="-60px" colors={[T.violet, "transparent"]} dur={16} opacity={0.4} />
 
-      <div className="max-w-6xl mx-auto px-5 py-20 md:py-28 relative grid lg:grid-cols-2 gap-14 items-center">
+      <div className="max-w-6xl mx-auto px-5 py-20 md:py-28 relative grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
         {/* board mockup */}
         <Reveal className="order-2 lg:order-1">
-          <div className="flex justify-center" style={{ padding: "10px 0" }}>
+          <div className="flex justify-center dl-mockup-scale" style={{ padding: "10px 0" }}>
             <Tilt3D max={10}>
               <JiraBoardMockup />
             </Tilt3D>

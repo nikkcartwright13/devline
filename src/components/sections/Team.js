@@ -17,7 +17,7 @@ export default function Team() {
           {t("team.section.text")}
         </p>
       </Reveal>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-12">
         {TEAM.map((key, i) => (
           <Reveal key={key} delay={i * 80}>
             <div className="dl-card" style={{ background: T.panel, border: `1px solid ${T.border}`, borderRadius: 16, padding: "24px 22px", height: "100%", textAlign: "center" }}>

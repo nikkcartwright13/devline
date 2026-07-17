@@ -27,7 +27,7 @@ export default function HeroCarousel() {
       <Orb size={360} bottom="-140px" right="-80px" colors={[T.violet, "transparent"]} dur={11} delay={1} />
       <Orb size={220} top="30%" right="18%" colors={["#22D3EE", "transparent"]} dur={9} delay={0.5} opacity={0.35} />
 
-      <div className="max-w-6xl mx-auto px-5 pt-24 pb-28 md:pt-32 md:pb-36 relative grid xl:grid-cols-[1fr_380px] gap-10 items-center">
+      <div className="max-w-6xl mx-auto px-5 pt-32 pb-28 md:pt-40 md:pb-36 relative grid grid-cols-1 xl:grid-cols-[1fr_380px] gap-10 items-center">
         <div>
           <div style={{ display: "grid" }}>
             {slides.map((s, i) => (
@@ -52,16 +52,18 @@ export default function HeroCarousel() {
                 <p style={{ fontSize: 18, color: "#B9C6E6", maxWidth: 560, marginTop: 22, lineHeight: 1.75 }}>
                   {s.text}
                 </p>
-                <div className="flex flex-wrap gap-4 mt-10">
-                  <Link to={HERO_HREFS[i].primary} className="dl-btn" style={{ fontSize: 15, fontWeight: 600, background: GRAD, color: "#fff", padding: "14px 30px", borderRadius: 999, textDecoration: "none" }}>
-                    {s.primary}
-                  </Link>
-                  <Link to={HERO_HREFS[i].secondary} className="dl-btn" style={{ fontSize: 15, fontWeight: 500, border: "1px solid rgba(255,255,255,.3)", color: "#fff", padding: "14px 30px", borderRadius: 999, textDecoration: "none" }}>
-                    {s.secondary}
-                  </Link>
-                </div>
               </div>
             ))}
+          </div>
+
+          {/* fixed CTA — stays put while the slide text above rotates */}
+          <div className="flex flex-wrap gap-4 mt-10">
+            <Link to="/contact" className="dl-btn" style={{ fontSize: 15, fontWeight: 600, background: GRAD, color: "#fff", padding: "14px 30px", borderRadius: 999, textDecoration: "none" }}>
+              {t("hero.cta.primary")}
+            </Link>
+            <Link to="/services" className="dl-btn" style={{ fontSize: 15, fontWeight: 500, border: "1px solid rgba(255,255,255,.3)", color: "#fff", padding: "14px 30px", borderRadius: 999, textDecoration: "none" }}>
+              {t("hero.cta.secondary")}
+            </Link>
           </div>
 
           <div style={{ marginTop: 28 }}>

@@ -21,7 +21,7 @@ export default function Footer() {
   return (
     <footer style={{ borderTop: `1px solid ${T.border}`, background: "#fff" }}>
       <div className="max-w-6xl mx-auto px-5 pt-14 pb-8">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
             <Link to="/" style={{ ...display, fontWeight: 700, fontSize: 18, color: T.ink, textDecoration: "none" }}>
               devline<span style={{ background: GRAD, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>.digital</span>

@@ -64,6 +64,10 @@
       "projects": "პროექტი",
       "experience": "წლიანი გამოცდილება",
       "uptime": "uptime SLA"
+    },
+    "cta": {
+      "primary": "პროექტის დაწყება →",
+      "secondary": "სერვისების ნახვა"
     }
   },
   "services": {

@@ -10,7 +10,7 @@ export default function Process() {
           <p style={{ ...mono, fontSize: 13, letterSpacing: ".12em", color: T.blue }}>PROCESS</p>
           <h2 style={{ ...display, fontWeight: 700, fontSize: "clamp(26px,4vw,40px)", marginTop: 10 }}>როგორ ვმუშაობთ</h2>
         </Reveal>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-12">
           {STEPS.map((st, i) => (
             <Reveal key={st.n} delay={i * 100}>
               <div className="dl-card" style={{ background: T.panel, border: `1px solid ${T.border}`, borderRadius: 16, padding: "26px 24px", height: "100%", position: "relative" }}>

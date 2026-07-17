@@ -48,7 +48,7 @@ export default function ContactPage() {
           background: "radial-gradient(circle, rgba(139,92,246,.10), transparent 70%)", pointerEvents: "none",
         }} />
 
-        <div className="grid md:grid-cols-2 gap-14" style={{ position: "relative" }}>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-14" style={{ position: "relative" }}>
           <Reveal>
             <p style={{ ...mono, fontSize: 13, letterSpacing: ".12em", color: T.blue }}>{t("contact.getInTouch.eyebrow")}</p>
             <h2 style={{ ...display, fontWeight: 700, fontSize: "clamp(24px,3.5vw,34px)", marginTop: 10 }}>

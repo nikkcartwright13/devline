@@ -16,10 +16,10 @@ export default function MarketingShowcase({ grouped = false }) {
       <Orb size={320} top="-90px" right="-70px" colors={[T.blue, "transparent"]} dur={13} opacity={0.4} />
       <Orb size={260} bottom="-110px" left="-50px" colors={[T.violet, "transparent"]} dur={16} opacity={0.35} />
 
-      <div className="max-w-6xl mx-auto px-5 py-20 md:py-28 relative grid lg:grid-cols-2 gap-14 items-center">
+      <div className="max-w-6xl mx-auto px-5 py-20 md:py-28 relative grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
         {/* mockup */}
         <Reveal className="order-2 lg:order-1">
-          <div className="flex justify-center" style={{ padding: "10px 0" }}>
+          <div className="flex justify-center dl-mockup-scale" style={{ padding: "10px 0" }}>
             <Tilt3D max={10}>
               <MarketingMockup />
             </Tilt3D>
