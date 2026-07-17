@@ -8,6 +8,7 @@ import Services from "./pages/Services";
 import { SERVICE_PAGES } from "./pages/servicePages";
 import Mobile from "./pages/Mobile";
 import Company from "./pages/Company";
+import OurProjects from "./pages/OurProjects";
 import Contact from "./pages/Contact";
 import CustomerStories from "./pages/CustomerStories";
 import CustomerStory from "./pages/CustomerStory";
@@ -26,6 +27,7 @@ export default function DevlineSite() {
             ))}
             <Route path="/mobile" element={<Mobile />} />
             <Route path="/company" element={<Company />} />
+            <Route path="/our-projects" element={<OurProjects />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/customer-stories" element={<CustomerStories />} />
             <Route path="/customer-stories/:slug" element={<CustomerStory />} />

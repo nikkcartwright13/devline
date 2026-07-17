@@ -15,6 +15,10 @@
         "label": "About Us",
         "text": "Our team, mission, and values."
       },
+      "projects": {
+        "label": "Our Projects",
+        "text": "A look at what we've built."
+      },
       "stories": {
         "label": "Customer Stories",
         "text": "How we help our clients."
@@ -498,6 +502,45 @@
         "industry": "[Industry]",
         "summary": "[A short description of the challenge Devline solved for this client.]",
         "body": "[Replace with the full story — context, solution, and outcome.]"
+      }
+    ]
+  },
+  "projects": {
+    "previewSection": {
+      "eyebrow": "OUR PROJECTS",
+      "title": "Selected work",
+      "viewAll": "All projects →"
+    },
+    "page": {
+      "eyebrow": "OUR PROJECTS",
+      "title": "Selected work",
+      "text": "A sample of the products and platforms we've delivered for our clients."
+    },
+    "seo": {
+      "title": "Our Projects",
+      "description": "A look at the projects Devline has delivered — web, mobile, and more."
+    },
+    "items": [
+      {
+        "slug": "placeholder-project-1",
+        "name": "[Project Name]",
+        "category": "[Category]",
+        "summary": "[A short description of what was built and the problem it solves.]",
+        "tags": ["React", "Node.js"]
+      },
+      {
+        "slug": "placeholder-project-2",
+        "name": "[Project Name]",
+        "category": "[Category]",
+        "summary": "[A short description of what was built and the problem it solves.]",
+        "tags": ["React Native", "Firebase"]
+      },
+      {
+        "slug": "placeholder-project-3",
+        "name": "[Project Name]",
+        "category": "[Category]",
+        "summary": "[A short description of what was built and the problem it solves.]",
+        "tags": ["Jira", "Automation"]
       }
     ]
   },
