@@ -8,6 +8,7 @@ import { COMPANY_DROPDOWN } from "../../data/nav";
 import useScrolled from "../../hooks/useScrolled";
 import Icon from "../ui/Icon";
 import LanguageSwitcher from "../ui/LanguageSwitcher";
+import ThemeToggle from "../ui/ThemeToggle";
 
 function DropdownPanel({ items }) {
   return (
@@ -107,7 +108,7 @@ export default function Header() {
         ref={(el) => { navRef.current = el; pillRef.current = el; }}
         className="max-w-6xl mx-auto flex items-center justify-between"
         style={{
-          background: "rgba(247,249,252,.85)",
+          background: "var(--dl-header-bg)",
           backdropFilter: "blur(10px)",
           border: `1px solid ${T.border}`,
           borderRadius: 999,
@@ -146,6 +147,7 @@ export default function Header() {
         </div>
 
         <div className="hidden lg:flex items-center gap-3">
+          <ThemeToggle />
           <LanguageSwitcher />
           <Link to="/contact" className="dl-btn" style={{ fontSize: 14, fontWeight: 600, background: GRAD, color: "#fff", padding: "10px 20px", borderRadius: 999, textDecoration: "none", whiteSpace: "nowrap" }}>
             {t("header.contactUs")}
@@ -174,7 +176,8 @@ export default function Header() {
             zIndex: 50,
           }}
         >
-          <div className="px-5" style={{ paddingTop: 16, paddingBottom: 10 }}>
+          <div className="px-5" style={{ paddingTop: 16, paddingBottom: 10, display: "flex", alignItems: "center", gap: 10 }}>
+            <ThemeToggle />
             <LanguageSwitcher style={{ width: "fit-content" }} />
           </div>
 

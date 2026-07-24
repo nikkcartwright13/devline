@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Main from './Main';
 import reportWebVitals from './reportWebVitals';
+import { initThemeMode } from './lib/themeMode';
+
+initThemeMode();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
