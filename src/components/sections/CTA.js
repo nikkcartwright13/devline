@@ -20,7 +20,7 @@ export default function CTA() {
               {t("cta.text")}
             </p>
             <div className="flex flex-col sm:flex-row flex-wrap gap-4 mt-9">
-              <a href="mailto:hello@devline.digital" className="dl-btn" style={{ fontSize: "clamp(13px,3.6vw,15px)", fontWeight: 600, background: "#fff", color: T.ink, padding: "14px 24px", borderRadius: 999, textDecoration: "none", textAlign: "center", wordBreak: "break-word" }}>
+              <a href="mailto:hello@devline.digital" className="dl-btn" style={{ fontSize: "clamp(13px,3.6vw,15px)", fontWeight: 600, background: "#fff", color: "#101A33", padding: "14px 24px", borderRadius: 999, textDecoration: "none", textAlign: "center", wordBreak: "break-word" }}>
                 hello@devline.digital
               </a>
               <a href="tel:+995555000000" className="dl-btn" style={{ fontSize: "clamp(13px,3.6vw,15px)", fontWeight: 500, border: "1px solid rgba(255,255,255,.3)", color: "#fff", padding: "14px 24px", borderRadius: 999, textDecoration: "none", textAlign: "center", wordBreak: "break-word" }}>

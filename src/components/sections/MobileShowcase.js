@@ -61,7 +61,7 @@ export default function MobileShowcase({ grouped = false }) {
 
       {!grouped && (
         <svg aria-hidden viewBox="0 0 1440 90" style={{ display: "block", width: "100%", marginBottom: -1 }}>
-          <path d="M0,50 C400,100 1000,10 1440,60 L1440,90 L0,90 Z" fill="#EFF3F9" />
+          <path d="M0,50 C400,100 1000,10 1440,60 L1440,90 L0,90 Z" fill={T.alt} />
         </svg>
       )}
     </section>

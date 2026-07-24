@@ -17,6 +17,7 @@
 export const T = {
   base: "var(--dl-base)",
   panel: "var(--dl-panel)",
+  alt: "var(--dl-alt)",
   ink: "var(--dl-ink)",
   muted: "var(--dl-muted)",
   border: "var(--dl-border)",

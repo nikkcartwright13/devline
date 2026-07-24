@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { T } from "../theme";
 import Seo from "../components/Seo";
 import HeroCarousel from "../components/sections/HeroCarousel";
 import TechMarquee from "../components/sections/TechMarquee";
@@ -20,7 +21,7 @@ export default function Home() {
       <HeroCarousel />
       <TechMarquee />
       <Services viewAllHref="/services" />
-      <DarkShowcaseGroup nextBg="#EFF3F9">
+      <DarkShowcaseGroup nextBg={T.alt}>
         <MobileShowcase grouped />
         <JiraShowcase grouped />
         <DesignShowcase grouped />

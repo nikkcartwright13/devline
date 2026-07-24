@@ -19,7 +19,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer style={{ borderTop: `1px solid ${T.border}`, background: "#fff" }}>
+    <footer style={{ borderTop: `1px solid ${T.border}`, background: T.panel }}>
       <div className="max-w-6xl mx-auto px-5 pt-14 pb-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>

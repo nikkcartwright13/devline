@@ -10,7 +10,7 @@ export default function StatsImpact() {
   return (
     <section
       style={{
-        backgroundColor: "#EFF3F9",
+        backgroundColor: T.alt,
         backgroundImage: "radial-gradient(circle, rgba(16,26,51,.07) 1.5px, transparent 1.5px)",
         backgroundSize: "26px 26px",
         borderBottom: `1px solid ${T.border}`,

@@ -8,7 +8,7 @@ import Icon from "../components/ui/Icon";
 
 const inputStyle = {
   width: "100%", padding: "13px 15px", borderRadius: 10, border: `1px solid ${T.border}`,
-  fontSize: 14.5, fontFamily: "inherit", color: T.ink, background: "#fff",
+  fontSize: 14.5, fontFamily: "inherit", color: T.ink, background: T.panel,
 };
 
 const CONTACT_ROWS = [

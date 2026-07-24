@@ -9,7 +9,7 @@ export default function CustomerStoriesPreview() {
   const items = t("stories.items", { returnObjects: true });
 
   return (
-    <section style={{ background: "#EFF3F9", borderBottom: `1px solid ${T.border}` }}>
+    <section style={{ background: T.alt, borderBottom: `1px solid ${T.border}` }}>
       <div className="max-w-6xl mx-auto px-5 py-20 md:py-24">
         <Reveal>
           <div className="flex flex-wrap items-end justify-between gap-4">

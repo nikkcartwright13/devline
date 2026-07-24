@@ -4,7 +4,7 @@ import Reveal from "../ui/Reveal";
 
 export default function Process() {
   return (
-    <section id="process" style={{ background: "#EFF3F9", borderBottom: `1px solid ${T.border}` }}>
+    <section id="process" style={{ background: T.alt, borderBottom: `1px solid ${T.border}` }}>
       <div className="max-w-6xl mx-auto px-5 py-20 md:py-24">
         <Reveal>
           <p style={{ ...mono, fontSize: 13, letterSpacing: ".12em", color: T.blue }}>PROCESS</p>

@@ -73,7 +73,7 @@
 }
 
 .dl-navlink { transition: color .2s ease; }
-.dl-navlink:hover { color: #101A33 !important; }
+.dl-navlink:hover { color: var(--dl-ink) !important; }
 
 .dl-btn { transition: transform .2s ease, box-shadow .2s ease, opacity .2s ease; }
 .dl-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(79,140,255,.35); }
