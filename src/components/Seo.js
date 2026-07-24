@@ -11,7 +11,7 @@ const ORGANIZATION_JSON_LD = {
   url: SITE_URL,
   logo: `${SITE_URL}/logo512.png`,
   email: "hello@devline.digital",
-  address: { "@type": "PostalAddress", addressLocality: "Tbilisi", addressCountry: "GE" },
+  areaServed: "Worldwide",
 };
 
 export default function Seo({ title, description, jsonLd }) {

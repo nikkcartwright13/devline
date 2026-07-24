@@ -58,7 +58,7 @@ export default function SeoMockup() {
         </div>
         <div style={{ flex: 1, display: "flex", alignItems: "center", gap: 8, background: "rgba(255,255,255,.06)", borderRadius: 999, padding: "5px 14px" }}>
           <Icon name="SearchCheck" size={12} color="#8FA3D6" />
-          <span style={{ ...mono, fontSize: 10.5, color: "#8FA3D6" }}>web development studio tbilisi</span>
+          <span style={{ ...mono, fontSize: 10.5, color: "#8FA3D6" }}>web development studio europe</span>
         </div>
       </div>
 

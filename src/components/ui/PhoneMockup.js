@@ -1,5 +1,6 @@
 import { GRAD, DARK, mono, display } from "../../theme";
 import Icon from "./Icon";
+import Counter from "./Counter";
 
 const MUTED = "#8FA3D6";
 const MINI_BARS = [40, 65, 50, 80, 55, 70, 95];
@@ -20,7 +21,9 @@ function TabBar({ active = 0 }) {
   return (
     <div style={{ marginTop: "auto", display: "flex", justifyContent: "space-around", padding: "12px 0 14px", borderTop: "1px solid rgba(255,255,255,.08)" }}>
       {tabs.map((ic, i) => (
-        <Icon key={ic} name={ic} size={14} color={i === active ? "#7FB0FF" : "#4A5578"} />
+        <span key={ic} style={i === active ? { animation: "dl-pulse 2s ease-in-out infinite" } : undefined}>
+          <Icon name={ic} size={14} color={i === active ? "#7FB0FF" : "#4A5578"} />
+        </span>
       ))}
     </div>
   );
@@ -29,24 +32,32 @@ function TabBar({ active = 0 }) {
 function DashboardScreen({ isFront }) {
   return (
     <>
-      <div style={{ padding: isFront ? "16px 18px 0" : "12px 14px 0" }}>
+      <div style={{ padding: isFront ? "16px 18px 0" : "12px 14px 0", animation: "dl-fade .4s ease both" }}>
         <div style={{ ...mono, fontSize: isFront ? 7.5 : 7, letterSpacing: ".14em", color: "#7FB0FF" }}>YOUR APP</div>
         <div style={{ ...display, fontWeight: 700, fontSize: isFront ? 15 : 12, color: "#fff", marginTop: 5 }}>Dashboard</div>
       </div>
 
-      <div style={{ margin: isFront ? "14px 16px 0" : "10px 12px 0", borderRadius: 16, padding: isFront ? "14px 16px 16px" : "10px 12px 12px", background: GRAD, color: "#fff" }}>
+      <div style={{ margin: isFront ? "14px 16px 0" : "10px 12px 0", borderRadius: 16, padding: isFront ? "14px 16px 16px" : "10px 12px 12px", background: GRAD, color: "#fff", animation: "dl-fade .4s ease both", animationDelay: ".1s" }}>
         <div style={{ fontSize: isFront ? 10 : 8.5, opacity: 0.85 }}>Overview</div>
-        <div style={{ ...display, fontWeight: 700, fontSize: isFront ? 24 : 19, marginTop: 4 }}>2,481</div>
+        <div style={{ ...display, fontWeight: 700, fontSize: isFront ? 24 : 19, marginTop: 4 }}>
+          <Counter to={2481} />
+        </div>
         <div style={{ display: "flex", gap: isFront ? 4 : 3, marginTop: 12, alignItems: "flex-end" }}>
           {MINI_BARS.map((h, i) => (
-            <span key={i} style={{ width: isFront ? 7 : 6, height: h * (isFront ? 0.34 : 0.28), background: "rgba(255,255,255,.75)", borderRadius: 3 }} />
+            <span
+              key={i}
+              style={{
+                width: isFront ? 7 : 6, height: h * (isFront ? 0.34 : 0.28), background: "rgba(255,255,255,.75)", borderRadius: 3,
+                transformOrigin: "bottom", animation: "dl-bar-breathe 2.2s ease-in-out infinite alternate", animationDelay: `${i * 0.12}s`,
+              }}
+            />
           ))}
         </div>
       </div>
 
       <div style={{ padding: isFront ? "16px 16px 0" : "12px 12px 0", display: "flex", flexDirection: "column", gap: isFront ? 8 : 6 }}>
-        {FIELDS.map((f) => (
-          <div key={f.icon} style={{ display: "flex", alignItems: "center", gap: 10, background: "rgba(255,255,255,.06)", border: "1px solid rgba(255,255,255,.08)", borderRadius: 10, padding: isFront ? "9px 12px" : "7px 10px" }}>
+        {FIELDS.map((f, i) => (
+          <div key={f.icon} style={{ display: "flex", alignItems: "center", gap: 10, background: "rgba(255,255,255,.06)", border: "1px solid rgba(255,255,255,.08)", borderRadius: 10, padding: isFront ? "9px 12px" : "7px 10px", animation: "dl-fade .4s ease both", animationDelay: `${0.2 + i * 0.1}s` }}>
             <span style={{ width: isFront ? 26 : 22, height: isFront ? 26 : 22, borderRadius: 8, background: GRAD, flexShrink: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
               <Icon name={f.icon} size={isFront ? 13 : 11} color="#fff" />
             </span>
@@ -66,14 +77,14 @@ function DashboardScreen({ isFront }) {
 function StatsScreen() {
   return (
     <>
-      <div style={{ padding: "12px 14px 0" }}>
+      <div style={{ padding: "12px 14px 0", animation: "dl-fade .4s ease both" }}>
         <div style={{ ...mono, fontSize: 7, letterSpacing: ".14em", color: "#7FB0FF" }}>YOUR APP</div>
         <div style={{ ...display, fontWeight: 700, fontSize: 12, color: "#fff", marginTop: 5 }}>Statistics</div>
       </div>
 
       <div style={{ display: "flex", gap: 8, padding: "12px 12px 0" }}>
-        {SUMMARY_STATS.map((s) => (
-          <div key={s.label} style={{ flex: 1, background: "rgba(255,255,255,.06)", border: "1px solid rgba(255,255,255,.08)", borderRadius: 10, padding: "8px 6px", textAlign: "center" }}>
+        {SUMMARY_STATS.map((s, i) => (
+          <div key={s.label} style={{ flex: 1, background: "rgba(255,255,255,.06)", border: "1px solid rgba(255,255,255,.08)", borderRadius: 10, padding: "8px 6px", textAlign: "center", animation: "dl-fade .4s ease both", animationDelay: `${0.1 + i * 0.08}s` }}>
             <div style={{ ...display, fontWeight: 700, fontSize: 12, color: "#fff" }}>{s.value}</div>
             <div style={{ fontSize: 6.5, color: MUTED, marginTop: 2 }}>{s.label}</div>
           </div>
@@ -82,13 +93,19 @@ function StatsScreen() {
 
       <div style={{ margin: "12px 12px 0", borderRadius: 14, padding: "12px 14px", background: "rgba(255,255,255,.06)", border: "1px solid rgba(255,255,255,.08)", display: "flex", alignItems: "flex-end", gap: 5, height: 80 }}>
         {CHART_BARS.map((h, i) => (
-          <span key={i} style={{ flex: 1, height: `${h}%`, borderRadius: 4, background: i === 5 ? GRAD : "rgba(255,255,255,.18)" }} />
+          <span
+            key={i}
+            style={{
+              flex: 1, height: `${h}%`, borderRadius: 4, background: i === 5 ? GRAD : "rgba(255,255,255,.18)",
+              transformOrigin: "bottom", animation: `dl-bar-breathe ${i === 5 ? "1.6s" : "2.4s"} ease-in-out infinite alternate`, animationDelay: `${i * 0.1}s`,
+            }}
+          />
         ))}
       </div>
 
       <div style={{ padding: "12px 12px 0", display: "flex", flexDirection: "column", gap: 6 }}>
-        {[{ icon: "Check", w: [60, 40] }, { icon: "Star", w: [45, 30] }].map((f) => (
-          <div key={f.icon} style={{ display: "flex", alignItems: "center", gap: 8, background: "rgba(255,255,255,.06)", border: "1px solid rgba(255,255,255,.08)", borderRadius: 10, padding: "7px 10px" }}>
+        {[{ icon: "Check", w: [60, 40] }, { icon: "Star", w: [45, 30] }].map((f, i) => (
+          <div key={f.icon} style={{ display: "flex", alignItems: "center", gap: 8, background: "rgba(255,255,255,.06)", border: "1px solid rgba(255,255,255,.08)", borderRadius: 10, padding: "7px 10px", animation: "dl-fade .4s ease both", animationDelay: `${0.35 + i * 0.1}s` }}>
             <span style={{ width: 20, height: 20, borderRadius: 7, background: GRAD, flexShrink: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
               <Icon name={f.icon} size={10} color="#fff" />
             </span>

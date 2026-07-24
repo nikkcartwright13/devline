@@ -3,6 +3,7 @@ import { GRAD, display } from "../../theme";
 import Reveal from "../ui/Reveal";
 import Icon from "../ui/Icon";
 import ProjectCard from "../ui/ProjectCard";
+import { PROJECT_IMAGES } from "../../data/projects";
 
 export default function ProjectCategorySection({ category, items }) {
   const { t } = useTranslation();
@@ -24,7 +25,7 @@ export default function ProjectCategorySection({ category, items }) {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
         {items.map((p, i) => (
           <Reveal key={p.slug} delay={i * 80}>
-            <ProjectCard project={p} />
+            <ProjectCard project={p} image={PROJECT_IMAGES[p.slug]} />
           </Reveal>
         ))}
       </div>
