@@ -7,6 +7,9 @@ import design6 from "../assets/desing/optimized/design6.jpg";
 import design7 from "../assets/desing/optimized/design7.jpg";
 import design8 from "../assets/desing/optimized/design8.jpg";
 import design9 from "../assets/desing/optimized/design9.jpg";
+import web1 from "../assets/webapp/optimized/web1.jpg";
+import web2 from "../assets/webapp/optimized/web2.jpg";
+import web3 from "../assets/webapp/optimized/web3.jpg";
 
 export const PROJECT_CATEGORIES = [
   { key: "web", icon: "Globe" },
@@ -19,6 +22,9 @@ export const PROJECT_CATEGORIES = [
 // portfolio image, when one exists. Projects without an entry here fall back
 // to ProjectCard's plain text layout.
 export const PROJECT_IMAGES = {
+  "web-project-1": web1,
+  "web-project-2": web2,
+  "web-project-3": web3,
   "design-project-1": design1,
   "design-project-2": design2,
   "design-project-3": design3,

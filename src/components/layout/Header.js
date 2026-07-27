@@ -81,6 +81,7 @@ export default function Header() {
     ...SERVICE_CATEGORIES.map((cat) => ({
       label: t(`services.categories.${cat.key}.title`),
       href: `/services#${cat.key}`,
+      icon: cat.icon,
       dropdown: cat.services.length > 1
         ? cat.services.map((s) => ({
             icon: s.icon,
@@ -93,6 +94,7 @@ export default function Header() {
     {
       label: t("header.companyLabel"),
       href: "/company",
+      icon: "Building2",
       dropdown: COMPANY_DROPDOWN.map((it) => ({
         icon: it.icon,
         label: t(`nav.companyDropdown.${it.key}.label`),
@@ -162,7 +164,7 @@ export default function Header() {
 
       {menuOpen && createPortal(
         <div
-          className="lg:hidden"
+          className="lg:hidden dl-fade-in"
           style={{
             position: "fixed",
             top: menuTop,
@@ -170,51 +172,58 @@ export default function Header() {
             right: 0,
             bottom: 0,
             background: T.base,
-            borderTop: `1px solid ${T.border}`,
             overflowY: "auto",
             WebkitOverflowScrolling: "touch",
             zIndex: 50,
+            padding: "16px 16px 28px",
           }}
         >
-          <div className="px-5" style={{ paddingTop: 16, paddingBottom: 10, display: "flex", alignItems: "center", gap: 10 }}>
-            <ThemeToggle />
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 10, background: T.panel, border: `1px solid ${T.border}`, borderRadius: 16, padding: 10, marginBottom: 14, boxShadow: "0 8px 20px rgba(16,26,51,.05)" }}>
             <LanguageSwitcher style={{ width: "fit-content" }} />
+            <ThemeToggle />
           </div>
 
-          {navMenu.map((item) => (
-            <div key={item.href} className="px-5" style={{ borderTop: `1px solid ${T.border}` }}>
-              {item.dropdown ? (
-                <>
-                  <button
-                    onClick={() => setOpenMobileCategory(openMobileCategory === item.href ? null : item.href)}
-                    style={{ width: "100%", display: "flex", alignItems: "center", justifyContent: "space-between", padding: "14px 0", background: "none", border: "none", fontWeight: 600, fontSize: 15, color: T.ink, textAlign: "left" }}
-                  >
+          <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+            {navMenu.map((item) => (
+              <div key={item.href} style={{ background: T.panel, border: `1px solid ${T.border}`, borderRadius: 16, overflow: "hidden", boxShadow: "0 8px 20px rgba(16,26,51,.05)" }}>
+                {item.dropdown ? (
+                  <>
+                    <button
+                      onClick={() => setOpenMobileCategory(openMobileCategory === item.href ? null : item.href)}
+                      style={{ width: "100%", display: "flex", alignItems: "center", gap: 12, padding: "14px 16px", background: "none", border: "none", fontWeight: 600, fontSize: 15, color: T.ink, textAlign: "left", cursor: "pointer" }}
+                    >
+                      <span aria-hidden style={{ width: 34, height: 34, borderRadius: 10, flexShrink: 0, display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", background: GRAD }}>
+                        <Icon name={item.icon} size={16} />
+                      </span>
+                      <span style={{ flex: 1 }}>{item.label}</span>
+                      <Icon name="ChevronDown" size={16} color={T.muted} style={{ transform: openMobileCategory === item.href ? "rotate(180deg)" : "none", transition: "transform .2s ease", flexShrink: 0 }} />
+                    </button>
+                    {openMobileCategory === item.href && (
+                      <div className="dl-fade-in" style={{ display: "flex", flexDirection: "column", gap: 2, padding: "0 8px 10px", borderTop: `1px solid ${T.border}`, marginTop: 2, paddingTop: 8 }}>
+                        {item.dropdown.map((it) => (
+                          <Link key={it.href} to={it.href} className="dl-navlink" style={{ display: "flex", alignItems: "center", gap: 10, color: T.muted, textDecoration: "none", fontSize: 13.5, fontWeight: 500, padding: "9px 10px", borderRadius: 10 }}>
+                            <Icon name={it.icon} size={15} style={{ flexShrink: 0 }} />
+                            {it.label}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </>
+                ) : (
+                  <Link to={item.href} style={{ display: "flex", alignItems: "center", gap: 12, padding: "14px 16px", color: T.ink, textDecoration: "none", fontWeight: 600, fontSize: 15 }}>
+                    <span aria-hidden style={{ width: 34, height: 34, borderRadius: 10, flexShrink: 0, display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", background: GRAD }}>
+                      <Icon name={item.icon} size={16} />
+                    </span>
                     {item.label}
-                    <Icon name="ChevronDown" size={16} color={T.muted} style={{ transform: openMobileCategory === item.href ? "rotate(180deg)" : "none", transition: "transform .2s ease", flexShrink: 0 }} />
-                  </button>
-                  {openMobileCategory === item.href && (
-                    <div style={{ display: "flex", flexDirection: "column", gap: 2, paddingBottom: 12 }}>
-                      {item.dropdown.map((it) => (
-                        <Link key={it.href} to={it.href} className="dl-navlink" style={{ color: T.muted, textDecoration: "none", fontSize: 14, padding: "9px 12px", borderRadius: 8, background: T.panel, border: `1px solid ${T.border}` }}>
-                          {it.label}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-                </>
-              ) : (
-                <Link to={item.href} style={{ display: "block", padding: "14px 0", color: T.ink, textDecoration: "none", fontWeight: 600, fontSize: 15 }}>
-                  {item.label}
-                </Link>
-              )}
-            </div>
-          ))}
-
-          <div className="px-5" style={{ paddingTop: 18, paddingBottom: 28 }}>
-            <Link to="/contact" style={{ display: "block", textAlign: "center", fontSize: 14, fontWeight: 600, background: GRAD, color: "#fff", padding: "13px 16px", borderRadius: 999, textDecoration: "none" }}>
-              {t("header.contactUs")}
-            </Link>
+                  </Link>
+                )}
+              </div>
+            ))}
           </div>
+
+          <Link to="/contact" style={{ display: "block", textAlign: "center", fontSize: 14, fontWeight: 600, background: GRAD, color: "#fff", padding: "14px 16px", borderRadius: 999, textDecoration: "none", marginTop: 16 }}>
+            {t("header.contactUs")}
+          </Link>
         </div>,
         document.body
       )}
