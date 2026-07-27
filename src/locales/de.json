@@ -672,28 +672,39 @@
     },
     "items": [
       {
-        "slug": "placeholder-project-1",
+        "slug": "web-project-1",
         "category": "web",
-        "name": "[Projektname]",
-        "summary": "[Kurze Beschreibung dessen, was gebaut wurde und welches Problem es löst.]",
-        "tags": ["React", "Node.js"]
+        "name": "FLYINSPECTORS.COM",
+        "summary": "Eine Plattform für Fluggastentschädigungen — von der Anspruchsprüfung bis zur Auszahlung bei Verspätungen und Annullierungen, komplett online.",
+        "tags": ["React", "Node.js"],
+        "link": "https://flyinspectors.com"
       },
       {
-        "slug": "placeholder-project-2",
+        "slug": "web-project-2",
         "category": "web",
-        "name": "[Projektname]",
-        "summary": "[Kurze Beschreibung dessen, was gebaut wurde und welches Problem es löst.]",
-        "tags": ["Next.js", "PostgreSQL"]
+        "name": "MCtrans",
+        "summary": "MCTrans – eine führende Plattform für den Autoimport von den USA nach Georgien.",
+        "tags": ["Next.js", "PostgreSQL"],
+        "link": "https://mctrans.ge/"
       },
       {
-        "slug": "placeholder-project-3",
+        "slug": "web-project-3",
+        "category": "web",
+        "name": "Pillar",
+        "summary": "PILLAR ist ein Premium-Immobilienentwickler in Georgien, der vollständig integrierte architektonische und bauliche Lösungen für hochwertige Wohnimmobilien anbietet.",
+        "tags": [],
+        "link": "https://pillar.ge/"
+      },
+      {
+        "slug": "app-project-1",
         "category": "mobile",
-        "name": "[Projektname]",
-        "summary": "[Kurze Beschreibung dessen, was gebaut wurde und welches Problem es löst.]",
-        "tags": ["Flutter", "Firebase"]
+        "name": "Dapet",
+        "summary": "Eine Haustier-App, die Besitzer mit Tierärzten, Groomern und anderen Dienstleistungen verbindet — Buchungen, Erinnerungen und Profile an einem Ort.",
+        "tags": ["Flutter", "Firebase"],
+        "link": "https://dapets.app/"
       },
       {
-        "slug": "placeholder-project-4",
+        "slug": "app-project-2",
         "category": "mobile",
         "name": "[Projektname]",
         "summary": "[Kurze Beschreibung dessen, was gebaut wurde und welches Problem es löst.]",
@@ -772,14 +783,14 @@
         "link": "https://www.behance.net/gallery/211966735/Krtsanisi-Margaliti-Presentation/modules/1205194595"
       },
       {
-        "slug": "placeholder-project-7",
+        "slug": "marketing-project-1",
         "category": "marketing",
         "name": "[Projektname]",
         "summary": "[Kurze Beschreibung dessen, was gebaut wurde und welches Problem es löst.]",
         "tags": ["Meta Ads", "Analytics"]
       },
       {
-        "slug": "placeholder-project-8",
+        "slug": "marketing-project-2",
         "category": "marketing",
         "name": "[Projektname]",
         "summary": "[Kurze Beschreibung dessen, was gebaut wurde und welches Problem es löst.]",
