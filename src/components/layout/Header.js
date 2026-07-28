@@ -9,7 +9,7 @@ import useScrolled from "../../hooks/useScrolled";
 import Icon from "../ui/Icon";
 import LanguageSwitcher from "../ui/LanguageSwitcher";
 import ThemeToggle from "../ui/ThemeToggle";
-import logo from "../../assets/logo/optimized/logo.png";
+import logo from "../../assets/logo/optimized/title_logo.png";
 
 function DropdownPanel({ items }) {
   return (

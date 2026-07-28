@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { T, GRAD, display, mono } from "../../theme";
 import { SERVICE_CATEGORIES } from "../../data/services";
 import { COMPANY_DROPDOWN } from "../../data/nav";
-import logo from "../../assets/logo/optimized/logo.png";
+import logo from "../../assets/logo/optimized/title_logo.png";
 
 export default function Footer() {
   const { t } = useTranslation();

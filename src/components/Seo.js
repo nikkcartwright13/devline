@@ -4,6 +4,9 @@ import { useLocation } from "react-router-dom";
 
 const SITE_URL = "https://devline.digital";
 
+// og:locale expects language_TERRITORY, not a bare i18next language code.
+const OG_LOCALE = { ka: "ka_GE", en: "en_US", ru: "ru_RU", de: "de_DE" };
+
 const ORGANIZATION_JSON_LD = {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -22,7 +25,7 @@ export default function Seo({ title, description, jsonLd }) {
   const fullTitle = title ? `${title} — ${siteName}` : `${siteName} — ${t("meta.defaultTitleSuffix")}`;
   const lang = i18n.resolvedLanguage || i18n.language || "ka";
   const canonical = `${SITE_URL}${pathname}`;
-  const ogImage = `${SITE_URL}/logo512.png`;
+  const ogImage = `${SITE_URL}/og-image.jpg`;
   const extraSchemas = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
 
   return (
@@ -36,7 +39,10 @@ export default function Seo({ title, description, jsonLd }) {
       <meta property="og:type" content="website" />
       <meta property="og:url" content={canonical} />
       <meta property="og:image" content={ogImage} />
-      <meta property="og:locale" content={lang} />
+      <meta property="og:image:type" content="image/jpeg" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:locale" content={OG_LOCALE[lang] || "en_US"} />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={desc} />
