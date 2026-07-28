@@ -5,6 +5,7 @@ import ka from "./locales/ka.json";
 import en from "./locales/en.json";
 import ru from "./locales/ru.json";
 import de from "./locales/de.json";
+import pl from "./locales/pl.json";
 import { applyGeoLanguage } from "./lib/geoLanguage";
 
 i18n
@@ -16,11 +17,12 @@ i18n
       en: { translation: en },
       ru: { translation: ru },
       de: { translation: de },
+      pl: { translation: pl },
     },
     fallbackLng: "ka",
     // "ru" temporarily excluded from auto-detection while the language switch is disabled;
     // the resource stays loaded below so returning visitors already on ru aren't broken.
-    supportedLngs: ["ka", "en", "de"],
+    supportedLngs: ["ka", "en", "de", "pl"],
     interpolation: { escapeValue: false },
     detection: {
       order: ["localStorage", "navigator"],

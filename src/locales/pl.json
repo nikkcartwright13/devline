@@ -1,0 +1,1204 @@
+{
+  "meta": {
+    "siteName": "Devline.digital",
+    "defaultTitleSuffix": "Software Studio",
+    "defaultDescription": "Devline.digital — europejskie studio software'owe obsługujące klientów na całym świecie: aplikacje webowe i mobilne, wdrożenia Jira/JSM, design i marketing."
+  },
+  "header": {
+    "contactUs": "Skontaktuj się z nami",
+    "menuAria": "Menu",
+    "companyLabel": "Firma"
+  },
+  "nav": {
+    "companyDropdown": {
+      "about": {
+        "label": "O nas",
+        "text": "Nasz zespół, misja i wartości."
+      },
+      "projects": {
+        "label": "Nasze projekty",
+        "text": "Zobacz, co stworzyliśmy."
+      },
+      "contact": {
+        "label": "Kontakt",
+        "text": "Opowiedz nam o swoim projekcie."
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Usługi zorientowane na człowieka, poparte doświadczeniem i innowacją.",
+    "contactHeading": "Kontakt",
+    "address": "Europa",
+    "privacyTerms": "Polityka prywatności",
+    "cookiePolicy": "Polityka cookies"
+  },
+  "hero": {
+    "slides": [
+      {
+        "eyebrow": "SOFTWARE STUDIO · EUROPE",
+        "title": "Pomysły, które zamieniamy w produkty",
+        "text": "Tworzymy produkty cyfrowe dopasowane do Twoich pomysłów — pomagając Twojej firmie rozwiązywać problemy w mądry i prosty sposób: od stron internetowych i aplikacji mobilnych po infrastrukturę, na całym świecie.",
+        "primary": "Rozpocznij projekt →",
+        "secondary": "Zobacz usługi"
+      },
+      {
+        "eyebrow": "WEB & MOBILE",
+        "title": "Od pomysłu do wdrożenia — jeden zespół",
+        "text": "Tworzymy aplikacje webowe i mobilne jednym zespołem, dzięki czemu design, programowanie i wdrożenie naturalnie się uzupełniają.",
+        "primary": "Zobacz usługi →",
+        "secondary": "Aplikacje mobilne"
+      },
+      {
+        "eyebrow": "DEVOPS & INFRASTRUCTURE",
+        "title": "Twoja infrastruktura — nasza odpowiedzialność",
+        "text": "Pipeline'y CI/CD, środowiska chmurowe i lokalne, monitoring i wsparcie 24/7 — wdrożenia bez stresu.",
+        "primary": "Porozmawiajmy →",
+        "secondary": "Poznaj zespół"
+      }
+    ],
+    "stats": {
+      "projects": "projektów",
+      "experience": "lat doświadczenia",
+      "uptime": "uptime SLA"
+    },
+    "cta": {
+      "primary": "Rozpocznij projekt →",
+      "secondary": "Zobacz usługi"
+    }
+  },
+  "services": {
+    "section": {
+      "eyebrow": "SERVICES",
+      "title": "Czym się zajmujemy",
+      "text": "Cztery dziedziny pod jednym dachem — od programowania po marketing, wszystko działa spójnie.",
+      "viewAll": "Wszystkie usługi →"
+    },
+    "categories": {
+      "programmers": {
+        "title": "Programiści",
+        "blurb": "Tworzenie aplikacji webowych i mobilnych, DevOps, infrastruktura, analityka i stałe wsparcie."
+      },
+      "jsm": {
+        "title": "Oprogramowanie IT",
+        "blurb": "Konfiguracja i zarządzanie ClickUp, JSM, Jira i Slack dla Twojego zespołu."
+      },
+      "designers": {
+        "title": "Design",
+        "blurb": "Figma, Adobe Photoshop, Illustrator i Premiere — od designu po produkcję wideo."
+      },
+      "marketers": {
+        "title": "Marketing",
+        "blurb": "Kampanie reklamowe na platformach Meta oraz optymalizacja pod wyszukiwarki (SEO)."
+      }
+    },
+    "items": {
+      "web": {
+        "title": "Aplikacje webowe",
+        "text": "Aplikacje webowe w React oraz strony WordPress — szybkie, bezpieczne i zgodne z europejskimi standardami.",
+        "features": [
+          "Architektura React.js / Next.js lub WordPress",
+          "Responsywny interfejs przyjazny SEO",
+          "Integracje API i uwierzytelnianie",
+          "Optymalizacja wydajności i testowanie",
+          "Zgodność z RODO i europejskimi standardami bezpieczeństwa"
+        ]
+      },
+      "mobile": {
+        "title": "Aplikacje mobilne",
+        "text": "Aplikacje we Flutterze, które działają natywnie na iOS i Androidzie — jeden kod, podwójny zasięg.",
+        "features": [
+          "Aplikacje wieloplatformowe na iOS i Android we Flutterze",
+          "Nowoczesny, wydajny UI/UX",
+          "Powiadomienia push i głębokie integracje",
+          "Publikacja w App Store i Google Play"
+        ]
+      },
+      "devops": {
+        "title": "DevOps & CI/CD",
+        "text": "Pipeline'y GitLab CI/CD, automatyczne wdrożenia i monitoring — wdrożenia bez stresu.",
+        "features": [
+          "Pipeline'y CI/CD w GitLab/GitHub",
+          "Konteneryzacja Docker i Kubernetes",
+          "Automatyczne testowanie i wdrażanie",
+          "Monitoring i alerty"
+        ],
+        "eyebrow": "PIPELINE CI/CD"
+      },
+      "infra": {
+        "title": "Infrastruktura",
+        "text": "Planowanie, administracja, bezpieczeństwo i optymalizacja środowisk chmurowych i lokalnych.",
+        "features": [
+          "Planowanie środowisk AWS / GCP / Azure",
+          "Administracja serwerami i skalowanie",
+          "Wzmacnianie zabezpieczeń i kopie zapasowe",
+          "Optymalizacja kosztów"
+        ],
+        "eyebrow": "INFRASTRUKTURA CHMUROWA"
+      },
+      "support": {
+        "title": "Wsparcie",
+        "text": "Stałe wsparcie oparte na SLA, monitoring i rozwój produktu po wdrożeniu.",
+        "features": [
+          "Czas reakcji oparty na SLA",
+          "Monitoring 24/7",
+          "Naprawa błędów i poprawki",
+          "Ciągły rozwój produktu"
+        ],
+        "eyebrow": "WSPARCIE 24/7"
+      },
+      "clickup": {
+        "title": "ClickUp",
+        "text": "Konfiguracja i dostosowanie przestrzeni roboczej ClickUp, projektów i przepływów pracy.",
+        "features": [
+          "Konfiguracja przestrzeni i struktury projektów",
+          "Niestandardowe przepływy pracy i statusy",
+          "Automatyzacje i integracje",
+          "Wdrożenie i szkolenie zespołu"
+        ],
+        "eyebrow": "ZARZĄDZANIE PROJEKTAMI"
+      },
+      "jsmPortal": {
+        "title": "JSM",
+        "text": "Konfiguracja portalu klienta Jira Service Management, SLA i typów zgłoszeń.",
+        "features": [
+          "Projekt i konfiguracja portalu klienta",
+          "Konfiguracja SLA i typów zgłoszeń",
+          "Integracja bazy wiedzy",
+          "Przepływy obsługi pracowników i klientów"
+        ],
+        "eyebrow": "PORTAL KLIENTA"
+      },
+      "jira": {
+        "title": "Jira",
+        "text": "Konfiguracja i wsparcie dla projektów, przepływów pracy i automatyzacji w Jira.",
+        "features": [
+          "Struktura projektów i tablic",
+          "Konfiguracja przepływów pracy i automatyzacji",
+          "Procesy Sprint/Scrum i Kanban",
+          "Raportowanie i pulpity"
+        ],
+        "eyebrow": "PRZEPŁYWY PRACY JIRA"
+      },
+      "slack": {
+        "title": "Slack",
+        "text": "Organizacja przestrzeni roboczej, integracje i automatyzacja powiadomień w Slacku.",
+        "features": [
+          "Struktura przestrzeni i kanałów",
+          "Konfiguracja botów i automatyzacji",
+          "Integracje z innymi narzędziami (Jira, ClickUp)",
+          "Dostosowanie powiadomień i przepływów pracy"
+        ],
+        "eyebrow": "KOMUNIKACJA ZESPOŁU"
+      },
+      "figma": {
+        "title": "Figma",
+        "text": "Projektowanie UI/UX i interaktywne prototypy w Figmie — dla interfejsów webowych i mobilnych.",
+        "features": [
+          "Projektowanie UI/UX i makiety (wireframes)",
+          "Interaktywne prototypy",
+          "Systemy projektowe i biblioteki komponentów",
+          "Przekazanie dla deweloperów (Dev Mode)"
+        ],
+        "eyebrow": "UI/UX DESIGN"
+      },
+      "photoshop": {
+        "title": "Adobe Photoshop",
+        "text": "Obróbka zdjęć, retusz i przygotowanie materiałów wizualnych.",
+        "features": [
+          "Retusz i obróbka zdjęć",
+          "Banery i grafiki do social mediów",
+          "Fotorealistyczny kompozyting",
+          "Przygotowanie materiałów wizualnych marki"
+        ],
+        "eyebrow": "OBRÓBKA ZDJĘĆ"
+      },
+      "illustrator": {
+        "title": "Adobe Illustrator",
+        "text": "Logotypy, ikony i grafika wektorowa.",
+        "features": [
+          "Projekt logo i księga znaku",
+          "Ikony i ilustracje wektorowe",
+          "Przygotowanie materiałów do druku",
+          "Infografiki"
+        ],
+        "eyebrow": "GRAFIKA WEKTOROWA"
+      },
+      "premiere": {
+        "title": "Adobe Premiere",
+        "text": "Montaż wideo i postprodukcja.",
+        "features": [
+          "Montaż wideo i korekcja kolorów",
+          "Filmy promocyjne i motywacyjne",
+          "Obróbka dźwięku i napisy",
+          "Formatowanie na potrzeby social mediów"
+        ],
+        "eyebrow": "MONTAŻ WIDEO"
+      },
+      "metaMarketing": {
+        "title": "Meta Product Marketing",
+        "text": "Planowanie, uruchamianie i optymalizacja kampanii reklamowych na Facebooku i Instagramie.",
+        "features": [
+          "Strategia kampanii i targetowanie odbiorców",
+          "Projektowanie reklam i kreacje",
+          "Testy A/B i optymalizacja",
+          "Analityka i raportowanie ROI"
+        ],
+        "eyebrow": "REKLAMY META"
+      },
+      "seo": {
+        "title": "SEO",
+        "text": "Poprawa pozycji w wynikach wyszukiwania — SEO techniczne, content i strategia linkowania.",
+        "features": [
+          "Audyt techniczny SEO",
+          "Analiza słów kluczowych i strategia contentowa",
+          "Strategia link buildingu",
+          "Monitoring pozycji i ruchu"
+        ],
+        "eyebrow": "POZYCJE W WYSZUKIWARCE"
+      },
+      "analytics": {
+        "eyebrow": "ANALITYKA WWW",
+        "title": "Analityka strony",
+        "text": "Śledzimy, przechowujemy i raportujemy ruch oraz zachowania użytkowników na Twojej stronie — tak, by każda decyzja opierała się na realnych danych.",
+        "features": [
+          "Konfiguracja Google Analytics / GA4",
+          "Śledzenie niestandardowych zdarzeń i konwersji",
+          "Przechowywanie danych historycznych i pulpity",
+          "Raportowanie ruchu i zachowań"
+        ]
+      }
+    }
+  },
+  "practices": {
+    "section": {
+      "eyebrow": "PRACTICES",
+      "title": "Nasza metodologia",
+      "text": "Budujemy stabilne, przejrzyste procesy oparte na sprawdzonych w branży frameworkach i praktykach."
+    },
+    "items": {
+      "agile": {
+        "title": "Agile & Scrum",
+        "text": "Zarządzamy pracą metodologią Agile/Scrum — krótkie iteracje i przejrzysty postęp co tydzień."
+      },
+      "devopsCulture": {
+        "title": "Kultura DevOps",
+        "text": "CI/CD, infrastructure-as-code i automatyzacja są w centrum każdego projektu — wdrożenia przestają być stresujące."
+      },
+      "itsm": {
+        "title": "IT Service Management",
+        "text": "Uporządkowane procesy operacyjne oparte na zasadach ITSM — od zarządzania incydentami po SLA."
+      },
+      "security": {
+        "title": "Bezpieczeństwo i zgodność",
+        "text": "Budujemy zgodnie z europejskimi standardami ochrony danych (RODO) i najlepszymi praktykami bezpieczeństwa — szyfrowane połączenia, bezpieczne uwierzytelnianie i regularne audyty od samego początku."
+      }
+    },
+    "cta": {
+      "title": "Chcesz porozmawiać z ekspertem?",
+      "text": "Napisz do nas, a odpowiemy w ciągu 24 godzin.",
+      "button": "Umów rozmowę →"
+    }
+  },
+  "stats": {
+    "section": {
+      "eyebrow": "IMPACT",
+      "title": "Nasz wpływ w liczbach"
+    },
+    "items": {
+      "projects": "zrealizowanych projektów",
+      "experience": "lat doświadczenia",
+      "uptime": "Uptime SLA",
+      "clients": "aktywnych klientów",
+      "deploys": "automatycznych wdrożeń / mies.",
+      "team": "członków zespołu"
+    }
+  },
+  "about": {
+    "section": {
+      "eyebrow": "ABOUT US",
+      "title": "Inżynierowie, którzy znają się na produkcji",
+      "text": "Devline.digital łączy zespół z realnym doświadczeniem w środowiskach klasy enterprise — programowanie, DevOps, administrację systemami i bezpieczeństwo. Dla nas dobry produkt to nie tylko ładny interfejs: to stabilny pipeline, mierzalna wydajność i zespół, który zawsze odpowiada."
+    },
+    "ctaDefault": "Poznaj zespół →",
+    "ctaContact": "Skontaktuj się z nami →",
+    "highlights": {
+      "fullCycle": {
+        "title": "Full-cycle",
+        "text": "Jeden zespół, od pomysłu do wdrożenia"
+      },
+      "enterprise": {
+        "title": "Enterprise",
+        "text": "Doświadczenie w pracy z infrastrukturą na dużą skalę"
+      },
+      "automationFirst": {
+        "title": "Automation-first",
+        "text": "CI/CD i monitoring w każdym projekcie"
+      },
+      "transparent": {
+        "title": "Transparent",
+        "text": "Cotygodniowe postępy i otwarta komunikacja"
+      }
+    }
+  },
+  "mobile": {
+    "section": {
+      "eyebrow": "MOBILE APPS",
+      "titleA": "Twoja aplikacja —",
+      "titleB": "na obu platformach",
+      "text": "Piszemy jeden kod we Flutterze, który równie naturalnie działa na iOS i Androidzie — o połowę krócej, dwa razy większy zasięg. Zajmujemy się wszystkim: od designu po publikację w App Store/Play Store.",
+      "builtWith": "Zbudowane z"
+    },
+    "features": [
+      "Jeden kod — iOS + Android",
+      "Natywna wydajność i animacje",
+      "Firebase, powiadomienia push, analityka",
+      "Automatyczne buildy z CI/CD i publikacja w sklepach"
+    ],
+    "cta": "Zamów aplikację →",
+    "page": {
+      "eyebrow": "MOBILE APPS",
+      "title": "Aplikacje mobilne na iOS i Android",
+      "text": "Jeden kod napisany we Flutterze, z natywnym odczuciem na obu platformach — od designu po publikację w sklepie."
+    },
+    "app": {
+      "greeting": "Cześć, Cartwright 👋",
+      "statLabel": "Dzisiejsze wizyty",
+      "schedule": [
+        {
+          "icon": "🐕",
+          "label": "Spacer — Rex",
+          "time": "10:30"
+        },
+        {
+          "icon": "✂️",
+          "label": "Pielęgnacja — Luna",
+          "time": "13:00"
+        },
+        {
+          "icon": "💉",
+          "label": "Weterynarz — Murr",
+          "time": "16:45"
+        }
+      ]
+    }
+  },
+  "web": {
+    "section": {
+      "eyebrow": "WEB APPS",
+      "title": "Strona internetowa, która pracuje dla Twojego biznesu",
+      "text": "Dla złożonych, niestandardowych aplikacji webowych korzystamy z React — dla stron marketingowych, blogów i stron opartych na treści budujemy na WordPressie. Tak czy inaczej, otrzymujesz szybki, gotowy pod SEO produkt zgodny z europejskimi standardami, z bezpieczeństwem uwzględnionym od pierwszego dnia — HTTPS, bezpieczne uwierzytelnianie i przetwarzanie danych zgodne z RODO.",
+      "reactLabel": "Aplikacje w React",
+      "wordpressLabel": "Strony WordPress"
+    },
+    "features": [
+      "React.js — szybkie aplikacje webowe przyjazne SEO",
+      "Indywidualny design dla każdego ekranu",
+      "Integracje API i bazy danych",
+      "Wdrożenia w chmurze i automatyczne CI/CD",
+      "Architektura zgodna z RODO, priorytetowo traktująca bezpieczeństwo"
+    ],
+    "cta": "Zamów projekt webowy →"
+  },
+  "devops": {
+    "features": [
+      "Wdrożenia bez przestojów",
+      "Infrastructure as code",
+      "Automatyczny rollback w razie błędu",
+      "Monitoring i alerty w czasie rzeczywistym"
+    ],
+    "builtWith": "Zbudowane z"
+  },
+  "infra": {
+    "features": [
+      "Skalowalna architektura chmurowa",
+      "Codzienne automatyczne kopie zapasowe",
+      "Wzmocnione bezpieczeństwo i kontrola dostępu",
+      "Bieżący monitoring kosztów"
+    ],
+    "builtWith": "Zbudowane z"
+  },
+  "analytics": {
+    "features": [
+      "Pulpity ruchu w czasie rzeczywistym",
+      "Śledzenie celów i konwersji",
+      "Śledzenie niestandardowych zdarzeń",
+      "Miesięczne raporty wydajności"
+    ],
+    "builtWith": "Zbudowane z"
+  },
+  "support": {
+    "features": [
+      "Gwarantowany czas reakcji SLA",
+      "Monitoring dostępności 24/7",
+      "Priorytetowa naprawa błędów",
+      "Dedykowany kanał wsparcia"
+    ],
+    "builtWith": "Zbudowane z"
+  },
+  "clickup": {
+    "features": [
+      "Niestandardowe Spaces, foldery i listy",
+      "Automatyczne przepływy zadań",
+      "Pulpity zapewniające wgląd w czasie rzeczywistym",
+      "Szkolenie zespołu i wsparcie we wdrożeniu"
+    ],
+    "builtWith": "Zbudowane z"
+  },
+  "jsmPortal": {
+    "features": [
+      "Markowy portal samoobsługowy",
+      "Typy zgłoszeń oparte na SLA",
+      "Odciążenie dzięki bazie wiedzy",
+      "Automatyczne przepływy zatwierdzania"
+    ],
+    "builtWith": "Zbudowane z"
+  },
+  "jira": {
+    "section": {
+      "eyebrow": "JIRA & JSM",
+      "titleA": "Portale Jira i JSM,",
+      "titleB": "które naprawdę działają",
+      "text": "Konfigurujemy i zarządzamy Jirą oraz Jira Service Management — od przepływów pracy po portal klienta i SLA, dopasowane do rzeczywistego procesu Twojego zespołu."
+    },
+    "features": [
+      "Wstępna konfiguracja i migracja Jira i JSM",
+      "Niestandardowe przepływy pracy i automatyzacje",
+      "Projekt portalu klienta i konfiguracja SLA",
+      "Integracje z Confluence i innymi narzędziami"
+    ],
+    "cta": "Konsultacja Jira/JSM →",
+    "builtWith": "Zbudowane z"
+  },
+  "design": {
+    "section": {
+      "eyebrow": "DESIGN",
+      "titleA": "Design,",
+      "titleB": "który rozumie Twoją markę",
+      "text": "Figma, Adobe Photoshop, Illustrator i Premiere — tworzymy interfejsy, branding i treści wizualne, które wyróżniają Twój produkt."
+    },
+    "features": [
+      "Projektowanie UI/UX i interaktywne prototypy w Figmie",
+      "Branding, logotypy i identyfikacja wizualna w Illustratorze",
+      "Obróbka i retusz zdjęć w Photoshopie",
+      "Montaż wideo i postprodukcja w Premiere"
+    ],
+    "cta": "Zamów projekt graficzny →"
+  },
+  "marketing": {
+    "section": {
+      "eyebrow": "MARKETING",
+      "titleA": "Marketing,",
+      "titleB": "który jest mierzalny",
+      "text": "Od kampanii reklamowych Meta po SEO — planujemy, uruchamiamy i analizujemy działania marketingowe, które przynoszą mierzalne rezultaty."
+    },
+    "features": [
+      "Planowanie i uruchamianie kampanii na Facebooku i Instagramie",
+      "Targetowanie odbiorców i optymalizacja budżetu",
+      "Optymalizacja pod wyszukiwarki (SEO) — strategia techniczna i contentowa",
+      "Analityka wyników i miesięczne raportowanie"
+    ],
+    "cta": "Konsultacja marketingowa →",
+    "mock": {
+      "impressions": "Wyświetlenia",
+      "active": "Aktywna",
+      "planned": "Zaplanowana"
+    }
+  },
+  "slack": {
+    "features": [
+      "Uporządkowana struktura kanałów",
+      "Niestandardowe boty i automatyzacje",
+      "Integracje między narzędziami",
+      "Reguły powiadomień bez zbędnego szumu"
+    ],
+    "builtWith": "Zbudowane z"
+  },
+  "figma": {
+    "features": [
+      "Od makiet po dopracowany UI",
+      "Systemy projektowe wielokrotnego użytku",
+      "Interaktywne klikalne prototypy",
+      "Specyfikacje gotowe do przekazania deweloperom"
+    ],
+    "builtWith": "Zbudowane z"
+  },
+  "photoshop": {
+    "features": [
+      "Fotorealistyczny retusz",
+      "Grafiki do social mediów i reklam",
+      "Niestandardowy kompozyting i obróbka",
+      "Spójny styl wizualny marki"
+    ],
+    "builtWith": "Zbudowane z"
+  },
+  "illustrator": {
+    "features": [
+      "Autorski projekt logo",
+      "Niestandardowe zestawy ikon",
+      "Pliki wektorowe gotowe do druku",
+      "Skalowalne materiały marki"
+    ],
+    "builtWith": "Zbudowane z"
+  },
+  "premiere": {
+    "features": [
+      "Profesjonalna korekcja kolorów",
+      "Czysty dźwięk i napisy",
+      "Formaty eksportu gotowe pod platformy",
+      "Szybka realizacja treści na social media"
+    ],
+    "builtWith": "Zbudowane z"
+  },
+  "metaMarketing": {
+    "features": [
+      "Badanie odbiorców i targetowanie",
+      "Kreacje reklamowe przyciągające uwagę",
+      "Ciągłe testy A/B",
+      "Przejrzyste raportowanie ROI"
+    ],
+    "builtWith": "Zbudowane z"
+  },
+  "seo": {
+    "features": [
+      "Naprawa błędów technicznych SEO",
+      "Plan treści oparty na słowach kluczowych",
+      "Linki budujące autorytet",
+      "Miesięczne raporty pozycji i ruchu"
+    ],
+    "builtWith": "Zbudowane z"
+  },
+  "testimonials": {
+    "section": {
+      "eyebrow": "TESTIMONIALS",
+      "title": "Co mówią o nas klienci"
+    },
+    "items": [
+      {
+        "quote": "[Zastąp prawdziwą opinią zadowolonego klienta.]",
+        "author": "[Imię Nazwisko]",
+        "role": "[Stanowisko, firma]"
+      },
+      {
+        "quote": "[Zastąp prawdziwą opinią zadowolonego klienta.]",
+        "author": "[Imię Nazwisko]",
+        "role": "[Stanowisko, firma]"
+      },
+      {
+        "quote": "[Zastąp prawdziwą opinią zadowolonego klienta.]",
+        "author": "[Imię Nazwisko]",
+        "role": "[Stanowisko, firma]"
+      }
+    ]
+  },
+  "projects": {
+    "previewSection": {
+      "eyebrow": "NASZE PROJEKTY",
+      "title": "Wybrane realizacje",
+      "viewAll": "Wszystkie projekty →"
+    },
+    "page": {
+      "eyebrow": "NASZE PROJEKTY",
+      "title": "Wybrane realizacje",
+      "text": "Przykłady produktów i platform, które zrealizowaliśmy dla naszych klientów."
+    },
+    "seo": {
+      "title": "Nasze projekty",
+      "description": "Zobacz projekty zrealizowane przez Devline — web, mobile i więcej."
+    },
+    "categories": {
+      "web": "Aplikacje webowe",
+      "mobile": "Aplikacje mobilne",
+      "design": "Design",
+      "marketing": "Marketing"
+    },
+    "items": [
+      {
+        "slug": "web-project-1",
+        "category": "web",
+        "name": "FLYINSPECTORS.COM",
+        "summary": "Platforma odszkodowań lotniczych pomagająca pasażerom odzyskać pieniądze za opóźnienia i odwołania lotów — od sprawdzenia uprawnień po wypłatę, w pełni online.",
+        "tags": [
+          "React",
+          "Node.js"
+        ],
+        "link": "https://flyinspectors.com"
+      },
+      {
+        "slug": "web-project-2",
+        "category": "web",
+        "name": "MCtrans",
+        "summary": "MCTrans – wiodąca platforma do importu samochodów z USA do Gruzji.",
+        "tags": [
+          "Next.js",
+          "MongoDB"
+        ],
+        "link": "https://mctrans.ge/"
+      },
+      {
+        "slug": "web-project-3",
+        "category": "web",
+        "name": "Pillar",
+        "summary": "PILLAR to deweloper nieruchomości premium w Gruzji, dostarczający w pełni zintegrowane rozwiązania architektoniczne i budowlane dla wysokiej jakości nieruchomości mieszkalnych.",
+        "tags": [],
+        "link": "https://pillar.ge/"
+      },
+      {
+        "slug": "app-project-1",
+        "category": "mobile",
+        "name": "Dapet",
+        "summary": "Aplikacja do opieki nad zwierzętami łącząca właścicieli z weterynarzami, groomerami i innymi usługami — rezerwacje, przypomnienia i profile w jednym miejscu.",
+        "tags": [
+          "Flutter",
+          "Firebase"
+        ],
+        "link": "https://dapets.app/"
+      },
+      {
+        "slug": "design-project-1",
+        "category": "design",
+        "name": "Groove Technologies",
+        "summary": "Identyfikacja marki ożywiona za pomocą animowanych banerów i grafik do social mediów.",
+        "tags": [],
+        "link": "https://www.behance.net/gallery/248693753/Groove-Technologies-Halloween-Designs"
+      },
+      {
+        "slug": "design-project-2",
+        "category": "design",
+        "name": "Teliani Valley",
+        "summary": "Dynamiczne banery i wizualizacje opakowań zaprojektowane, by wzmocnić cyfrową obecność marki.",
+        "tags": [],
+        "link": "https://www.behance.net/gallery/110963849/Teliani-Valley-Chacha/modules/1146353137"
+      },
+      {
+        "slug": "design-project-3",
+        "category": "design",
+        "name": "Apart Group",
+        "summary": "Projekt broszury drukowanej i cyfrowej połączony z animowanymi banerami promocyjnymi.",
+        "tags": [],
+        "link": "https://www.behance.net/gallery/220994773/Apart-Group-Brochure/modules/1260641329"
+      },
+      {
+        "slug": "design-project-4",
+        "category": "design",
+        "name": "Naturrein",
+        "summary": "Projekt opakowań wsparty dopracowanymi renderami produktów i banerami do social mediów.",
+        "tags": [],
+        "link": "https://www.behance.net/gallery/208519669/Naturrein-Spices-Packaging-Design/modules/1470949171"
+      },
+      {
+        "slug": "design-project-5",
+        "category": "design",
+        "name": "Black Bells Garage",
+        "summary": "Animacje 3D, banery i projekty postów do social mediów stworzone dla marki.",
+        "tags": [],
+        "link": "https://www.behance.net/gallery/234736737/Poker-Run-Logo-Design-Brandbook/modules/1348706747"
+      },
+      {
+        "slug": "design-project-6",
+        "category": "design",
+        "name": "Bridgetrade",
+        "summary": "Seria animowanych banerów i projektów postów stworzona na potrzeby stałej kampanii w social mediach.",
+        "tags": [],
+        "link": "https://www.behance.net/gallery/201518235/_"
+      },
+      {
+        "slug": "design-project-7",
+        "category": "design",
+        "name": "IK Development",
+        "summary": "Odważne wizualizacje i banery promocyjne zaprojektowane na potrzeby spójnej kampanii marki.",
+        "tags": [],
+        "link": "https://www.behance.net/gallery/196639489/LK-Development-Real-Estate-Developer/modules/1113589625"
+      },
+      {
+        "slug": "design-project-8",
+        "category": "design",
+        "name": "GE360",
+        "summary": "Pełny zestaw banerów do postów w social mediach z subtelnymi akcentami animacji.",
+        "tags": [],
+        "link": "https://www.behance.net/gallery/193257199/GE360-PLUS-Real-Estate-Development"
+      },
+      {
+        "slug": "design-project-9",
+        "category": "design",
+        "name": "Krtsanisi Margaliti",
+        "summary": "Animowane banery i szablony postów zaprojektowane dla spójnego storytellingu marki.",
+        "tags": [],
+        "link": "https://www.behance.net/gallery/211966735/Krtsanisi-Margaliti-Presentation/modules/1205194595"
+      },
+      {
+        "slug": "marketing-project-3",
+        "category": "marketing",
+        "name": "MCtrans",
+        "summary": "Zoptymalizowane pod SEO meta tagi, uporządkowany content i strategia słów kluczowych wdrożone dla mctrans.ge w celu poprawy widoczności w wyszukiwarkach.",
+        "tags": [
+          "SEO",
+          "Meta Tags"
+        ],
+        "link": "https://mctrans.ge/"
+      },
+      {
+        "slug": "marketing-project-4",
+        "category": "marketing",
+        "name": "FLYINSPECTORS.COM",
+        "summary": "Optymalizacja meta tagów, copywriting SEO i techniczna konfiguracja SEO dla flyinspectors.com w celu zwiększenia zasięgu organicznego.",
+        "tags": [
+          "SEO",
+          "Meta Tags"
+        ],
+        "link": "https://flyinspectors.com"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Gotowy na swój projekt?",
+    "text": "Wyślij nam swój pomysł, a odpowiemy w ciągu 24 godzin z konkretną wizją i wyceną."
+  },
+  "placeholderBadge": "Treść zastępcza",
+  "cookieConsent": {
+    "text": "Używamy plików cookie, aby zrozumieć, jak odwiedzający korzystają z tej strony. Żadne dane nie są zbierane, dopóki nie wyrazisz zgody.",
+    "accept": "Akceptuj",
+    "decline": "Odrzuć"
+  },
+  "contact": {
+    "seo": {
+      "title": "Kontakt",
+      "description": "Skontaktuj się w sprawie swojego projektu — Devline.digital."
+    },
+    "header": {
+      "eyebrow": "CONTACT",
+      "title": "Gotowy na swój projekt?",
+      "text": "Wyślij nam swój pomysł, a odpowiemy w ciągu 24 godzin z konkretną wizją i wyceną."
+    },
+    "getInTouch": {
+      "eyebrow": "GET IN TOUCH",
+      "title": "Skontaktuj się z nami",
+      "emailLabel": "EMAIL",
+      "phoneLabel": "TELEFON",
+      "addressLabel": "ADRES",
+      "addressValue": "Europa"
+    },
+    "form": {
+      "namePlaceholder": "Imię",
+      "emailPlaceholder": "E-mail",
+      "messagePlaceholder": "Opowiedz nam o swoim projekcie",
+      "submit": "Wyślij →",
+      "hint": "Kliknięcie przycisku otworzy Twój program pocztowy z gotową wiadomością.",
+      "subjectPrefix": "Zapytanie o projekt",
+      "newContact": "Nowy kontakt"
+    }
+  },
+  "company": {
+    "seo": {
+      "title": "O nas",
+      "description": "Poznaj zespół Devline — misję, doświadczenie i wartości."
+    },
+    "header": {
+      "eyebrow": "ABOUT US",
+      "title": "Inżynierowie, którzy znają się na produkcji",
+      "text": "Devline.digital łączy zespół z realnym doświadczeniem w środowiskach klasy enterprise."
+    }
+  },
+  "servicesPage": {
+    "seo": {
+      "title": "Usługi",
+      "description": "Tworzenie aplikacji webowych i mobilnych, wdrożenia Jira i JSM, design i marketing — cztery dziedziny, jeden zespół."
+    },
+    "header": {
+      "eyebrow": "SERVICES",
+      "title": "Usługi obejmujące pełen cykl",
+      "text": "Programiści, JSM, graficy i marketerzy — cztery dziedziny pod jednym dachem, dzięki czemu nic nie umyka uwadze."
+    }
+  },
+  "mobilePage": {
+    "seo": {
+      "title": "Aplikacje mobilne",
+      "description": "Aplikacje na iOS i Android we Flutterze z jednym kodem — od designu po publikację w sklepie."
+    },
+    "header": {
+      "eyebrow": "MOBILE APPS",
+      "title": "Aplikacje mobilne na iOS i Android",
+      "text": "Jeden kod napisany we Flutterze, z natywnym odczuciem na obu platformach — od designu po publikację w sklepie."
+    }
+  },
+  "home": {
+    "seo": {
+      "description": "Programowanie, JSM i Jira, design oraz marketing — cyfrowe studio pełnego cyklu obsługujące klientów na całym świecie."
+    }
+  },
+  "notFound": {
+    "seoTitle": "Strona nie znaleziona",
+    "title": "Strona nie znaleziona",
+    "cta": "Powrót na stronę główną"
+  },
+  "common": {
+    "next": "Dalej",
+    "prev": "Wstecz",
+    "slides": "Slajdy",
+    "slide": "Slajd {{n}}"
+  },
+  "serviceDetail": {
+    "whatsIncluded": "Co obejmuje",
+    "related": "Inne usługi w tej kategorii",
+    "backToServices": "Wszystkie usługi",
+    "notFound": "Usługa nie znaleziona",
+    "faqTitle": "Najczęściej zadawane pytania",
+    "faq": {
+      "jira": [
+        {
+          "q": "Konfigurujecie Jirę od zera, czy poprawiacie istniejący projekt?",
+          "a": "Jedno i drugie. Możemy skonfigurować nowe projekty Jira od podstaw albo przeprowadzić audyt i przebudować istniejącą konfigurację, która stała się wolna lub nieczytelna."
+        },
+        {
+          "q": "Czy możecie dostosować przepływy pracy do naszego procesu?",
+          "a": "Tak — tworzymy niestandardowe statusy, przejścia i reguły automatyzacji dopasowane do tego, jak faktycznie pracuje Twój zespół, niezależnie czy to Scrum, Kanban czy podejście hybrydowe."
+        },
+        {
+          "q": "Konfigurujecie raportowanie i pulpity?",
+          "a": "Tak. Konfigurujemy pulpity i raporty (velocity, burndown, cycle time), dzięki czemu liderzy i interesariusze widzą postępy bez konieczności pytania o status."
+        },
+        {
+          "q": "Czy Jira może integrować się z naszymi innymi narzędziami?",
+          "a": "Tak — łączymy Jirę ze Slackiem, Bitbucket/GitHub, Confluence i innymi narzędziami, dzięki czemu aktualizacje i powiadomienia przepływają automatycznie."
+        },
+        {
+          "q": "Czy nasz zespół będzie potrzebował szkolenia?",
+          "a": "Do każdego wdrożenia dołączamy sesje onboardingowe i dokumentację, dzięki czemu zespół szybko i spójnie przyswaja nową strukturę."
+        }
+      ],
+      "slack": [
+        {
+          "q": "Czy możecie uporządkować chaotyczną przestrzeń Slack?",
+          "a": "Tak — audytujemy istniejące kanały, archiwizujemy nieużywane i porządkujemy przestrzeń wokół zespołów i projektów, dzięki czemu ponownie łatwo się w niej poruszać."
+        },
+        {
+          "q": "Czy możecie stworzyć niestandardowe boty do Slacka?",
+          "a": "Tak. Budujemy boty i przepływy pracy dla typowych potrzeb — przypomnienia o standupach, aktualizacje ticketów, procesy zatwierdzania — wykorzystując natywny Workflow Builder Slacka lub własne integracje."
+        },
+        {
+          "q": "Czy Slack może automatycznie powiadamiać nas z Jiry lub ClickUp?",
+          "a": "Tak — konfigurujemy dwukierunkowe integracje, dzięki którym zmiany statusów, komentarze i wzmianki w Jirze/ClickUp trafiają bezpośrednio na odpowiedni kanał Slack."
+        },
+        {
+          "q": "Jak zapobiegacie nadmiarowi powiadomień?",
+          "a": "Konfigurujemy reguły powiadomień i domyślne ustawienia kanałów, dzięki czemu ludzie otrzymują powiadomienia tylko o tym, co faktycznie ich dotyczy — mniej szumu, szybsza reakcja."
+        },
+        {
+          "q": "Ile czasu zajmuje konfiguracja Slacka?",
+          "a": "Typowa reorganizacja przestrzeni roboczej i konfiguracja integracji zajmuje około tygodnia, w zależności od wielkości zespołu i liczby podłączanych narzędzi."
+        }
+      ],
+      "figma": [
+        {
+          "q": "Projektujecie od zera, czy pracujecie z istniejącą marką?",
+          "a": "Jedno i drugie. Możemy stworzyć nowy kierunek wizualny od podstaw albo projektować w ramach Twoich istniejących wytycznych marki i systemu projektowego."
+        },
+        {
+          "q": "Co otrzymam na koniec — same obrazki, czy coś, z czego skorzystają deweloperzy?",
+          "a": "Deweloperzy otrzymują w pełni zorganizowany plik Figma z komponentami, auto-layoutem i podglądem Dev Mode — dzięki czemu mogą bezpośrednio pobrać dokładne odstępy, kolory i zasoby."
+        },
+        {
+          "q": "Czy możecie stworzyć interaktywny prototyp, który przetestuję z użytkownikami?",
+          "a": "Tak — budujemy klikalne prototypy symulujące rzeczywistą nawigację i interakcje, dzięki czemu możesz przetestować przepływ, zanim powstanie choćby jedna linijka kodu."
+        },
+        {
+          "q": "Projektujecie zarówno pod web, jak i mobile?",
+          "a": "Tak — projektujemy responsywne interfejsy webowe oraz ekrany aplikacji mobilnych o natywnym odczuciu, korzystając z tego samego systemu projektowego dla spójności."
+        },
+        {
+          "q": "Ile czasu zajmuje projekt graficzny?",
+          "a": "Typowy projekt — od makiet po finalny UI — zajmuje 2–5 tygodni, w zależności od liczby ekranów i rund feedbacku."
+        }
+      ],
+      "photoshop": [
+        {
+          "q": "Jakiego rodzaju zdjęcia obrabiacie?",
+          "a": "Zdjęcia produktowe, portrety, banery marketingowe, grafiki do social mediów oraz obrazy kompozytowe — wszystko, co wymaga retuszu, korekcji kolorów lub obróbki."
+        },
+        {
+          "q": "Czy możecie sprawić, by nasze grafiki do social mediów były spójne z marką?",
+          "a": "Tak — pracujemy w oparciu o kolory, czcionki i księgę stylu Twojej marki (lub pomagamy ją stworzyć), dzięki czemu każda grafika wygląda spójnie z resztą marki."
+        },
+        {
+          "q": "Czy zajmujecie się kompozytingiem zdjęć — łączeniem wielu obrazów?",
+          "a": "Tak — od prostej wymiany tła po złożone, fotorealistyczne kompozycje łączące kilka zdjęć źródłowych w jeden spójny efekt."
+        },
+        {
+          "q": "Ile poprawek jest wliczonych?",
+          "a": "Nasz standardowy proces obejmuje rundy poprawek aż do momentu, gdy będziesz zadowolony z efektu — zazwyczaj finalizujemy w ciągu 2–3 rund feedbacku."
+        },
+        {
+          "q": "Jak szybko realizujecie partię zdjęć?",
+          "a": "Standardowa partia (10–20 zdjęć) jest zwykle dostarczana w ciągu 3–5 dni roboczych, w zależności od stopnia skomplikowania."
+        }
+      ],
+      "illustrator": [
+        {
+          "q": "Co otrzymam w ramach projektu logo?",
+          "a": "Kompletny znak marki z wariantami (poziomy, sama ikona, monochromatyczny), dostarczony jako pliki wektorowe (SVG, AI, EPS) wraz z księgą znaku obejmującą kolory, czcionki i zasady użycia."
+        },
+        {
+          "q": "Czy możecie zaprojektować niestandardowy zestaw ikon dla naszego produktu lub aplikacji?",
+          "a": "Tak — projektujemy spójne zestawy ikon dopasowane do stylu Twojej marki, dostarczane jako skalowalne pliki wektorowe gotowe do wdrożenia w aplikacji lub na stronie."
+        },
+        {
+          "q": "Czy przygotowujecie pliki do druku, a nie tylko do użytku cyfrowego?",
+          "a": "Tak — przygotowujemy pliki gotowe do druku z odpowiednim trybem kolorów (CMYK), spadami i rozdzielczością dla wizytówek, opakowań, banerów i innych materiałów drukowanych."
+        },
+        {
+          "q": "Czy projekty pozostaną ostre w każdym rozmiarze?",
+          "a": "Tak — wszystko tworzymy w formacie wektorowym, dzięki czemu logotypy i ikony skalują się od favikony po billboard bez utraty jakości."
+        },
+        {
+          "q": "Ile czasu zajmuje logo lub zestaw ikon?",
+          "a": "Projekt logo zwykle zajmuje 1–2 tygodnie wraz z poprawkami; pełny zestaw ikon trwa mniej więcej tyle samo, w zależności od liczby ikon."
+        }
+      ],
+      "premiere": [
+        {
+          "q": "Jakiego rodzaju wideo montujecie?",
+          "a": "Filmy promocyjne, prezentacje produktów, klipy do social mediów, opinie klientów oraz treści motywacyjne/wizerunkowe — od surowego materiału po dopracowany finalny montaż."
+        },
+        {
+          "q": "Czy zajmujecie się korekcją kolorów i czyszczeniem dźwięku?",
+          "a": "Tak — każdy montaż obejmuje kolorystykę zapewniającą spójny wygląd oraz obróbkę dźwięku (redukcja szumów, wyrównanie poziomów), dzięki czemu finalne wideo brzmi równie dobrze, jak wygląda."
+        },
+        {
+          "q": "Czy możecie dodać napisy?",
+          "a": "Tak — dodajemy precyzyjne napisy w wybranych przez Ciebie językach, sformatowane pod kątem dostępności oraz platform, na których wideo odtwarza się automatycznie bez dźwięku."
+        },
+        {
+          "q": "Czy eksportujecie materiał we właściwym formacie dla każdej platformy?",
+          "a": "Tak — dostarczamy wersje zoptymalizowane pod każdą platformę (Instagram Reels, YouTube, LinkedIn itd.), z odpowiednimi proporcjami i specyfikacją."
+        },
+        {
+          "q": "Jak szybko realizujecie montaż?",
+          "a": "Standardowe krótkie wideo (poniżej 2 minut) jest zwykle dostarczane w ciągu 3–5 dni roboczych; dłuższe lub bardziej złożone montaże zajmują trochę więcej czasu."
+        }
+      ],
+      "metaMarketing": [
+        {
+          "q": "Czy zajmujecie się zarówno strategią, jak i kreacją reklamową?",
+          "a": "Tak — planujemy strategię kampanii i targetowanie odbiorców, a także projektujemy kreacje reklamowe (grafiki, wideo, teksty), dzięki czemu wszystko jest spójne od samego początku."
+        },
+        {
+          "q": "Skąd wiecie, które reklamy faktycznie działają?",
+          "a": "Konfigurujemy Meta Pixel i śledzenie konwersji, a następnie na bieżąco testujemy A/B kreacje i grupy odbiorców, inwestując więcej w to, co działa, i eliminując to, co nie działa."
+        },
+        {
+          "q": "Jaki budżet potrzebuję na start?",
+          "a": "Możemy pracować z różnymi budżetami — podczas krótkiej rozmowy wstępnej zarekomendujemy realistyczny budżet startowy w oparciu o Twoje cele i branżę."
+        },
+        {
+          "q": "Czy otrzymam jasne raporty dotyczące wyników, a nie tylko wyświetleń?",
+          "a": "Tak — raportujemy metryki istotne dla Twojego biznesu: koszt pozyskania leada/zakupu, ROAS i trendy konwersji, a nie tylko powierzchowne wskaźniki jak zasięg."
+        },
+        {
+          "q": "Po jakim czasie zobaczymy rezultaty?",
+          "a": "Pierwsze dane pojawiają się w ciągu 1–2 tygodni; większość kampanii osiąga stabilną, zoptymalizowaną skuteczność po około 4 tygodniach testowania."
+        }
+      ],
+      "seo": [
+        {
+          "q": "Czy zaczynacie od audytu technicznego?",
+          "a": "Tak — zaczynamy od audytu szybkości strony, indeksowania, responsywności mobilnej i struktury, i w pierwszej kolejności naprawiamy problemy techniczne, które ograniczają Twoje pozycje."
+        },
+        {
+          "q": "Jak wybieracie słowa kluczowe do targetowania?",
+          "a": "Analizujemy słowa kluczowe na podstawie Twojej branży, konkurencji i intencji wyszukiwania, priorytetyzując frazy, które przyciągają odwiedzających gotowych do konwersji, a nie tylko sam ruch."
+        },
+        {
+          "q": "Piszecie treści, czy tylko mówicie nam, co napisać?",
+          "a": "Dostępne są obie opcje — możemy sami napisać treści zoptymalizowane pod SEO albo dostarczyć szczegółowy brief contentowy dla Twojego zespołu."
+        },
+        {
+          "q": "Czy link building jest częścią usługi?",
+          "a": "Tak — budujemy autorytet poprzez etyczne, długoterminowe strategie link buildingu (bez spamerskich taktyk, które ryzykują karę od Google)."
+        },
+        {
+          "q": "Po jakim czasie zobaczymy poprawę pozycji?",
+          "a": "SEO to inwestycja średnioterminowa — większość stron widzi znaczącą zmianę pozycji w ciągu 3–6 miesięcy, przy czym poprawki techniczne często przynoszą efekt szybciej."
+        }
+      ],
+      "jsmPortal": [
+        {
+          "q": "Czym dokładnie jest JSM Customer Portal?",
+          "a": "To samoobsługowy interfejs dla Jira Service Management — markowy portal, w którym klienci lub pracownicy zgłaszają prośby, śledzą status i znajdują odpowiedzi, bez konieczności posiadania dostępu do samej Jiry."
+        },
+        {
+          "q": "Czy możemy mieć różne portale dla różnych zespołów (IT, HR, administracja)?",
+          "a": "Tak — konfigurujemy osobne typy zgłoszeń, kolejki i uprawnienia dla każdego zespołu, dzięki czemu każdy dział ma własny przepływ pracy w ramach jednej instancji JSM."
+        },
+        {
+          "q": "Czy konfigurujecie SLA, żeby żadne zgłoszenie nie zostało pominięte?",
+          "a": "Tak. Konfigurujemy zasady SLA dla każdego typu zgłoszenia i priorytetu, z automatyczną eskalacją i raportowaniem, dzięki czemu żadne zgłoszenie nie pozostaje bez odpowiedzi."
+        },
+        {
+          "q": "Czy portal może odciążyć zespół dzięki bazie wiedzy dla prostych zgłoszeń?",
+          "a": "Tak — łączymy portal z przeszukiwalną bazą wiedzy, dzięki czemu częste pytania są odpowiadane natychmiast, zamiast zamieniać się w zgłoszenia."
+        },
+        {
+          "q": "Ile czasu zajmuje konfiguracja JSM Portal?",
+          "a": "Standardowa konfiguracja — branding portalu, typy zgłoszeń, SLA i baza wiedzy — zajmuje zwykle 1–3 tygodnie, w zależności od liczby zaangażowanych zespołów."
+        }
+      ],
+      "clickup": [
+        {
+          "q": "Konfigurujecie ClickUp od zera, czy porządkujecie istniejącą, chaotyczną przestrzeń?",
+          "a": "Jedno i drugie. Możemy zbudować czystą strukturę ClickUp od podstaw albo przeprowadzić audyt i reorganizację istniejącej przestrzeni, która z czasem stała się nieuporządkowana."
+        },
+        {
+          "q": "Czy możecie połączyć ClickUp z naszymi innymi narzędziami?",
+          "a": "Tak — konfigurujemy integracje ze Slackiem, GitHubem, Google Drive i innymi narzędziami poprzez natywne integracje lub Zapier, dzięki czemu aktualizacje przepływają automatycznie między systemami."
+        },
+        {
+          "q": "Czy nasz zespół będzie potrzebował szkolenia z nowej konfiguracji?",
+          "a": "Do każdego wdrożenia dołączamy onboarding i szkolenie, dzięki czemu Twój zespół od pierwszego dnia dokładnie wie, jak korzystać z nowych Spaces, przepływów pracy i automatyzacji."
+        },
+        {
+          "q": "Czy możecie zautomatyzować powtarzalne zadania w ClickUp?",
+          "a": "Tak — konfigurujemy automatyzacje dla zmian statusów, przypisywania zadań, przypomnień o terminach i zadań cyklicznych, dzięki czemu Twój zespół poświęca mniej czasu na ręczną administrację."
+        },
+        {
+          "q": "Ile czasu zajmuje konfiguracja ClickUp?",
+          "a": "Typowa konfiguracja przestrzeni roboczej zajmuje 1–2 tygodnie, w zależności od liczby zespołów, projektów i integracji."
+        }
+      ],
+      "support": [
+        {
+          "q": "Co obejmuje plan wsparcia SLA?",
+          "a": "Gwarantowany czas reakcji w zależności od priorytetu (krytyczny, wysoki, normalny), monitoring 24/7, naprawę błędów oraz bezpośredni kanał wsparcia — dzięki czemu problemy są rozwiązywane, zanim wpłyną na Twoich użytkowników."
+        },
+        {
+          "q": "Jak szybko reagujecie na krytyczne problemy?",
+          "a": "Krytyczne incydenty (strona niedostępna, ryzyko utraty danych) otrzymują reakcję w czasie określonym w Twoim SLA — zwykle poniżej godziny, z priorytetem nad wszystkimi innymi zadaniami."
+        },
+        {
+          "q": "Czy tylko naprawiacie błędy, czy też dodajecie nowe funkcje?",
+          "a": "Jedno i drugie. Plany wsparcia domyślnie obejmują naprawę błędów i monitoring, a dodatkowo możemy przeznaczyć stałe godziny na nowe funkcje i usprawnienia produktu."
+        },
+        {
+          "q": "Czy możecie wspierać aplikację, której sami nie budowaliście?",
+          "a": "Tak. Zaczynamy od krótkiego audytu kodu i infrastruktury, by zrozumieć system, a następnie przejmujemy wsparcie i dalszy rozwój."
+        },
+        {
+          "q": "Jak zgłaszamy problemy lub prosimy o zmiany?",
+          "a": "Poprzez dedykowany kanał — zwykle Slack lub Jira Service Management — dzięki czemu każde zgłoszenie jest śledzone, priorytetyzowane i widoczne dla Twojego zespołu."
+        }
+      ],
+      "analytics": [
+        {
+          "q": "Czy konfigurujecie Google Analytics 4 (GA4) od zera?",
+          "a": "Tak — konfigurujemy GA4 (lub migrujemy Cię z Universal Analytics), ustawiamy cele konwersji i łączymy z Google Tag Manager, zapewniając czyste i wiarygodne śledzenie zdarzeń."
+        },
+        {
+          "q": "Czy możecie śledzić konkretne działania, np. wysłanie formularza czy kliknięcie przycisku?",
+          "a": "Tak. Konfigurujemy śledzenie niestandardowych zdarzeń dokładnie dla działań istotnych dla Twojego biznesu — rejestracji, zakupów, pobrań, odtworzeń wideo i innych."
+        },
+        {
+          "q": "Czy otrzymam regularne raporty, czy muszę sam sprawdzać pulpity?",
+          "a": "Jedno i drugie. Budujemy pulpit na żywo, który możesz sprawdzić w dowolnym momencie, a także wysyłamy okresowe raporty podsumowujące ruch, konwersje i trendy prostym językiem."
+        },
+        {
+          "q": "Czy pomagacie zrozumieć dane, czy tylko konfigurujecie śledzenie?",
+          "a": "Jedno i drugie — nie tylko instalujemy śledzenie, ale też pomagamy zinterpretować dane i rekomendujemy konkretne zmiany poprawiające konwersję i doświadczenie użytkownika."
+        },
+        {
+          "q": "Czy moja konfiguracja analityki jest zgodna z RODO?",
+          "a": "Tak — konfigurujemy śledzenie uwzględniające zgodę użytkownika oraz banery cookie, dzięki czemu zbieranie danych jest zgodne z przepisami o prywatności."
+        }
+      ],
+      "infra": [
+        {
+          "q": "Z jakim dostawcą chmury pracujecie — AWS, GCP czy Azure?",
+          "a": "Ze wszystkimi trzema. Wybieramy dostawcę dopasowanego do Twojego budżetu i istniejącej konfiguracji albo pracujemy w oparciu o ten, którego już używasz — nie musisz migrować tylko po to, by z nami współpracować."
+        },
+        {
+          "q": "Czy zarządzacie też serwerami on-premise lub self-hosted?",
+          "a": "Tak. Oprócz środowisk chmurowych administrujemy infrastrukturą on-prem i self-hosted (VPS, serwery dedykowane) — w tym administracją Linuksa i konfiguracją Nginx/IIS."
+        },
+        {
+          "q": "Jak dbacie o bezpieczeństwo i kopie zapasowe?",
+          "a": "Wzmacniamy zabezpieczenia dostępu do serwerów, konfigurujemy firewalle i zasady najmniejszych uprawnień oraz ustawiamy automatyczne, codzienne kopie zapasowe z przetestowanymi procedurami odzyskiwania — dzięki czemu awaria nigdy nie oznacza utraty danych."
+        },
+        {
+          "q": "Czy możecie pomóc obniżyć nasze koszty chmury?",
+          "a": "Tak — audytujemy bieżące wykorzystanie, dostosowujemy rozmiar zasobów, konfigurujemy autoskalowanie i eliminujemy nieużywane lub nadmiernie rozbudowane usługi. Większość klientów zauważa wyraźne obniżenie miesięcznego rachunku."
+        },
+        {
+          "q": "Czy zapewniacie stałe wsparcie infrastruktury po wdrożeniu?",
+          "a": "Tak — oferujemy stały monitoring, utrzymanie i wsparcie dyżurne, dzięki czemu Twoja infrastruktura działa niezawodnie w miarę wzrostu ruchu i zespołu."
+        }
+      ],
+      "devops": [
+        {
+          "q": "Konfigurujecie CI/CD od zera, czy pracujecie z naszym istniejącym pipeline'em?",
+          "a": "Jedno i drugie. Możemy zbudować pipeline CI/CD od podstaw albo przeprowadzić audyt i usprawnić istniejącą konfigurację GitLab/GitHub Actions — skracając czas buildów, zwiększając pokrycie testami i bezpieczeństwo wdrożeń."
+        },
+        {
+          "q": "Czy wdrożenia spowodują przestoje?",
+          "a": "Nie. Konfigurujemy strategie wdrożeń bez przestojów (rolling updates, blue-green lub canary releases), dzięki czemu Twoi użytkownicy nigdy nie zobaczą przerwy w działaniu podczas wdrożenia."
+        },
+        {
+          "q": "Co się stanie, jeśli wdrożenie się nie powiedzie?",
+          "a": "Automatyczny rollback. Jeśli health check lub test zawiedzie po wdrożeniu, pipeline automatycznie wraca do ostatniej stabilnej wersji, bez konieczności ręcznej interwencji."
+        },
+        {
+          "q": "Czy zajmujecie się też monitoringiem i alertami?",
+          "a": "Tak — konfigurujemy monitoring (Datadog, Grafana lub podobne) z alertami kierowanymi do Slacka lub e-mail, dzięki czemu Twój zespół dowiaduje się o problemach, zanim zrobią to Twoi użytkownicy."
+        },
+        {
+          "q": "Ile czasu zajmuje konfiguracja pełnego pipeline'u CI/CD?",
+          "a": "Standardowy pipeline — build, testy, wdrożenie, monitoring — jest zwykle gotowy w 2–3 tygodnie, w zależności od Twojej infrastruktury i liczby środowisk."
+        }
+      ],
+      "web": [
+        {
+          "q": "Budujecie w React czy WordPress?",
+          "a": "Jedno i drugie — właściwy wybór zależy od Twojego projektu. React/Next.js sprawdza się w złożonych, niestandardowych aplikacjach webowych i portalach; WordPress pasuje do stron marketingowych, blogów i stron opartych na treści, które Twój zespół chce edytować samodzielnie."
+        },
+        {
+          "q": "Skąd mam wiedzieć, którego potrzebuję?",
+          "a": "Jeśli potrzebujesz niestandardowej logiki, pulpitów lub rozbudowanych integracji, lepszym wyborem jest React. Jeśli głównie potrzebujesz strony opartej na treści, którą zespół może edytować bez dewelopera, WordPress jest szybszy i bardziej ekonomiczny."
+        },
+        {
+          "q": "Czy mogę zacząć od WordPressa i przejść na React później?",
+          "a": "Tak. Wielu klientów zaczyna od strony WordPress i migruje do niestandardowej aplikacji React, gdy produkt lub ruch przerasta jej możliwości. Od pierwszego dnia planujemy architekturę z myślą o takiej ścieżce."
+        },
+        {
+          "q": "Czy budujecie sklepy internetowe?",
+          "a": "Tak — WooCommerce na WordPressie dla większości sklepów albo niestandardowy sklep w React, gdy potrzebujesz większej kontroli nad procesem zakupowym, integracjami lub wydajnością na dużą skalę."
+        },
+        {
+          "q": "Ile czasu zajmuje budowa strony?",
+          "a": "Strona WordPress zwykle uruchamiana jest w 2–4 tygodnie. Niestandardowa aplikacja React zajmuje zazwyczaj 6–12 tygodni, w zależności od zakresu i integracji."
+        },
+        {
+          "q": "Czy budujecie strony zgodne z europejskimi standardami ochrony danych (RODO)?",
+          "a": "Tak — każda strona, którą budujemy, domyślnie spełnia zasady RODO: bezpieczne przetwarzanie danych, szyfrowanie HTTPS i zgoda na cookies tam, gdzie to konieczne. Możemy też wdrożyć dodatkowe wymogi zgodności, np. rezydencję danych, jeśli Twój biznes tego potrzebuje."
+        }
+      ],
+      "mobile": [
+        {
+          "q": "Budujecie w pełni natywne aplikacje, czy korzystacie z Fluttera?",
+          "a": "Budujemy we Flutterze — jeden kod, który kompiluje się do w pełni natywnych aplikacji na iOS i Android, dzięki czemu otrzymujesz natywną wydajność i natywny interfejs bez płacenia za dwa osobne zespoły."
+        },
+        {
+          "q": "Ile czasu zajmuje budowa aplikacji mobilnej?",
+          "a": "Większość aplikacji o zakresie MVP uruchamiana jest w 6–10 tygodni, w zależności od funkcji i integracji. Dokładny harmonogram potwierdzimy po krótkiej rozmowie wstępnej."
+        },
+        {
+          "q": "Czy aplikacja będzie działać tak samo na iOS i Androidzie?",
+          "a": "Tak. Flutter renderuje własny silnik UI, dzięki czemu Twoja aplikacja wygląda i działa spójnie — i natywnie — na obu platformach z jednego kodu."
+        },
+        {
+          "q": "Czy zajmujecie się publikacją w App Store i Google Play?",
+          "a": "Tak — zajmujemy się całym procesem publikacji: kontami deweloperskimi, opisami w sklepach, zrzutami ekranu i wymogami weryfikacyjnymi dla obu sklepów."
+        },
+        {
+          "q": "Co dzieje się po wydaniu aplikacji?",
+          "a": "Oferujemy stałe wsparcie: naprawę błędów, aktualizacje pod nowe wersje systemu, monitoring analityki oraz nowe funkcje w miarę rozwoju Twojego produktu."
+        }
+      ]
+    }
+  }
+}

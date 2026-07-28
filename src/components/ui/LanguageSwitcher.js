@@ -8,6 +8,7 @@ const LANGS = [
   { code: "en", label: "English" },
   // { code: "ru", label: "Русский" }, // temporarily disabled
   { code: "de", label: "Deutsch" },
+  { code: "pl", label: "Polski" },
 ];
 
 export default function LanguageSwitcher({ style = {} }) {
