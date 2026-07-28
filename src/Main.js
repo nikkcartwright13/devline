@@ -13,8 +13,6 @@ const Mobile = lazy(() => import("./pages/Mobile"));
 const Company = lazy(() => import("./pages/Company"));
 const OurProjects = lazy(() => import("./pages/OurProjects"));
 const Contact = lazy(() => import("./pages/Contact"));
-const CustomerStories = lazy(() => import("./pages/CustomerStories"));
-const CustomerStory = lazy(() => import("./pages/CustomerStory"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 export default function DevlineSite() {
@@ -33,8 +31,6 @@ export default function DevlineSite() {
               <Route path="/company" element={<Company />} />
               <Route path="/our-projects" element={<OurProjects />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="/customer-stories" element={<CustomerStories />} />
-              <Route path="/customer-stories/:slug" element={<CustomerStory />} />
               <Route path="*" element={<NotFound />} />
             </Route>
           </Routes>

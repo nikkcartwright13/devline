@@ -25,6 +25,8 @@ export const PROJECT_IMAGES = {
   "web-project-1": web1,
   "web-project-2": web2,
   "web-project-3": web3,
+  "marketing-project-3": web2,
+  "marketing-project-4": web1,
   "design-project-1": design1,
   "design-project-2": design2,
   "design-project-3": design3,

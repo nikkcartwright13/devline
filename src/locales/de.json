@@ -19,10 +19,6 @@
         "label": "Unsere Projekte",
         "text": "Ein Blick auf das, was wir gebaut haben."
       },
-      "stories": {
-        "label": "Kundengeschichten",
-        "text": "Wie wir unseren Kunden helfen."
-      },
       "contact": {
         "label": "Kontakt",
         "text": "Erzählen Sie uns von Ihrem Projekt."
@@ -33,8 +29,8 @@
     "tagline": "Menschzentrierter Service — mit Erfahrung und Innovation.",
     "contactHeading": "Kontakt",
     "address": "Europa",
-    "privacyTerms": "Privacy terms",
-    "cookiePolicy": "Cookie policy"
+    "privacyTerms": "Datenschutzbestimmungen",
+    "cookiePolicy": "Cookie-Richtlinie"
   },
   "hero": {
     "slides": [
@@ -271,19 +267,6 @@
           "Traffic- & Verhaltensberichte"
         ]
       }
-    }
-  },
-  "team": {
-    "section": {
-      "eyebrow": "UNSER TEAM",
-      "title": "Die Menschen hinter dem Produkt",
-      "text": "Ein kleines, erfahrenes Team — Ingenieure, Designer und Marketer, die bereits in Produktionsumgebungen gearbeitet haben."
-    },
-    "items": {
-      "member1": { "name": "[Teammitglied]", "role": "[Lead Engineer]" },
-      "member2": { "name": "[Teammitglied]", "role": "[Produktdesigner]" },
-      "member3": { "name": "[Teammitglied]", "role": "[DevOps-Ingenieur]" },
-      "member4": { "name": "[Teammitglied]", "role": "[Marketing Lead]" }
     }
   },
   "practices": {
@@ -607,48 +590,6 @@
       }
     ]
   },
-  "stories": {
-    "previewSection": {
-      "eyebrow": "CUSTOMER STORIES",
-      "title": "Wie wir unseren Kunden helfen",
-      "viewAll": "Alle Geschichten →"
-    },
-    "page": {
-      "eyebrow": "CUSTOMER STORIES",
-      "title": "Wie wir unseren Kunden helfen",
-      "text": "Reale Beispiele dafür, wie Devline mit Unternehmen wie Ihrem zusammenarbeitet."
-    },
-    "readStory": "Geschichte lesen →",
-    "backToStories": "← Alle Geschichten",
-    "notFound": "Geschichte nicht gefunden",
-    "seo": {
-      "title": "Kundengeschichten",
-      "description": "Wie Devline echten Unternehmen hilft — Kundengeschichten."
-    },
-    "items": [
-      {
-        "slug": "placeholder-story-1",
-        "client": "[Kundenname]",
-        "industry": "[Branche]",
-        "summary": "[Kurze Beschreibung der Herausforderung, die Devline für diesen Kunden gelöst hat.]",
-        "body": "[Durch die vollständige Geschichte ersetzen — Kontext, Lösung und Ergebnis.]"
-      },
-      {
-        "slug": "placeholder-story-2",
-        "client": "[Kundenname]",
-        "industry": "[Branche]",
-        "summary": "[Kurze Beschreibung der Herausforderung, die Devline für diesen Kunden gelöst hat.]",
-        "body": "[Durch die vollständige Geschichte ersetzen — Kontext, Lösung und Ergebnis.]"
-      },
-      {
-        "slug": "placeholder-story-3",
-        "client": "[Kundenname]",
-        "industry": "[Branche]",
-        "summary": "[Kurze Beschreibung der Herausforderung, die Devline für diesen Kunden gelöst hat.]",
-        "body": "[Durch die vollständige Geschichte ersetzen — Kontext, Lösung und Ergebnis.]"
-      }
-    ]
-  },
   "projects": {
     "previewSection": {
       "eyebrow": "UNSERE PROJEKTE",
@@ -676,7 +617,10 @@
         "category": "web",
         "name": "FLYINSPECTORS.COM",
         "summary": "Eine Plattform für Fluggastentschädigungen — von der Anspruchsprüfung bis zur Auszahlung bei Verspätungen und Annullierungen, komplett online.",
-        "tags": ["React", "Node.js"],
+        "tags": [
+          "React",
+          "Node.js"
+        ],
         "link": "https://flyinspectors.com"
       },
       {
@@ -684,7 +628,10 @@
         "category": "web",
         "name": "MCtrans",
         "summary": "MCTrans – eine führende Plattform für den Autoimport von den USA nach Georgien.",
-        "tags": ["Next.js", "PostgreSQL"],
+        "tags": [
+          "Next.js",
+          "MongoDB"
+        ],
         "link": "https://mctrans.ge/"
       },
       {
@@ -700,15 +647,11 @@
         "category": "mobile",
         "name": "Dapet",
         "summary": "Eine Haustier-App, die Besitzer mit Tierärzten, Groomern und anderen Dienstleistungen verbindet — Buchungen, Erinnerungen und Profile an einem Ort.",
-        "tags": ["Flutter", "Firebase"],
+        "tags": [
+          "Flutter",
+          "Firebase"
+        ],
         "link": "https://dapets.app/"
-      },
-      {
-        "slug": "app-project-2",
-        "category": "mobile",
-        "name": "[Projektname]",
-        "summary": "[Kurze Beschreibung dessen, was gebaut wurde und welches Problem es löst.]",
-        "tags": ["React Native", "GraphQL"]
       },
       {
         "slug": "design-project-1",
@@ -783,18 +726,26 @@
         "link": "https://www.behance.net/gallery/211966735/Krtsanisi-Margaliti-Presentation/modules/1205194595"
       },
       {
-        "slug": "marketing-project-1",
+        "slug": "marketing-project-3",
         "category": "marketing",
-        "name": "[Projektname]",
-        "summary": "[Kurze Beschreibung dessen, was gebaut wurde und welches Problem es löst.]",
-        "tags": ["Meta Ads", "Analytics"]
+        "name": "MCtrans",
+        "summary": "SEO-optimierte Meta-Tags, strukturierter Content und Keyword-Strategie für mctrans.ge zur Verbesserung der Suchsichtbarkeit.",
+        "tags": [
+          "SEO",
+          "Meta Tags"
+        ],
+        "link": "https://mctrans.ge/"
       },
       {
-        "slug": "marketing-project-2",
+        "slug": "marketing-project-4",
         "category": "marketing",
-        "name": "[Projektname]",
-        "summary": "[Kurze Beschreibung dessen, was gebaut wurde und welches Problem es löst.]",
-        "tags": ["SEO", "Content Strategy"]
+        "name": "FLYINSPECTORS.COM",
+        "summary": "Meta-Tag-Optimierung, SEO-Texte und technisches SEO-Setup für flyinspectors.com zur Steigerung der organischen Reichweite.",
+        "tags": [
+          "SEO",
+          "Meta Tags"
+        ],
+        "link": "https://flyinspectors.com"
       }
     ]
   },

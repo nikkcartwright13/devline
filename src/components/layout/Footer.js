@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { T, GRAD, display, mono } from "../../theme";
 import { SERVICE_CATEGORIES } from "../../data/services";
 import { COMPANY_DROPDOWN } from "../../data/nav";
+import logo from "../../assets/logo/optimized/logo.png";
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -23,8 +24,11 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-5 pt-14 pb-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
-            <Link to="/" style={{ ...display, fontWeight: 700, fontSize: 18, color: T.ink, textDecoration: "none" }}>
-              devline<span style={{ background: GRAD, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>.digital</span>
+            <Link to="/" style={{ display: "flex", alignItems: "center", gap: 9, textDecoration: "none" }}>
+              <img src={logo} alt="" width={26} height={26} style={{ borderRadius: 7, display: "block" }} />
+              <span style={{ ...display, fontWeight: 700, fontSize: 18, color: T.ink }}>
+                devline<span style={{ background: GRAD, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>.digital</span>
+              </span>
             </Link>
             <p style={{ color: T.muted, fontSize: 13.5, lineHeight: 1.7, marginTop: 14, maxWidth: 240 }}>
               {t("footer.tagline")}

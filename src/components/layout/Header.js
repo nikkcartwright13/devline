@@ -9,6 +9,7 @@ import useScrolled from "../../hooks/useScrolled";
 import Icon from "../ui/Icon";
 import LanguageSwitcher from "../ui/LanguageSwitcher";
 import ThemeToggle from "../ui/ThemeToggle";
+import logo from "../../assets/logo/optimized/logo.png";
 
 function DropdownPanel({ items }) {
   return (
@@ -122,8 +123,17 @@ export default function Header() {
           transition: "padding .25s ease, box-shadow .25s ease",
         }}
       >
-        <Link to="/" style={{ ...display, fontWeight: 700, fontSize: scrolled ? 17 : 20, color: T.ink, textDecoration: "none", flexShrink: 0, transition: "font-size .25s ease" }}>
-          devline<span style={{ background: GRAD, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>.digital</span>
+        <Link to="/" style={{ display: "flex", alignItems: "center", gap: 9, textDecoration: "none", flexShrink: 0 }}>
+          <img
+            src={logo}
+            alt=""
+            width={scrolled ? 24 : 28}
+            height={scrolled ? 24 : 28}
+            style={{ borderRadius: 7, display: "block", transition: "width .25s ease, height .25s ease" }}
+          />
+          <span style={{ ...display, fontWeight: 700, fontSize: scrolled ? 17 : 20, color: T.ink, transition: "font-size .25s ease" }}>
+            devline<span style={{ background: GRAD, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>.digital</span>
+          </span>
         </Link>
 
         <div className="hidden lg:flex items-center">

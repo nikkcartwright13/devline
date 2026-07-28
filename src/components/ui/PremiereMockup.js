@@ -7,6 +7,8 @@ const PHASE_DURATION = { raw: 1800, grading: 1600, rendering: 1400, done: 2400 }
 
 const WAVEFORM = [6, 12, 8, 16, 10, 14, 7, 18, 11, 9, 15, 8];
 
+const TIMECODE = { raw: "00:00:00:00", grading: "00:00:12:04", rendering: "00:00:20:18", done: "00:00:20:18" };
+
 export default function PremiereMockup() {
   const [phase, setPhase] = useState("raw");
 
@@ -74,14 +76,14 @@ export default function PremiereMockup() {
             }}
           />
 
-          {/* play button */}
-          <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
+          {/* play button — only shown before editing starts; fades out once grading/rendering is underway so the preview doesn't read as permanently paused */}
+          <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", opacity: isRaw ? 1 : 0, transition: "opacity .6s ease" }}>
             <span style={{ width: 34, height: 34, borderRadius: "50%", background: "rgba(0,0,0,.35)", display: "flex", alignItems: "center", justifyContent: "center" }}>
               <Icon name="Play" size={14} color="#fff" fill="#fff" />
             </span>
           </div>
 
-          <span style={{ position: "absolute", bottom: 8, left: 10, ...mono, fontSize: 9, color: "rgba(255,255,255,.85)" }}>00:00:12:04</span>
+          <span style={{ position: "absolute", bottom: 8, left: 10, ...mono, fontSize: 9, color: "rgba(255,255,255,.85)" }}>{TIMECODE[phase]}</span>
         </div>
 
         {/* timeline */}

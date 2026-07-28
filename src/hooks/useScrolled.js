@@ -1,7 +1,12 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
-export default function useScrolled(threshold = 10) {
+// A single hard threshold flips back and forth when scrollY hovers near it
+// (momentum/rubber-band scroll), retriggering the header's transition mid-animation
+// and making it stutter. Hysteresis gives entering/exiting the "scrolled" state
+// separate thresholds so small jitter around one point can't cause that.
+export default function useScrolled(threshold = 10, hysteresis = 8) {
   const [scrolled, setScrolled] = useState(typeof window !== "undefined" ? window.scrollY > threshold : false);
+  const scrolledRef = useRef(scrolled);
 
   useEffect(() => {
     let ticking = false;
@@ -9,13 +14,20 @@ export default function useScrolled(threshold = 10) {
       if (ticking) return;
       ticking = true;
       requestAnimationFrame(() => {
-        setScrolled(window.scrollY > threshold);
+        const y = window.scrollY;
+        if (!scrolledRef.current && y > threshold + hysteresis) {
+          scrolledRef.current = true;
+          setScrolled(true);
+        } else if (scrolledRef.current && y < threshold - hysteresis) {
+          scrolledRef.current = false;
+          setScrolled(false);
+        }
         ticking = false;
       });
     }
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, [threshold]);
+  }, [threshold, hysteresis]);
 
   return scrolled;
 }

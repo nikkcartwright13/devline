@@ -19,10 +19,6 @@
         "label": "Our Projects",
         "text": "A look at what we've built."
       },
-      "stories": {
-        "label": "Customer Stories",
-        "text": "How we help our clients."
-      },
       "contact": {
         "label": "Contact",
         "text": "Tell us about your project."
@@ -271,19 +267,6 @@
           "Traffic & behavior reporting"
         ]
       }
-    }
-  },
-  "team": {
-    "section": {
-      "eyebrow": "OUR TEAM",
-      "title": "The people behind the product",
-      "text": "A small, senior team — engineers, designers, and marketers who've worked in production environments before."
-    },
-    "items": {
-      "member1": { "name": "[Team Member]", "role": "[Lead Engineer]" },
-      "member2": { "name": "[Team Member]", "role": "[Product Designer]" },
-      "member3": { "name": "[Team Member]", "role": "[DevOps Engineer]" },
-      "member4": { "name": "[Team Member]", "role": "[Marketing Lead]" }
     }
   },
   "practices": {
@@ -607,48 +590,6 @@
       }
     ]
   },
-  "stories": {
-    "previewSection": {
-      "eyebrow": "CUSTOMER STORIES",
-      "title": "How we help our clients",
-      "viewAll": "All stories →"
-    },
-    "page": {
-      "eyebrow": "CUSTOMER STORIES",
-      "title": "How we help our clients",
-      "text": "Real examples of how Devline works with businesses like yours."
-    },
-    "readStory": "Read the story →",
-    "backToStories": "← All stories",
-    "notFound": "Story not found",
-    "seo": {
-      "title": "Customer Stories",
-      "description": "How Devline helps real businesses — customer stories."
-    },
-    "items": [
-      {
-        "slug": "placeholder-story-1",
-        "client": "[Client Name]",
-        "industry": "[Industry]",
-        "summary": "[A short description of the challenge Devline solved for this client.]",
-        "body": "[Replace with the full story — context, solution, and outcome.]"
-      },
-      {
-        "slug": "placeholder-story-2",
-        "client": "[Client Name]",
-        "industry": "[Industry]",
-        "summary": "[A short description of the challenge Devline solved for this client.]",
-        "body": "[Replace with the full story — context, solution, and outcome.]"
-      },
-      {
-        "slug": "placeholder-story-3",
-        "client": "[Client Name]",
-        "industry": "[Industry]",
-        "summary": "[A short description of the challenge Devline solved for this client.]",
-        "body": "[Replace with the full story — context, solution, and outcome.]"
-      }
-    ]
-  },
   "projects": {
     "previewSection": {
       "eyebrow": "OUR PROJECTS",
@@ -676,7 +617,10 @@
         "category": "web",
         "name": "FLYINSPECTORS.COM",
         "summary": "A flight compensation platform helping passengers claim money back for delays and cancellations — from eligibility check to payout, entirely online.",
-        "tags": ["React", "Node.js"],
+        "tags": [
+          "React",
+          "Node.js"
+        ],
         "link": "https://flyinspectors.com"
       },
       {
@@ -684,7 +628,10 @@
         "category": "web",
         "name": "MCtrans",
         "summary": "MCTrans – a leading platform for importing cars from the US to Georgia.",
-        "tags": ["Next.js", "PostgreSQL"],
+        "tags": [
+          "Next.js",
+          "MongoDB"
+        ],
         "link": "https://mctrans.ge/"
       },
       {
@@ -700,15 +647,11 @@
         "category": "mobile",
         "name": "Dapet",
         "summary": "A pet care app connecting owners with vets, groomers, and pet services — bookings, reminders, and profiles all in one place.",
-        "tags": ["Flutter", "Firebase"],
+        "tags": [
+          "Flutter",
+          "Firebase"
+        ],
         "link": "https://dapets.app/"
-      },
-      {
-        "slug": "app-project-2",
-        "category": "mobile",
-        "name": "[Project Name]",
-        "summary": "[A short description of what was built and the problem it solves.]",
-        "tags": ["React Native", "GraphQL"]
       },
       {
         "slug": "design-project-1",
@@ -783,18 +726,26 @@
         "link": "https://www.behance.net/gallery/211966735/Krtsanisi-Margaliti-Presentation/modules/1205194595"
       },
       {
-        "slug": "marketing-project-1",
+        "slug": "marketing-project-3",
         "category": "marketing",
-        "name": "[Project Name]",
-        "summary": "[A short description of what was built and the problem it solves.]",
-        "tags": ["Meta Ads", "Analytics"]
+        "name": "MCtrans",
+        "summary": "SEO-optimized meta tags, structured content, and keyword strategy set up for mctrans.ge to improve search visibility.",
+        "tags": [
+          "SEO",
+          "Meta Tags"
+        ],
+        "link": "https://mctrans.ge/"
       },
       {
-        "slug": "marketing-project-2",
+        "slug": "marketing-project-4",
         "category": "marketing",
-        "name": "[Project Name]",
-        "summary": "[A short description of what was built and the problem it solves.]",
-        "tags": ["SEO", "Content Strategy"]
+        "name": "FLYINSPECTORS.COM",
+        "summary": "Meta tag optimization, SEO copywriting, and technical SEO setup for flyinspectors.com to boost organic reach.",
+        "tags": [
+          "SEO",
+          "Meta Tags"
+        ],
+        "link": "https://flyinspectors.com"
       }
     ]
   },

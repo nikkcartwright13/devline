@@ -22,6 +22,7 @@ export default function Seo({ title, description, jsonLd }) {
   const fullTitle = title ? `${title} — ${siteName}` : `${siteName} — ${t("meta.defaultTitleSuffix")}`;
   const lang = i18n.resolvedLanguage || i18n.language || "ka";
   const canonical = `${SITE_URL}${pathname}`;
+  const ogImage = `${SITE_URL}/logo512.png`;
   const extraSchemas = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
 
   return (
@@ -34,9 +35,12 @@ export default function Seo({ title, description, jsonLd }) {
       <meta property="og:site_name" content={siteName} />
       <meta property="og:type" content="website" />
       <meta property="og:url" content={canonical} />
-      <meta name="twitter:card" content="summary" />
+      <meta property="og:image" content={ogImage} />
+      <meta property="og:locale" content={lang} />
+      <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={desc} />
+      <meta name="twitter:image" content={ogImage} />
       <script type="application/ld+json">{JSON.stringify(ORGANIZATION_JSON_LD)}</script>
       {extraSchemas.map((schema, i) => (
         <script key={i} type="application/ld+json">{JSON.stringify(schema)}</script>

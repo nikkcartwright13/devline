@@ -6,7 +6,7 @@ import Icon from "./Icon";
 const LANGS = [
   { code: "ka", label: "ქართული" },
   { code: "en", label: "English" },
-  { code: "ru", label: "Русский" },
+  // { code: "ru", label: "Русский" }, // temporarily disabled
   { code: "de", label: "Deutsch" },
 ];
 

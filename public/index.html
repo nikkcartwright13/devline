@@ -5,7 +5,22 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#0C1030" />
-    <!-- description/title are managed per-route by react-helmet-async (see src/components/Seo.js) -->
+    <!--
+      Static fallback for crawlers that don't execute JavaScript (most social-share
+      link-unfurlers, some search engines). React Helmet (see src/components/Seo.js)
+      overwrites these per-route for everyone else once the app renders.
+    -->
+    <title>Devline.digital — Software Studio</title>
+    <meta name="description" content="Devline.digital — a European software studio serving clients worldwide: web and mobile apps, Jira/JSM setup, design, and marketing." />
+    <meta property="og:title" content="Devline.digital — Software Studio" />
+    <meta property="og:description" content="Devline.digital — a European software studio serving clients worldwide: web and mobile apps, Jira/JSM setup, design, and marketing." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://devline.digital/" />
+    <meta property="og:image" content="https://devline.digital/logo512.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Devline.digital — Software Studio" />
+    <meta name="twitter:description" content="Devline.digital — a European software studio serving clients worldwide: web and mobile apps, Jira/JSM setup, design, and marketing." />
+    <meta name="twitter:image" content="https://devline.digital/logo512.png" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />

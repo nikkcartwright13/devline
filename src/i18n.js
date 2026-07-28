@@ -18,7 +18,9 @@ i18n
       de: { translation: de },
     },
     fallbackLng: "ka",
-    supportedLngs: ["ka", "en", "ru", "de"],
+    // "ru" temporarily excluded from auto-detection while the language switch is disabled;
+    // the resource stays loaded below so returning visitors already on ru aren't broken.
+    supportedLngs: ["ka", "en", "de"],
     interpolation: { escapeValue: false },
     detection: {
       order: ["localStorage", "navigator"],
