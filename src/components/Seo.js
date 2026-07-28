@@ -17,7 +17,7 @@ const ORGANIZATION_JSON_LD = {
   areaServed: "Worldwide",
 };
 
-export default function Seo({ title, description, jsonLd }) {
+export default function Seo({ title, description, jsonLd, noindex }) {
   const { t, i18n } = useTranslation();
   const { pathname } = useLocation();
   const siteName = t("meta.siteName");
@@ -32,6 +32,7 @@ export default function Seo({ title, description, jsonLd }) {
     <Helmet htmlAttributes={{ lang }}>
       <title>{fullTitle}</title>
       <meta name="description" content={desc} />
+      {noindex && <meta name="robots" content="noindex, nofollow" />}
       <link rel="canonical" href={canonical} />
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={desc} />

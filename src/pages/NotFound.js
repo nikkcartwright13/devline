@@ -7,7 +7,7 @@ export default function NotFoundPage() {
   const { t } = useTranslation();
   return (
     <section className="max-w-6xl mx-auto px-5 py-32 text-center">
-      <Seo title={t("notFound.seoTitle")} />
+      <Seo title={t("notFound.seoTitle")} description={t("notFound.title")} noindex />
       <div style={{ ...display, fontWeight: 700, fontSize: "clamp(48px,10vw,96px)", background: GRAD, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>404</div>
       <h1 style={{ ...display, fontWeight: 700, fontSize: 24, marginTop: 10 }}>{t("notFound.title")}</h1>
       <Link to="/" className="dl-btn" style={{ display: "inline-block", marginTop: 26, fontSize: 15, fontWeight: 600, background: GRAD, color: "#fff", padding: "13px 28px", borderRadius: 999, textDecoration: "none" }}>
