@@ -4,6 +4,7 @@ import "./i18n";
 import { HelmetProvider } from "react-helmet-async";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import Layout from "./components/layout/Layout";
 import PageLoader from "./components/ui/PageLoader";
 import { SERVICE_PAGES } from "./pages/servicePages";
@@ -38,6 +39,7 @@ export default function DevlineSite() {
         </Suspense>
       </BrowserRouter>
       <Analytics />
+      <SpeedInsights />
     </HelmetProvider>
   );
 }
