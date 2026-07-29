@@ -13,7 +13,6 @@ const inputStyle = {
 
 const CONTACT_ROWS = [
   { key: "email", icon: "Mail", href: "mailto:hello@devline.digital", value: "hello@devline.digital" },
-  { key: "phone", icon: "Phone", href: "tel:+995555000000", value: "+995 555 00 00 00" },
   { key: "address", icon: "MapPin" },
 ];
 
