@@ -782,9 +782,21 @@
       "emailPlaceholder": "E-Mail",
       "messagePlaceholder": "Erzählen Sie uns von Ihrem Projekt",
       "submit": "Senden →",
-      "hint": "Beim Klicken öffnet sich Ihr E-Mail-Programm mit einer vorausgefüllten Nachricht.",
+      "hint": "Klick auf Senden, und dein E-Mail-Programm öffnet sich mit allem ausgefüllt — kurz prüfen und ab geht's! 🚀",
       "subjectPrefix": "Projektanfrage",
-      "newContact": "Neuer Kontakt"
+      "newContact": "Neuer Kontakt",
+      "successTitle": "Nachricht gesendet! 🎉",
+      "successText": "Ihr E-Mail-Programm sollte sich mit einer vorbereiteten Nachricht geöffnet haben. Wir melden uns innerhalb von 24 Stunden.",
+      "sendAnother": "Weitere Nachricht senden",
+      "servicePlaceholder": "Woran sind Sie interessiert?",
+      "budgetPlaceholder": "Geschätztes Budget",
+      "budget": {
+        "under5k": "Unter 5.000 $",
+        "5to15k": "5.000 $ – 15.000 $",
+        "15to50k": "15.000 $ – 50.000 $",
+        "50plus": "50.000 $+",
+        "notSure": "Noch unklar"
+      }
     }
   },
   "company": {

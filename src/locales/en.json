@@ -782,9 +782,21 @@
       "emailPlaceholder": "Email",
       "messagePlaceholder": "Tell us about your project",
       "submit": "Send →",
-      "hint": "Clicking the button opens your email client with a pre-filled message.",
+      "hint": "Hit send and your email app pops open with everything filled in — just double-check and fire away! 🚀",
       "subjectPrefix": "Project request",
-      "newContact": "New contact"
+      "newContact": "New contact",
+      "successTitle": "Message sent! 🎉",
+      "successText": "Your email app should be open with everything ready to go. We'll get back to you within 24 hours.",
+      "sendAnother": "Send another message",
+      "servicePlaceholder": "What are you interested in?",
+      "budgetPlaceholder": "Estimated budget",
+      "budget": {
+        "under5k": "Under $5,000",
+        "5to15k": "$5,000 – $15,000",
+        "15to50k": "$15,000 – $50,000",
+        "50plus": "$50,000+",
+        "notSure": "Not sure yet"
+      }
     }
   },
   "company": {

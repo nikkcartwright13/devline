@@ -91,10 +91,16 @@
 .dl-input:hover { border-color: #C7D6F5; }
 
 .dl-contact-icon {
-  transition: transform .3s cubic-bezier(.2,.7,.3,1), box-shadow .3s ease;
+  transition: box-shadow .3s ease;
+}
+@keyframes dl-wiggle {
+  0%, 100% { transform: scale(1.12) rotate(-8deg); }
+  25%      { transform: scale(1.12) rotate(10deg); }
+  50%      { transform: scale(1.12) rotate(-10deg); }
+  75%      { transform: scale(1.12) rotate(8deg); }
 }
 .dl-contact-row:hover .dl-contact-icon {
-  transform: scale(1.1) rotate(-6deg);
+  animation: dl-wiggle .5s ease-in-out;
   box-shadow: 0 10px 20px rgba(79,140,255,.35);
 }
 

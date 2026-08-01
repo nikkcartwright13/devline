@@ -782,9 +782,21 @@
       "emailPlaceholder": "E-mail",
       "messagePlaceholder": "Opowiedz nam o swoim projekcie",
       "submit": "Wyślij →",
-      "hint": "Kliknięcie przycisku otworzy Twój program pocztowy z gotową wiadomością.",
+      "hint": "Kliknij, a Twój program pocztowy otworzy się z gotową wiadomością — sprawdź i wyślij! 🚀",
       "subjectPrefix": "Zapytanie o projekt",
-      "newContact": "Nowy kontakt"
+      "newContact": "Nowy kontakt",
+      "successTitle": "Wiadomość wysłana! 🎉",
+      "successText": "Twój program pocztowy powinien się otworzyć z gotową wiadomością. Odpowiemy w ciągu 24 godzin.",
+      "sendAnother": "Wyślij kolejną wiadomość",
+      "servicePlaceholder": "Czym jesteś zainteresowany?",
+      "budgetPlaceholder": "Szacowany budżet",
+      "budget": {
+        "under5k": "Poniżej 5000 $",
+        "5to15k": "5000 $ – 15 000 $",
+        "15to50k": "15 000 $ – 50 000 $",
+        "50plus": "50 000 $+",
+        "notSure": "Jeszcze nie wiem"
+      }
     }
   },
   "company": {
