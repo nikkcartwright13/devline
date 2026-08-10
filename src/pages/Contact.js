@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import emailjs from "@emailjs/browser";
 import { T, GRAD, mono, display } from "../theme";
 import Seo from "../components/Seo";
 import PageHeader from "../components/sections/PageHeader";
@@ -25,29 +26,51 @@ const CONTACT_ROWS = [
   { key: "address", icon: "MapPin" },
 ];
 
+const EMAILJS_SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+const EMAILJS_TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+const EMAILJS_PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+
 export default function ContactPage() {
   const { t } = useTranslation();
   const [form, setForm] = useState({ name: "", email: "", service: "", budget: "", message: "" });
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState(false);
 
   const update = (field) => (e) => setForm((f) => ({ ...f, [field]: e.target.value }));
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const subject = encodeURIComponent(`${t("contact.form.subjectPrefix")} — ${form.name || t("contact.form.newContact")}`);
-    const extras = [];
-    if (form.service) extras.push(`${t("contact.form.servicePlaceholder")}: ${t(`services.categories.${form.service}.title`)}`);
-    if (form.budget) extras.push(`${t("contact.form.budgetPlaceholder")}: ${t(`contact.form.budget.${form.budget}`)}`);
-    const body = encodeURIComponent(
-      `${form.message}\n\n${extras.length ? extras.join("\n") + "\n\n" : ""}— ${form.name} (${form.email})`
-    );
-    window.location.href = `mailto:hello@devline.digital?subject=${subject}&body=${body}`;
-    setSent(true);
+    setError(false);
+    setSending(true);
+
+    const subject = `${t("contact.form.subjectPrefix")} — ${form.name || t("contact.form.newContact")}`;
+    const service = form.service ? t(`services.categories.${form.service}.title`) : "";
+    const budget = form.budget ? t(`contact.form.budget.${form.budget}`) : "";
+
+    emailjs
+      .send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          subject,
+          from_name: form.name,
+          from_email: form.email,
+          service,
+          budget,
+          message: form.message,
+        },
+        { publicKey: EMAILJS_PUBLIC_KEY }
+      )
+      .then(() => setSent(true))
+      .catch(() => setError(true))
+      .finally(() => setSending(false));
   };
 
   const sendAnother = () => {
     setForm({ name: "", email: "", service: "", budget: "", message: "" });
     setSent(false);
+    setError(false);
   };
 
   return (
@@ -166,11 +189,20 @@ export default function ContactPage() {
                   </div>
                 </div>
                 <textarea required className="dl-input" placeholder={t("contact.form.messagePlaceholder")} rows={5} value={form.message} onChange={update("message")} style={{ ...inputStyle, resize: "vertical" }} />
-                <button type="submit" className="dl-btn" style={{ display: "inline-flex", alignItems: "center", gap: 8, fontSize: 15, fontWeight: 600, background: GRAD, color: "#fff", padding: "14px 28px", borderRadius: 999, border: "none", cursor: "pointer", width: "fit-content" }}>
-                  {t("contact.form.submit").replace("→", "").trim()}
-                  <span aria-hidden className="dl-btn-arrow"><Icon name="ArrowRight" size={17} /></span>
+                <button
+                  type="submit"
+                  disabled={sending}
+                  className="dl-btn"
+                  style={{ display: "inline-flex", alignItems: "center", gap: 8, fontSize: 15, fontWeight: 600, background: GRAD, color: "#fff", padding: "14px 28px", borderRadius: 999, border: "none", cursor: sending ? "default" : "pointer", width: "fit-content", opacity: sending ? 0.7 : 1 }}
+                >
+                  {sending ? t("contact.form.sending") : t("contact.form.submit").replace("→", "").trim()}
+                  {!sending && <span aria-hidden className="dl-btn-arrow"><Icon name="ArrowRight" size={17} /></span>}
                 </button>
-                <p style={{ fontSize: 12.5, color: T.muted, margin: 0 }}>{t("contact.form.hint")}</p>
+                {error ? (
+                  <p style={{ fontSize: 12.5, color: "#e5484d", margin: 0 }}>{t("contact.form.errorText")}</p>
+                ) : (
+                  <p style={{ fontSize: 12.5, color: T.muted, margin: 0 }}>{t("contact.form.hint")}</p>
+                )}
               </form>
             )}
           </Reveal>
