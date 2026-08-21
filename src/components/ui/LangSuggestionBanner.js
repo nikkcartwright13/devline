@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Link, useLocation } from "react-router-dom";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import { T, GRAD, display } from "../../theme";
 import { detectLanguageFromGeo } from "../../lib/geoLanguage";
 import { langFromPathname, localizePath, stripLangPrefix } from "../../lib/langRouting";
@@ -12,7 +13,8 @@ const DISMISS_KEY = "devline-lang-banner-dismissed";
 // language versions of the site from search engines entirely.
 export default function LangSuggestionBanner() {
   const { t } = useTranslation();
-  const { pathname } = useLocation();
+  const router = useRouter();
+  const pathname = router.asPath.split(/[?#]/)[0];
   const [suggested, setSuggested] = useState(null);
   const currentLang = langFromPathname(pathname);
 
@@ -50,7 +52,7 @@ export default function LangSuggestionBanner() {
         <p style={{ margin: 0, fontSize: 13, color: T.muted }}>{t(messageKey)}</p>
         <div style={{ display: "flex", gap: 8, flexShrink: 0 }}>
           <Link
-            to={targetHref}
+            href={targetHref}
             onClick={dismiss}
             className="dl-btn"
             style={{ ...display, fontSize: 12.5, fontWeight: 600, color: "#fff", background: GRAD, borderRadius: 999, padding: "7px 14px", textDecoration: "none" }}

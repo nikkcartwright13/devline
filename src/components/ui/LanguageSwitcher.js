@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useRouter } from "next/router";
 import { T } from "../../theme";
 import { langFromPathname, localizePath, stripLangPrefix } from "../../lib/langRouting";
 import Icon from "./Icon";
@@ -15,14 +15,22 @@ const LANGS = [
 export default function LanguageSwitcher({ style = {} }) {
   const [open, setOpen] = useState(false);
   const ref = useRef(null);
-  const location = useLocation();
-  const navigate = useNavigate();
-  const current = langFromPathname(location.pathname);
+  const router = useRouter();
+  // router.pathname (matched route pattern) for anything rendered — it's
+  // consistent between server and client even for the shared static 404
+  // page, unlike router.asPath, which reflects whatever URL the visitor
+  // actually typed and would mismatch the "ka" the 404 page was built as.
+  const current = langFromPathname(router.pathname);
   const currentLang = LANGS.find((l) => l.code === current) || LANGS[0];
 
   const switchTo = (code) => {
-    const target = localizePath(stripLangPrefix(location.pathname), code) + location.search + location.hash;
-    navigate(target);
+    // Safe to use asPath here: this only runs from a click handler, never
+    // during render, so there's no hydration comparison to disagree with.
+    const asPath = router.asPath;
+    const pathname = asPath.split(/[?#]/)[0];
+    const rest = asPath.slice(pathname.length);
+    const target = localizePath(stripLangPrefix(pathname), code) + rest;
+    router.push(target);
     setOpen(false);
   };
 

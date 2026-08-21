@@ -1,9 +1,13 @@
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useRouter } from "next/router";
 import { trackPageview } from "../../lib/analytics";
 
 export default function ScrollManager() {
-  const { pathname, hash } = useLocation();
+  const router = useRouter();
+  const asPath = router.asPath;
+  const pathname = asPath.split(/[?#]/)[0];
+  const hashMatch = asPath.match(/#.+$/);
+  const hash = hashMatch ? hashMatch[0] : "";
 
   useEffect(() => {
     if (hash) {

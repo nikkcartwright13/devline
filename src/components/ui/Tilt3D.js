@@ -1,9 +1,15 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Tilt3D({ children, max = 12, style = {} }) {
   const ref = useRef(null);
-  const reduced = useState(() => window.matchMedia("(prefers-reduced-motion: reduce)").matches)[0];
+  // Static export pre-renders on the server, where matchMedia doesn't
+  // exist — default to enabled, then defer to the real preference once mounted.
+  const [reduced, setReduced] = useState(false);
   const [t, setT] = useState({ rx: 0, ry: 0, active: false });
+
+  useEffect(() => {
+    setReduced(window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+  }, []);
 
   if (reduced) return <div style={style}>{children}</div>;
 

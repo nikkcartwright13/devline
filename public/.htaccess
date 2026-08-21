@@ -1,8 +1,7 @@
-# SPA fallback: this app handles routing client-side (react-router), so any
-# URL that isn't a real file on disk (e.g. /en, /de/services/web) must still
-# be served index.html — otherwise the server 404s before React ever loads.
-# Without this, Googlebot gets a real 404 for every non-root URL, which is
-# why /en, /de, /pl (and every /services/* page) were unreachable.
+# Next.js static export gives every route its own real .html file (e.g.
+# /en/services/web -> en/services/web.html) — there is no client-side-only
+# routing to fall back to anymore, so this maps clean URLs to those files
+# instead of routing everything through one index.html like the old SPA did.
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
@@ -12,12 +11,17 @@
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
 
-  # Everything else goes through index.html so react-router can render it.
-  RewriteRule ^ /index.html [L]
+  # Clean URL -> matching .html file, trailing slash optional.
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^(.*?)/?$ $1.html [L]
 </IfModule>
 
-# Cache hashed static assets aggressively; never cache index.html itself
-# (it must always be re-fetched so deploys show up immediately).
+# A genuinely missing page now returns a real 404 status (not a 200 "soft
+# 404"), since every valid route already matched a real file above.
+ErrorDocument 404 /404.html
+
+# Cache hashed static assets aggressively; never cache the HTML pages
+# themselves (they must always be re-fetched so deploys show up immediately).
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresByType text/css "access plus 1 year"
@@ -28,7 +32,7 @@
 </IfModule>
 
 <IfModule mod_headers.c>
-  <FilesMatch "index\.html$">
+  <FilesMatch "\.html$">
     Header set Cache-Control "no-cache, no-store, must-revalidate"
   </FilesMatch>
 </IfModule>

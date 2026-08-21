@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { useTranslation } from "react-i18next";
-import { useLocation } from "react-router-dom";
+import { useRouter } from "next/router";
 import Link from "../ui/LocalizedLink";
 import { T, GRAD, display } from "../../theme";
 import { SERVICE_CATEGORIES } from "../../data/services";
@@ -60,7 +60,8 @@ export default function Header() {
   const [menuTop, setMenuTop] = useState(84);
   const navRef = useRef(null);
   const pillRef = useRef(null);
-  const location = useLocation();
+  const router = useRouter();
+  const location = { pathname: router.asPath.split(/[?#]/)[0] };
   const scrolled = useScrolled(10);
 
   useEffect(() => { setMenuOpen(false); setOpenDropdown(null); setOpenMobileCategory(null); }, [location.pathname]);
@@ -134,7 +135,7 @@ export default function Header() {
       >
         <Link to="/" style={{ display: "flex", alignItems: "center", gap: 9, textDecoration: "none", flexShrink: 0 }}>
           <img
-            src={logo}
+            src={logo.src}
             alt=""
             width={scrolled ? 24 : 28}
             height={scrolled ? 24 : 28}

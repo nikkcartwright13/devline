@@ -1,4 +1,4 @@
-const GA_ID = process.env.REACT_APP_GA_ID;
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 const CONSENT_KEY = "devline-cookie-consent";
 
 let loaded = false;

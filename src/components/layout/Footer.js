@@ -26,7 +26,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
             <Link to="/" style={{ display: "flex", alignItems: "center", gap: 9, textDecoration: "none" }}>
-              <img src={logo} alt="" width={26} height={26} style={{ borderRadius: 7, display: "block" }} />
+              <img src={logo.src} alt="" width={26} height={26} style={{ borderRadius: 7, display: "block" }} />
               <span style={{ ...display, fontWeight: 700, fontSize: 18, color: T.ink }}>
                 devline<span style={{ background: GRAD, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>.digital</span>
               </span>

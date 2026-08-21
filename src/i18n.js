@@ -7,7 +7,7 @@ import de from "./locales/de.json";
 import pl from "./locales/pl.json";
 
 // Language is driven entirely by the URL (see src/lib/langRouting.js and
-// src/index.js), never by browser locale or geolocation — each language has
+// pages/_app.js), never by browser locale or geolocation — each language has
 // its own crawlable path so search engines can index every version.
 i18n
   .use(initReactI18next)

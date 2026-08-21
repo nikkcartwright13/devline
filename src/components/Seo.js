@@ -1,6 +1,6 @@
-import { Helmet } from "react-helmet-async";
+import Head from "next/head";
 import { useTranslation } from "react-i18next";
-import { useLocation } from "react-router-dom";
+import { useRouter } from "next/router";
 import { LANGS, langFromPathname, localizePath, stripLangPrefix } from "../lib/langRouting";
 
 const SITE_URL = "https://devline.digital";
@@ -20,7 +20,17 @@ const ORGANIZATION_JSON_LD = {
 
 export default function Seo({ title, description, jsonLd, noindex }) {
   const { t } = useTranslation();
-  const { pathname } = useLocation();
+  const router = useRouter();
+  // router.pathname is the matched route pattern (e.g. "/en/services/[slug]"),
+  // not the raw browser URL — deliberately not router.asPath. asPath reflects
+  // whatever the visitor actually typed, which for the shared static 404 page
+  // can be anything and would then disagree with what was pre-rendered at
+  // build time for "/404", causing a hydration mismatch on every mismatched
+  // 404 visit. Swapping in query params keeps dynamic segments resolved.
+  const pathname = Object.entries(router.query).reduce(
+    (p, [key, value]) => p.replace(`[${key}]`, value),
+    router.pathname
+  );
   const siteName = t("meta.siteName");
   const desc = description || t("meta.defaultDescription");
   const fullTitle = title ? `${title} — ${siteName}` : `${siteName} — ${t("meta.defaultTitleSuffix")}`;
@@ -31,7 +41,7 @@ export default function Seo({ title, description, jsonLd, noindex }) {
   const extraSchemas = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
 
   return (
-    <Helmet htmlAttributes={{ lang }}>
+    <Head>
       <title>{fullTitle}</title>
       <meta name="description" content={desc} />
       {noindex && <meta name="robots" content="noindex, nofollow" />}
@@ -54,10 +64,10 @@ export default function Seo({ title, description, jsonLd, noindex }) {
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={desc} />
       <meta name="twitter:image" content={ogImage} />
-      <script type="application/ld+json">{JSON.stringify(ORGANIZATION_JSON_LD)}</script>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_JSON_LD) }} />
       {extraSchemas.map((schema, i) => (
-        <script key={i} type="application/ld+json">{JSON.stringify(schema)}</script>
+        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}
-    </Helmet>
+    </Head>
   );
 }

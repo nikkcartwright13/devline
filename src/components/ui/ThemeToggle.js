@@ -4,7 +4,15 @@ import { getStoredThemeMode, applyThemeMode } from "../../lib/themeMode";
 import Icon from "./Icon";
 
 export default function ThemeToggle({ style = {} }) {
-  const [mode, setMode] = useState(() => getStoredThemeMode() || document.documentElement.getAttribute("data-theme") || "light");
+  // Static export pre-renders on the server, where localStorage/document
+  // don't exist — start from a safe default and sync to the real stored
+  // preference once mounted in the browser.
+  const [mode, setMode] = useState("light");
+
+  useEffect(() => {
+    const stored = getStoredThemeMode();
+    if (stored) setMode(stored);
+  }, []);
 
   useEffect(() => {
     applyThemeMode(mode);

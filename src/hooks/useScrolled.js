@@ -5,7 +5,10 @@ import { useEffect, useRef, useState } from "react";
 // and making it stutter. Hysteresis gives entering/exiting the "scrolled" state
 // separate thresholds so small jitter around one point can't cause that.
 export default function useScrolled(threshold = 10, hysteresis = 8) {
-  const [scrolled, setScrolled] = useState(typeof window !== "undefined" ? window.scrollY > threshold : false);
+  // Always start false: a client hydrating after scroll-position restoration
+  // (e.g. back/forward navigation) could otherwise read a nonzero scrollY on
+  // the very first render and mismatch the server-rendered (always-false) HTML.
+  const [scrolled, setScrolled] = useState(false);
   const scrolledRef = useRef(scrolled);
 
   useEffect(() => {
