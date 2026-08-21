@@ -13,8 +13,8 @@ export default function MarketingShowcase({ grouped = false }) {
 
   return (
     <section id="marketing-showcase" style={{ position: "relative", background: grouped ? "transparent" : DARK, color: "#fff", overflow: "hidden" }}>
-      <Orb size={320} top="-90px" right="-70px" colors={[T.blue, "transparent"]} dur={13} opacity={0.4} />
-      <Orb size={260} bottom="-110px" left="-50px" colors={[T.violet, "transparent"]} dur={16} opacity={0.35} />
+      <Orb size={320} top="-90px" right="-70px" colors={[T.blue, "transparent"]} dur={13} />
+      <Orb size={260} bottom="-110px" left="-50px" colors={[T.violet, "transparent"]} dur={16} opacity={0.45} />
 
       <div className="max-w-6xl mx-auto px-5 py-20 md:py-28 relative grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
         {/* mockup */}

@@ -13,8 +13,8 @@ export default function DesignShowcase({ grouped = false }) {
 
   return (
     <section id="design-showcase" style={{ position: "relative", background: grouped ? "transparent" : DARK, color: "#fff", overflow: "hidden" }}>
-      <Orb size={340} top="-100px" left="-80px" colors={[T.violet, "transparent"]} dur={12} opacity={0.4} />
-      <Orb size={280} bottom="-120px" right="-60px" colors={["#22D3EE", "transparent"]} dur={15} opacity={0.35} />
+      <Orb size={340} top="-100px" left="-80px" colors={[T.violet, "transparent"]} dur={12} />
+      <Orb size={280} bottom="-120px" right="-60px" colors={["#22D3EE", "transparent"]} dur={15} opacity={0.45} />
 
       <div className="max-w-6xl mx-auto px-5 py-20 md:py-28 relative grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
         {/* text */}

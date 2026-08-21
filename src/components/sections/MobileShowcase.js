@@ -13,8 +13,8 @@ export default function MobileShowcase({ grouped = false }) {
 
   return (
     <section id="mobile" style={{ position: "relative", background: grouped ? "transparent" : DARK, color: "#fff", overflow: "hidden" }}>
-      <Orb size={380} top="-100px" right="-80px" colors={[T.violet, "transparent"]} dur={12} opacity={0.4} />
-      <Orb size={300} bottom="-120px" left="-60px" colors={[T.blue, "transparent"]} dur={15} opacity={0.4} />
+      <Orb size={380} top="-100px" right="-80px" colors={[T.violet, "transparent"]} dur={12} />
+      <Orb size={300} bottom="-120px" left="-60px" colors={[T.blue, "transparent"]} dur={15} />
 
       <div className="max-w-6xl mx-auto px-5 py-20 md:py-28 relative grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
         {/* text */}

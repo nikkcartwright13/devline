@@ -15,8 +15,8 @@ export default function SeoShowcase() {
 
   return (
     <section style={{ position: "relative", background: DARK, color: "#fff", overflow: "hidden" }}>
-      <Orb size={320} top="-100px" left="-80px" colors={[T.blue, "transparent"]} dur={13} opacity={0.4} />
-      <Orb size={280} bottom="-110px" right="-60px" colors={["#34D399", "transparent"]} dur={16} opacity={0.35} />
+      <Orb size={320} top="-100px" left="-80px" colors={[T.blue, "transparent"]} dur={13} />
+      <Orb size={280} bottom="-110px" right="-60px" colors={["#34D399", "transparent"]} dur={16} opacity={0.45} />
 
       <div className="max-w-6xl mx-auto px-5 py-20 md:py-24 relative grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
         {/* text */}

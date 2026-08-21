@@ -11,7 +11,7 @@ export default function CTA() {
       <Reveal>
         <div style={{ position: "relative", background: DARK, borderRadius: 24, padding: "clamp(32px,6vw,64px)", color: "#fff", overflow: "hidden" }}>
           <Orb size={300} top="-80px" right="-60px" colors={[T.violet, "transparent"]} dur={10} opacity={0.45} />
-          <Orb size={260} bottom="-100px" left="-40px" colors={[T.blue, "transparent"]} dur={13} opacity={0.4} />
+          <Orb size={260} bottom="-100px" left="-40px" colors={[T.blue, "transparent"]} dur={13} />
           <div style={{ position: "relative" }}>
             <h2 style={{ ...display, fontWeight: 700, fontSize: "clamp(26px,4.5vw,44px)", maxWidth: 560 }}>
               {t("cta.title")}
