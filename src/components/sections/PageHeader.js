@@ -15,7 +15,7 @@ export default function PageHeader({ eyebrow, title, text }) {
               {eyebrow}
             </span>
           )}
-          <h1 style={{ ...display, fontWeight: 700, fontSize: "clamp(30px,5vw,52px)", lineHeight: 1.15, maxWidth: 760, marginTop: 22 }}>
+          <h1 style={{ ...display, fontWeight: 700, fontSize: "clamp(24px,3.8vw,40px)", lineHeight: 1.25, maxWidth: 820, marginTop: 22 }}>
             {title}
           </h1>
           {text && (
