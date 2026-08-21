@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { T, mono, display } from "../../theme";
 import Icon from "../ui/Icon";
+import { upperLabel } from "../../lib/text";
 
 export default function FAQ({ eyebrow, items }) {
   const [openIndex, setOpenIndex] = useState(0);
@@ -11,7 +12,7 @@ export default function FAQ({ eyebrow, items }) {
     <div>
       {eyebrow && (
         <p style={{ ...mono, fontSize: 13, letterSpacing: ".1em", color: T.blue }}>
-          {eyebrow.toUpperCase()}
+          {upperLabel(eyebrow)}
         </p>
       )}
       <div style={{ display: "flex", flexDirection: "column", gap: 10, marginTop: 8 }}>

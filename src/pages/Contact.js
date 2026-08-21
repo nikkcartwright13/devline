@@ -45,8 +45,8 @@ export default function ContactPage() {
     setSending(true);
 
     const subject = `${t("contact.form.subjectPrefix")} — ${form.name || t("contact.form.newContact")}`;
-    const service = form.service ? t(`services.categories.${form.service}.title`) : "";
-    const budget = form.budget ? t(`contact.form.budget.${form.budget}`) : "";
+    const service = form.service ? t(`services.categories.${form.service}.title`) : "—";
+    const budget = form.budget ? t(`contact.form.budget.${form.budget}`) : "—";
 
     emailjs
       .send(
@@ -54,10 +54,11 @@ export default function ContactPage() {
         EMAILJS_TEMPLATE_ID,
         {
           subject,
-          from_name: form.name,
-          from_email: form.email,
+          name: form.name,
+          email: form.email,
           service,
           budget,
+          time: new Date().toLocaleString(),
           message: form.message,
         },
         { publicKey: EMAILJS_PUBLIC_KEY }

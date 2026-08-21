@@ -3,11 +3,10 @@ import "./styles/animations.css";
 import "./i18n";
 import { HelmetProvider } from "react-helmet-async";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/react";
 import Layout from "./components/layout/Layout";
 import PageLoader from "./components/ui/PageLoader";
 import { SERVICE_PAGES } from "./pages/servicePages";
+import { LANGS, localizePath } from "./lib/langRouting";
 
 const Home = lazy(() => import("./pages/Home"));
 const Services = lazy(() => import("./pages/Services"));
@@ -17,6 +16,19 @@ const OurProjects = lazy(() => import("./pages/OurProjects"));
 const Contact = lazy(() => import("./pages/Contact"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
+// Bare (unprefixed) route definitions — mirrored per language below so every
+// page gets its own crawlable, indexable URL (/, /en/*, /de/*, /pl/*) instead
+// of one URL whose content silently changes based on the visitor's browser/IP.
+const ROUTE_DEFS = [
+  { path: "/", Component: Home },
+  { path: "/services", Component: Services },
+  ...SERVICE_PAGES.map(({ slug, Component }) => ({ path: `/services/${slug}`, Component })),
+  { path: "/mobile", Component: Mobile },
+  { path: "/company", Component: Company },
+  { path: "/our-projects", Component: OurProjects },
+  { path: "/contact", Component: Contact },
+];
+
 export default function DevlineSite() {
   return (
     <HelmetProvider>
@@ -24,22 +36,16 @@ export default function DevlineSite() {
         <Suspense fallback={<PageLoader />}>
           <Routes>
             <Route element={<Layout />}>
-              <Route path="/" element={<Home />} />
-              <Route path="/services" element={<Services />} />
-              {SERVICE_PAGES.map(({ slug, Component }) => (
-                <Route key={slug} path={`/services/${slug}`} element={<Component />} />
-              ))}
-              <Route path="/mobile" element={<Mobile />} />
-              <Route path="/company" element={<Company />} />
-              <Route path="/our-projects" element={<OurProjects />} />
-              <Route path="/contact" element={<Contact />} />
+              {LANGS.flatMap((lang) =>
+                ROUTE_DEFS.map(({ path, Component }) => (
+                  <Route key={`${lang}:${path}`} path={localizePath(path, lang)} element={<Component />} />
+                ))
+              )}
               <Route path="*" element={<NotFound />} />
             </Route>
           </Routes>
         </Suspense>
       </BrowserRouter>
-      <Analytics />
-      <SpeedInsights />
     </HelmetProvider>
   );
 }

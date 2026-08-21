@@ -1,5 +1,59 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+
+# AI crawlers and answer-engine retrievers are named explicitly. The wildcard
+# above already permits them, but several of these bots resolve the most
+# specific matching group only — naming them removes any ambiguity about
+# whether the site is available for training, retrieval, and citation.
+# Devline.digital wants to be cited, so every one of these is allowed.
+
+# OpenAI — GPTBot trains, OAI-SearchBot indexes for ChatGPT Search,
+# ChatGPT-User fetches a page live when a user asks about it.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+# Google — Google-Extended governs Gemini and AI Overviews grounding
+# separately from ordinary Googlebot crawling.
+User-agent: Google-Extended
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Microsoft Copilot
+User-agent: BingBot
+Allow: /
+
+# Common Crawl — the corpus behind a large share of open LLM training sets.
+User-agent: CCBot
+Allow: /
+
+# Meta and Apple
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
 
 Sitemap: https://devline.digital/sitemap.xml

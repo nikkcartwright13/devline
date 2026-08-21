@@ -1,8 +1,9 @@
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import Link from "../ui/LocalizedLink";
 import { T, GRAD, mono, display } from "../../theme";
 import Reveal from "../ui/Reveal";
 import Icon from "../ui/Icon";
+import { upperLabel } from "../../lib/text";
 
 export default function ServiceCategorySection({ category }) {
   const { t } = useTranslation();
@@ -16,7 +17,7 @@ export default function ServiceCategorySection({ category }) {
             <Icon name={category.icon} size={21} />
           </span>
           <div>
-            <p style={{ ...mono, fontSize: 12, letterSpacing: ".1em", color: T.blue }}>{title.toUpperCase()}</p>
+            <p style={{ ...mono, fontSize: 12, letterSpacing: ".1em", color: T.blue }}>{upperLabel(title)}</p>
             <h2 style={{ ...display, fontWeight: 700, fontSize: "clamp(22px,3vw,30px)", marginTop: 2 }}>{title}</h2>
           </div>
         </div>

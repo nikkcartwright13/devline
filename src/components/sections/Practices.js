@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import Link from "../ui/LocalizedLink";
 import { T, GRAD, mono, display } from "../../theme";
 import { PRACTICES } from "../../data/practices";
 import Reveal from "../ui/Reveal";
@@ -35,7 +35,7 @@ export default function Practices() {
               <h3 style={{ ...display, fontWeight: 700, fontSize: 18, margin: "0 0 8px" }}>{t("practices.cta.title")}</h3>
               <p style={{ fontSize: 14, lineHeight: 1.6, opacity: 0.92, margin: 0 }}>{t("practices.cta.text")}</p>
             </div>
-            <Link to="/contact" className="dl-btn" style={{ marginTop: 18, display: "inline-block", fontSize: 14, fontWeight: 600, background: "#fff", color: "#101A33", padding: "11px 20px", borderRadius: 999, textDecoration: "none", width: "fit-content" }}>
+            <Link to="/contact" className="dl-btn" style={{ marginTop: 18, display: "inline-block", fontSize: 12.5, fontWeight: 600, background: "#fff", color: "#101A33", padding: "10px 14px", borderRadius: 999, textDecoration: "none", width: "fit-content", whiteSpace: "nowrap" }}>
               {t("practices.cta.button")}
             </Link>
           </div>

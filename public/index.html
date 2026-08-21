@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ka">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -13,17 +13,26 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
     <!--
-      Static fallback for crawlers that don't execute JavaScript (most social-share
-      link-unfurlers, some search engines). React Helmet (see src/components/Seo.js)
-      overwrites these per-route for everyone else once the app renders.
+      Static fallback for crawlers that don't execute JavaScript — mainly
+      social-share link-unfurlers (Slack, Facebook, X, WhatsApp, Discord),
+      which read straight from this HTML and never run React Helmet
+      (src/components/Seo.js). Real search crawlers (Googlebot, Bingbot) do
+      execute JS, so they get Helmet's per-page values instead.
+
+      IMPORTANT: title/description/canonical are intentionally NOT duplicated
+      here. React 19's built-in head-tag hoisting (which Helmet uses on
+      React 19) only dedupes tags React itself rendered — it can't see or
+      remove plain static tags from this file, so a static <link
+      rel="canonical"> or <meta name="description"> here would sit next to
+      Helmet's per-page one forever, sending Google two conflicting values.
+      OG/Twitter tags are safe to keep static: non-JS bots only ever see
+      these (harmless if a JS crawler also sees Helmet's copy alongside).
     -->
     <title>Devline.digital — Software Studio</title>
-    <meta name="description" content="Devline.digital — a European software studio serving clients worldwide: web and mobile apps, Jira/JSM setup, design, and marketing." />
-    <link rel="canonical" href="https://devline.digital/" />
     <meta property="og:site_name" content="Devline.digital" />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale" content="ka_GE" />
     <meta property="og:title" content="Devline.digital — Software Studio" />
-    <meta property="og:description" content="Devline.digital — a European software studio serving clients worldwide: web and mobile apps, Jira/JSM setup, design, and marketing." />
+    <meta property="og:description" content="Devline.digital — ევროპული დეველოპერული სტუდია, რომელიც მსოფლიო ბაზარზეა ორიენტირებული: ვებ და მობილური აპლიკაციები, Jira/JSM გამართვა, დიზაინი და მარკეტინგი." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://devline.digital/" />
     <meta property="og:image" content="https://devline.digital/og-image.jpg" />
@@ -33,7 +42,7 @@
     <meta property="og:image:alt" content="Devline.digital — software studio for web, mobile and Atlassian" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Devline.digital — Software Studio" />
-    <meta name="twitter:description" content="Devline.digital — a European software studio serving clients worldwide: web and mobile apps, Jira/JSM setup, design, and marketing." />
+    <meta name="twitter:description" content="Devline.digital — ევროპული დეველოპერული სტუდია, რომელიც მსოფლიო ბაზარზეა ორიენტირებული: ვებ და მობილური აპლიკაციები, Jira/JSM გამართვა, დიზაინი და მარკეტინგი." />
     <meta name="twitter:image" content="https://devline.digital/og-image.jpg" />
     <script type="application/ld+json">
       {

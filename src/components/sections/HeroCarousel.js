@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import Link from "../ui/LocalizedLink";
 import { T, DARK, GRAD, mono, display, gradientText } from "../../theme";
 import { HERO_HREFS } from "../../data/hero";
 import useCarousel from "../../hooks/useCarousel";
@@ -46,7 +46,7 @@ export default function HeroCarousel() {
                 <span style={{ ...mono, fontSize: 13, letterSpacing: ".12em", color: "#A5B8E8", border: "1px solid rgba(255,255,255,.18)", borderRadius: 999, padding: "7px 16px", display: "inline-block" }}>
                   {s.eyebrow}
                 </span>
-                <h1 style={{ ...display, fontWeight: 700, fontSize: "clamp(26px,6vw,40px)", lineHeight: 1.1, marginTop: 26 }}>
+                <h1 style={{ ...display, fontWeight: 700, fontSize: "clamp(22px,4.4vw,32px)", lineHeight: 1.2, marginTop: 26 }}>
                   {s.title}
                 </h1>
                 <p style={{ fontSize: 18, color: "#B9C6E6", maxWidth: 560, marginTop: 22, lineHeight: 1.75 }}>

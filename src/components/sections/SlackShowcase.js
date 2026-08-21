@@ -5,6 +5,7 @@ import Orb from "../ui/Orb";
 import Tilt3D from "../ui/Tilt3D";
 import SlackMockup from "../ui/SlackMockup";
 import Icon from "../ui/Icon";
+import { upperLabel } from "../../lib/text";
 
 const STACK = ["Slack", "Slack Workflow Builder", "Zapier", "Jira"];
 
@@ -40,7 +41,7 @@ export default function SlackShowcase() {
 
           <div style={{ marginTop: 28 }}>
             <p style={{ ...mono, fontSize: 11.5, letterSpacing: ".1em", color: "#93A5CE" }}>
-              {t("slack.builtWith").toUpperCase()}
+              {upperLabel(t("slack.builtWith"))}
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginTop: 10 }}>
               {STACK.map((tech) => (

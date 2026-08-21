@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import Link from "../ui/LocalizedLink";
 import Seo from "../Seo";
 import CTA from "./CTA";
 import FAQ from "./FAQ";
@@ -7,6 +7,7 @@ import Reveal from "../ui/Reveal";
 import Icon from "../ui/Icon";
 import { T, GRAD, mono, display } from "../../theme";
 import { SERVICE_CATEGORIES } from "../../data/services";
+import { upperLabel } from "../../lib/text";
 
 export default function ServiceDetailTemplate({ slug, children }) {
   const { t } = useTranslation();
@@ -17,6 +18,10 @@ export default function ServiceDetailTemplate({ slug, children }) {
   const text = t(`services.items.${slug}.text`);
   const features = t(`services.items.${slug}.features`, { returnObjects: true });
   const faqItems = t(`serviceDetail.faq.${slug}`, { returnObjects: true, defaultValue: [] });
+  // Dedicated, longer-form SEO copy — falls back to the short display title/text
+  // (used in nav/cards) for any service that doesn't have one yet.
+  const seoTitle = t(`services.items.${slug}.seoTitle`, { defaultValue: "", fallbackLng: false }) || title;
+  const seoDescription = t(`services.items.${slug}.seoDescription`, { defaultValue: "", fallbackLng: false }) || text;
 
   const jsonLd = [
     {
@@ -41,14 +46,14 @@ export default function ServiceDetailTemplate({ slug, children }) {
 
   return (
     <>
-      <Seo title={title} description={text} jsonLd={jsonLd} />
+      <Seo title={seoTitle} description={seoDescription} jsonLd={jsonLd} />
 
       {children}
 
       <section className="max-w-6xl mx-auto px-5 py-16 md:py-20">
         <Reveal>
           <p style={{ ...mono, fontSize: 13, letterSpacing: ".1em", color: T.blue }}>
-            {t("serviceDetail.whatsIncluded").toUpperCase()}
+            {upperLabel(t("serviceDetail.whatsIncluded"))}
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-8">
             {features.map((f, i) => (
@@ -74,7 +79,7 @@ export default function ServiceDetailTemplate({ slug, children }) {
           <Reveal delay={100}>
             <div style={{ marginTop: 64 }}>
               <p style={{ ...mono, fontSize: 13, letterSpacing: ".1em", color: T.blue }}>
-                {t("serviceDetail.related").toUpperCase()}
+                {upperLabel(t("serviceDetail.related"))}
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-8">
                 {related.map((s) => (

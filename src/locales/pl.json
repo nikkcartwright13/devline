@@ -352,7 +352,8 @@
       "Jeden kod — iOS + Android",
       "Natywna wydajność i animacje",
       "Firebase, powiadomienia push, analityka",
-      "Automatyczne buildy z CI/CD i publikacja w sklepach"
+      "Automatyczne buildy z CI/CD i publikacja w sklepach",
+      "Płatności kartą i raty — TBC, BOG, BSB, Stripe, PayPal"
     ],
     "cta": "Zamów aplikację →",
     "page": {
@@ -380,6 +381,37 @@
           "time": "16:45"
         }
       ]
+    }
+  },
+  "mobileAppTypes": {
+    "eyebrow": "TYPY APLIKACJI",
+    "title": "Aplikacje mobilne o dowolnym poziomie złożoności",
+    "text": "Od prostej aplikacji informacyjnej po pełną platformę SaaS — tworzymy rozwiązania wieloplatformowe (Flutter) dopasowane do potrzeb Twojego biznesu.",
+    "items": {
+      "business": {
+        "title": "Aplikacje biznesowe i usługowe",
+        "text": "Mobilna wizytówka Twojej firmy lub usługi — katalog produktów/usług, powiadomienia push i bezpośrednia komunikacja z klientami."
+      },
+      "ecommerce": {
+        "title": "Aplikacje e-commerce",
+        "text": "Katalog produktów, zintegrowany koszyk, płatności kartą i raty — pełny sklep internetowy w kieszeni klienta."
+      },
+      "booking": {
+        "title": "Systemy rezerwacji i bookingu",
+        "text": "Dla salonów kosmetycznych, klinik, hoteli i firm turystycznych — zautomatyzowana rezerwacja online, kalendarz i przypomnienia."
+      },
+      "delivery": {
+        "title": "Aplikacje dostawcze i logistyczne",
+        "text": "Śledzenie kuriera GPS w czasie rzeczywistym, panel zarządzania zamówieniami oraz osobne aplikacje dla kierowców i klientów."
+      },
+      "saas": {
+        "title": "SaaS i wewnętrzne narzędzia biznesowe",
+        "text": "Systemy zarządzania pracownikami, magazynem lub pracą terenową — pełna integracja z istniejącym CRM i ERP."
+      },
+      "ai": {
+        "title": "Aplikacje z integracją AI",
+        "text": "Chatboty AI, spersonalizowane rekomendacje i automatyzacja procesów wbudowane bezpośrednio w Twojej aplikacji mobilnej."
+      }
     }
   },
   "web": {
@@ -758,6 +790,12 @@
     "text": "Używamy plików cookie, aby zrozumieć, jak odwiedzający korzystają z tej strony. Żadne dane nie są zbierane, dopóki nie wyrazisz zgody.",
     "accept": "Akceptuj",
     "decline": "Odrzuć"
+  },
+  "langBanner": {
+    "suggestKa": "Ta strona jest również dostępna w języku gruzińskim.",
+    "suggestEn": "Ta strona jest również dostępna w języku angielskim.",
+    "switch": "Przełącz",
+    "dismiss": "Zamknij"
   },
   "contact": {
     "seo": {

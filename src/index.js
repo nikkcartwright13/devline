@@ -4,8 +4,14 @@ import './index.css';
 import Main from './Main';
 import reportWebVitals from './reportWebVitals';
 import { initThemeMode } from './lib/themeMode';
+import i18n from './i18n';
+import { langFromPathname } from './lib/langRouting';
 
 initThemeMode();
+
+// Set the language from the URL before the first render so the initial
+// paint (what crawlers and users both see) is never wrong for a beat.
+i18n.changeLanguage(langFromPathname(window.location.pathname));
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

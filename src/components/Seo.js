@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
+import { LANGS, langFromPathname, localizePath, stripLangPrefix } from "../lib/langRouting";
 
 const SITE_URL = "https://devline.digital";
 
@@ -18,13 +19,14 @@ const ORGANIZATION_JSON_LD = {
 };
 
 export default function Seo({ title, description, jsonLd, noindex }) {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const { pathname } = useLocation();
   const siteName = t("meta.siteName");
   const desc = description || t("meta.defaultDescription");
   const fullTitle = title ? `${title} — ${siteName}` : `${siteName} — ${t("meta.defaultTitleSuffix")}`;
-  const lang = i18n.resolvedLanguage || i18n.language || "ka";
-  const canonical = `${SITE_URL}${pathname}`;
+  const lang = langFromPathname(pathname);
+  const barePath = stripLangPrefix(pathname);
+  const canonical = `${SITE_URL}${localizePath(barePath, lang)}`;
   const ogImage = `${SITE_URL}/og-image.jpg`;
   const extraSchemas = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
 
@@ -34,6 +36,10 @@ export default function Seo({ title, description, jsonLd, noindex }) {
       <meta name="description" content={desc} />
       {noindex && <meta name="robots" content="noindex, nofollow" />}
       <link rel="canonical" href={canonical} />
+      {!noindex && LANGS.map((l) => (
+        <link key={l} rel="alternate" hrefLang={l} href={`${SITE_URL}${localizePath(barePath, l)}`} />
+      ))}
+      {!noindex && <link rel="alternate" hrefLang="x-default" href={`${SITE_URL}${localizePath(barePath, "ka")}`} />}
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={desc} />
       <meta property="og:site_name" content={siteName} />

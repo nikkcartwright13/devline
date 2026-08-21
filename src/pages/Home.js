@@ -10,6 +10,7 @@ import JiraShowcase from "../components/sections/JiraShowcase";
 import DesignShowcase from "../components/sections/DesignShowcase";
 import MarketingShowcase from "../components/sections/MarketingShowcase";
 import StatsImpact from "../components/sections/StatsImpact";
+import WhyUs from "../components/sections/WhyUs";
 import About from "../components/sections/About";
 import CTA from "../components/sections/CTA";
 
@@ -17,7 +18,10 @@ export default function Home() {
   const { t } = useTranslation();
   return (
     <>
-      <Seo description={t("home.seo.description")} />
+      <Seo
+        title={t("home.seo.title", { defaultValue: "", fallbackLng: false }) || undefined}
+        description={t("home.seo.description")}
+      />
       <HeroCarousel />
       <TechMarquee />
       <Services viewAllHref="/services" />
@@ -28,6 +32,7 @@ export default function Home() {
         <MarketingShowcase grouped />
       </DarkShowcaseGroup>
       <StatsImpact />
+      <WhyUs />
       <About />
       <CTA />
     </>

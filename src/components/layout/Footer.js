@@ -1,9 +1,10 @@
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import Link from "../ui/LocalizedLink";
 import { T, GRAD, display, mono } from "../../theme";
 import { SERVICE_CATEGORIES } from "../../data/services";
 import { COMPANY_DROPDOWN } from "../../data/nav";
 import logo from "../../assets/logo/optimized/title_logo.png";
+import { upperLabel } from "../../lib/text";
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -36,7 +37,7 @@ export default function Footer() {
           </div>
           {footerColumns.map((col) => (
             <div key={col.title}>
-              <div style={{ ...mono, fontSize: 12, letterSpacing: ".08em", color: T.muted, marginBottom: 14 }}>{col.title.toUpperCase()}</div>
+              <div style={{ ...mono, fontSize: 12, letterSpacing: ".08em", color: T.muted, marginBottom: 14 }}>{upperLabel(col.title)}</div>
               <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                 {col.links.map(([label, href]) => (
                   <Link key={href} to={href} className="dl-navlink" style={{ fontSize: 13.5, color: T.ink, textDecoration: "none" }}>{label}</Link>

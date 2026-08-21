@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { useTranslation } from "react-i18next";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import Link from "../ui/LocalizedLink";
 import { T, GRAD, display } from "../../theme";
 import { SERVICE_CATEGORIES } from "../../data/services";
 import { COMPANY_DROPDOWN } from "../../data/nav";
@@ -17,23 +18,31 @@ function DropdownPanel({ items }) {
       className="dl-fade-in"
       style={{
         position: "absolute", top: "calc(100% + 10px)", left: "50%", transform: "translateX(-50%)",
-        width: 340, background: T.panel, border: `1px solid ${T.border}`, borderRadius: 16,
-        boxShadow: "0 20px 50px rgba(16,26,51,.14)", padding: 10, zIndex: 60,
+        width: 320, maxHeight: "calc(100vh - 140px)", overflowY: "auto",
+        background: T.panel, border: `1px solid ${T.border}`, borderRadius: 16,
+        boxShadow: "0 20px 50px rgba(16,26,51,.14)", padding: 8, zIndex: 60,
       }}
     >
       {items.map((it) => (
         <Link
           key={it.href}
           to={it.href}
-          style={{ display: "flex", gap: 12, alignItems: "flex-start", padding: "10px 12px", borderRadius: 10, textDecoration: "none" }}
+          style={{ display: "flex", gap: 10, alignItems: "flex-start", padding: "8px 10px", borderRadius: 10, textDecoration: "none" }}
           className="dl-navlink"
         >
-          <span aria-hidden style={{ width: 34, height: 34, borderRadius: 10, flexShrink: 0, display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", background: GRAD }}>
-            <Icon name={it.icon} size={17} />
+          <span aria-hidden style={{ width: 28, height: 28, borderRadius: 9, flexShrink: 0, display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", background: GRAD }}>
+            <Icon name={it.icon} size={14} />
           </span>
-          <span>
-            <span style={{ ...display, fontWeight: 600, fontSize: 14, color: T.ink, display: "block" }}>{it.label}</span>
-            <span style={{ fontSize: 12.5, color: T.muted }}>{it.text}</span>
+          <span style={{ minWidth: 0 }}>
+            <span style={{ ...display, fontWeight: 600, fontSize: 13, color: T.ink, display: "block" }}>{it.label}</span>
+            <span
+              style={{
+                fontSize: 11.5, color: T.muted, display: "-webkit-box", WebkitLineClamp: 2,
+                WebkitBoxOrient: "vertical", overflow: "hidden", lineHeight: 1.4, marginTop: 1,
+              }}
+            >
+              {it.text}
+            </span>
           </span>
         </Link>
       ))}
@@ -109,7 +118,7 @@ export default function Header() {
     <header className="sticky z-50 px-5" style={{ top: HEADER_GAP }}>
       <nav
         ref={(el) => { navRef.current = el; pillRef.current = el; }}
-        className="max-w-6xl mx-auto flex items-center justify-between"
+        className="max-w-7xl mx-auto flex items-center justify-between"
         style={{
           background: "var(--dl-header-bg)",
           backdropFilter: "blur(10px)",
@@ -143,13 +152,13 @@ export default function Header() {
                 <button
                   onClick={() => setOpenDropdown(openDropdown === item.href ? null : item.href)}
                   className="dl-navlink"
-                  style={{ background: "none", border: "none", cursor: "pointer", fontSize: 13.5, fontWeight: 500, color: openDropdown === item.href ? T.ink : T.muted, padding: "10px 11px", display: "flex", alignItems: "center", gap: 5, whiteSpace: "nowrap" }}
+                  style={{ background: "none", border: "none", cursor: "pointer", fontSize: 12.5, fontWeight: 500, color: openDropdown === item.href ? T.ink : T.muted, padding: "10px 8px", display: "flex", alignItems: "center", gap: 4, whiteSpace: "nowrap" }}
                 >
                   {item.label}
                   <Icon name="ChevronDown" size={14} style={{ transform: openDropdown === item.href ? "rotate(180deg)" : "none", transition: "transform .2s ease" }} />
                 </button>
               ) : (
-                <Link to={item.href} className="dl-navlink" style={{ fontSize: 13.5, fontWeight: 500, color: T.muted, textDecoration: "none", padding: "10px 11px", display: "inline-block", whiteSpace: "nowrap" }}>
+                <Link to={item.href} className="dl-navlink" style={{ fontSize: 12.5, fontWeight: 500, color: T.muted, textDecoration: "none", padding: "10px 8px", display: "inline-block", whiteSpace: "nowrap" }}>
                   {item.label}
                 </Link>
               )}
@@ -158,10 +167,10 @@ export default function Header() {
           ))}
         </div>
 
-        <div className="hidden lg:flex items-center gap-3">
+        <div className="hidden lg:flex items-center gap-2">
           <ThemeToggle />
           <LanguageSwitcher />
-          <Link to="/contact" className="dl-btn" style={{ fontSize: 14, fontWeight: 600, background: GRAD, color: "#fff", padding: "10px 20px", borderRadius: 999, textDecoration: "none", whiteSpace: "nowrap" }}>
+          <Link to="/contact" className="dl-btn" style={{ fontSize: 13, fontWeight: 600, background: GRAD, color: "#fff", padding: "9px 16px", borderRadius: 999, textDecoration: "none", whiteSpace: "nowrap" }}>
             {t("header.contactUs")}
           </Link>
         </div>

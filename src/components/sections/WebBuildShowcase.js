@@ -5,6 +5,7 @@ import Orb from "../ui/Orb";
 import Tilt3D from "../ui/Tilt3D";
 import WebBuildMockup from "../ui/WebBuildMockup";
 import Icon from "../ui/Icon";
+import { upperLabel } from "../../lib/text";
 
 const REACT_STACK = ["React", "Next.js", "Node.js"];
 const WORDPRESS_STACK = ["WordPress", "PHP", "WooCommerce"];
@@ -12,7 +13,7 @@ const WORDPRESS_STACK = ["WordPress", "PHP", "WooCommerce"];
 function StackGroup({ label, stack }) {
   return (
     <div>
-      <p style={{ ...mono, fontSize: 11.5, letterSpacing: ".1em", color: "#93A5CE" }}>{label.toUpperCase()}</p>
+      <p style={{ ...mono, fontSize: 11.5, letterSpacing: ".1em", color: "#93A5CE" }}>{upperLabel(label)}</p>
       <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginTop: 10 }}>
         {stack.map((tech) => (
           <span key={tech} style={{ ...mono, fontSize: 12, color: "#DDE5F8", background: "rgba(255,255,255,.08)", border: "1px solid rgba(255,255,255,.18)", borderRadius: 999, padding: "5px 13px" }}>

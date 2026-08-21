@@ -5,6 +5,7 @@ import Orb from "../ui/Orb";
 import Tilt3D from "../ui/Tilt3D";
 import PremiereMockup from "../ui/PremiereMockup";
 import Icon from "../ui/Icon";
+import { upperLabel } from "../../lib/text";
 
 const STACK = ["Adobe Premiere Pro", "Adobe After Effects"];
 
@@ -40,7 +41,7 @@ export default function PremiereShowcase() {
 
           <div style={{ marginTop: 28 }}>
             <p style={{ ...mono, fontSize: 11.5, letterSpacing: ".1em", color: "#93A5CE" }}>
-              {t("premiere.builtWith").toUpperCase()}
+              {upperLabel(t("premiere.builtWith"))}
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginTop: 10 }}>
               {STACK.map((tech) => (

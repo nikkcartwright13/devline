@@ -1,25 +1,971 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://devline.digital/</loc><lastmod>2026-07-28</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://devline.digital/services</loc><lastmod>2026-07-28</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://devline.digital/services/web</loc><lastmod>2026-07-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://devline.digital/services/mobile</loc><lastmod>2026-07-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://devline.digital/services/devops</loc><lastmod>2026-07-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://devline.digital/services/infra</loc><lastmod>2026-07-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://devline.digital/services/analytics</loc><lastmod>2026-07-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://devline.digital/services/support</loc><lastmod>2026-07-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://devline.digital/services/clickup</loc><lastmod>2026-07-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://devline.digital/services/jsmPortal</loc><lastmod>2026-07-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://devline.digital/services/jira</loc><lastmod>2026-07-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://devline.digital/services/slack</loc><lastmod>2026-07-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://devline.digital/services/figma</loc><lastmod>2026-07-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://devline.digital/services/photoshop</loc><lastmod>2026-07-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://devline.digital/services/illustrator</loc><lastmod>2026-07-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://devline.digital/services/premiere</loc><lastmod>2026-07-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://devline.digital/services/metaMarketing</loc><lastmod>2026-07-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://devline.digital/services/seo</loc><lastmod>2026-07-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://devline.digital/mobile</loc><lastmod>2026-07-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://devline.digital/company</loc><lastmod>2026-07-28</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://devline.digital/our-projects</loc><lastmod>2026-07-28</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://devline.digital/contact</loc><lastmod>2026-07-28</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://devline.digital/</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/en</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/de</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/pl</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/services</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/en/services</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/de/services</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/pl/services</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/services/web</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/web"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/web"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/web"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/web"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/web"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/en/services/web</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/web"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/web"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/web"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/web"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/web"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/de/services/web</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/web"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/web"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/web"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/web"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/web"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/pl/services/web</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/web"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/web"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/web"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/web"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/web"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/services/mobile</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/mobile"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/mobile"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/mobile"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/mobile"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/mobile"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/en/services/mobile</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/mobile"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/mobile"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/mobile"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/mobile"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/mobile"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/de/services/mobile</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/mobile"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/mobile"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/mobile"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/mobile"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/mobile"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/pl/services/mobile</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/mobile"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/mobile"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/mobile"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/mobile"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/mobile"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/services/devops</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/devops"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/devops"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/devops"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/devops"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/devops"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/en/services/devops</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/devops"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/devops"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/devops"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/devops"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/devops"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/de/services/devops</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/devops"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/devops"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/devops"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/devops"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/devops"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/pl/services/devops</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/devops"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/devops"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/devops"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/devops"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/devops"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/services/infra</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/infra"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/infra"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/infra"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/infra"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/infra"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/en/services/infra</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/infra"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/infra"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/infra"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/infra"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/infra"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/de/services/infra</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/infra"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/infra"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/infra"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/infra"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/infra"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/pl/services/infra</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/infra"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/infra"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/infra"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/infra"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/infra"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/services/analytics</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/analytics"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/analytics"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/analytics"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/analytics"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/analytics"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/en/services/analytics</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/analytics"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/analytics"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/analytics"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/analytics"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/analytics"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/de/services/analytics</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/analytics"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/analytics"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/analytics"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/analytics"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/analytics"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/pl/services/analytics</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/analytics"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/analytics"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/analytics"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/analytics"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/analytics"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/services/support</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/support"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/support"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/support"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/en/services/support</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/support"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/support"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/support"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/de/services/support</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/support"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/support"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/support"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/pl/services/support</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/support"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/support"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/support"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/support"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/support"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/services/clickup</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/clickup"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/clickup"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/clickup"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/clickup"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/clickup"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/en/services/clickup</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/clickup"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/clickup"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/clickup"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/clickup"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/clickup"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/de/services/clickup</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/clickup"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/clickup"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/clickup"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/clickup"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/clickup"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/pl/services/clickup</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/clickup"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/clickup"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/clickup"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/clickup"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/clickup"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/services/jsmPortal</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/jsmPortal"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/jsmPortal"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/jsmPortal"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/jsmPortal"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/jsmPortal"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/en/services/jsmPortal</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/jsmPortal"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/jsmPortal"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/jsmPortal"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/jsmPortal"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/jsmPortal"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/de/services/jsmPortal</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/jsmPortal"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/jsmPortal"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/jsmPortal"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/jsmPortal"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/jsmPortal"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/pl/services/jsmPortal</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/jsmPortal"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/jsmPortal"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/jsmPortal"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/jsmPortal"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/jsmPortal"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/services/jira</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/jira"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/jira"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/jira"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/jira"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/jira"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/en/services/jira</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/jira"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/jira"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/jira"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/jira"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/jira"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/de/services/jira</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/jira"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/jira"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/jira"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/jira"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/jira"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/pl/services/jira</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/jira"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/jira"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/jira"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/jira"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/jira"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/services/slack</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/slack"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/slack"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/slack"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/slack"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/slack"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/en/services/slack</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/slack"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/slack"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/slack"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/slack"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/slack"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/de/services/slack</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/slack"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/slack"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/slack"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/slack"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/slack"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/pl/services/slack</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/slack"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/slack"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/slack"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/slack"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/slack"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/services/figma</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/figma"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/figma"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/figma"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/figma"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/figma"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/en/services/figma</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/figma"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/figma"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/figma"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/figma"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/figma"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/de/services/figma</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/figma"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/figma"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/figma"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/figma"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/figma"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/pl/services/figma</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/figma"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/figma"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/figma"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/figma"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/figma"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/services/photoshop</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/photoshop"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/photoshop"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/photoshop"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/photoshop"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/photoshop"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/en/services/photoshop</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/photoshop"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/photoshop"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/photoshop"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/photoshop"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/photoshop"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/de/services/photoshop</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/photoshop"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/photoshop"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/photoshop"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/photoshop"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/photoshop"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/pl/services/photoshop</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/photoshop"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/photoshop"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/photoshop"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/photoshop"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/photoshop"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/services/illustrator</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/illustrator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/illustrator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/illustrator"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/illustrator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/illustrator"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/en/services/illustrator</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/illustrator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/illustrator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/illustrator"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/illustrator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/illustrator"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/de/services/illustrator</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/illustrator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/illustrator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/illustrator"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/illustrator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/illustrator"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/pl/services/illustrator</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/illustrator"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/illustrator"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/illustrator"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/illustrator"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/illustrator"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/services/premiere</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/premiere"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/premiere"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/premiere"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/premiere"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/premiere"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/en/services/premiere</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/premiere"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/premiere"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/premiere"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/premiere"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/premiere"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/de/services/premiere</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/premiere"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/premiere"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/premiere"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/premiere"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/premiere"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/pl/services/premiere</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/premiere"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/premiere"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/premiere"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/premiere"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/premiere"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/services/metaMarketing</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/metaMarketing"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/metaMarketing"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/metaMarketing"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/metaMarketing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/metaMarketing"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/en/services/metaMarketing</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/metaMarketing"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/metaMarketing"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/metaMarketing"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/metaMarketing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/metaMarketing"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/de/services/metaMarketing</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/metaMarketing"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/metaMarketing"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/metaMarketing"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/metaMarketing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/metaMarketing"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/pl/services/metaMarketing</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/metaMarketing"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/metaMarketing"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/metaMarketing"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/metaMarketing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/metaMarketing"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/services/seo</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/seo"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/seo"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/seo"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/seo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/seo"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/en/services/seo</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/seo"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/seo"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/seo"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/seo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/seo"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/de/services/seo</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/seo"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/seo"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/seo"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/seo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/seo"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/pl/services/seo</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/services/seo"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/services/seo"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/services/seo"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/services/seo"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/services/seo"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/mobile</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/mobile"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/mobile"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/mobile"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/mobile"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/mobile"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/en/mobile</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/mobile"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/mobile"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/mobile"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/mobile"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/mobile"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/de/mobile</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/mobile"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/mobile"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/mobile"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/mobile"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/mobile"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/pl/mobile</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/mobile"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/mobile"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/mobile"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/mobile"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/mobile"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/company</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/company"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/company"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/company"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/company"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/company"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/en/company</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/company"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/company"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/company"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/company"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/company"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/de/company</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/company"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/company"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/company"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/company"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/company"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/pl/company</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/company"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/company"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/company"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/company"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/company"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/our-projects</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/our-projects"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/our-projects"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/our-projects"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/our-projects"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/our-projects"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/en/our-projects</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/our-projects"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/our-projects"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/our-projects"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/our-projects"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/our-projects"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/de/our-projects</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/our-projects"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/our-projects"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/our-projects"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/our-projects"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/our-projects"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/pl/our-projects</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/our-projects"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/our-projects"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/our-projects"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/our-projects"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/our-projects"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/contact</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/contact"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/contact"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/contact"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/contact"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/de/contact</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/contact"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/contact"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://devline.digital/pl/contact</loc>
+    <xhtml:link rel="alternate" hreflang="ka" href="https://devline.digital/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://devline.digital/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://devline.digital/de/contact"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://devline.digital/pl/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://devline.digital/contact"/>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import Link from "../ui/LocalizedLink";
 import { T, GRAD, mono, display } from "../../theme";
 import Reveal from "../ui/Reveal";
 import Tilt3D from "../ui/Tilt3D";

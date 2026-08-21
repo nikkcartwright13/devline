@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import { useTranslation } from "react-i18next";
+import { useLocation, useNavigate } from "react-router-dom";
 import { T } from "../../theme";
+import { langFromPathname, localizePath, stripLangPrefix } from "../../lib/langRouting";
 import Icon from "./Icon";
 
 const LANGS = [
@@ -12,11 +13,18 @@ const LANGS = [
 ];
 
 export default function LanguageSwitcher({ style = {} }) {
-  const { i18n } = useTranslation();
   const [open, setOpen] = useState(false);
   const ref = useRef(null);
-  const current = i18n.resolvedLanguage || i18n.language || "ka";
-  const currentLang = LANGS.find((l) => current.startsWith(l.code)) || LANGS[0];
+  const location = useLocation();
+  const navigate = useNavigate();
+  const current = langFromPathname(location.pathname);
+  const currentLang = LANGS.find((l) => l.code === current) || LANGS[0];
+
+  const switchTo = (code) => {
+    const target = localizePath(stripLangPrefix(location.pathname), code) + location.search + location.hash;
+    navigate(target);
+    setOpen(false);
+  };
 
   useEffect(() => {
     function onClick(e) {
@@ -33,8 +41,8 @@ export default function LanguageSwitcher({ style = {} }) {
         className="dl-navlink"
         style={{
           background: "none", border: `1px solid ${T.border}`, borderRadius: 999, cursor: "pointer",
-          fontSize: 13, fontWeight: 600, color: T.ink, padding: "8px 14px",
-          display: "flex", alignItems: "center", gap: 6, whiteSpace: "nowrap",
+          fontSize: 12.5, fontWeight: 600, color: T.ink, padding: "8px 11px",
+          display: "flex", alignItems: "center", gap: 5, whiteSpace: "nowrap",
         }}
       >
         {currentLang.code.toUpperCase()}
@@ -51,11 +59,11 @@ export default function LanguageSwitcher({ style = {} }) {
           }}
         >
           {LANGS.map((l) => {
-            const active = current.startsWith(l.code);
+            const active = current === l.code;
             return (
               <button
                 key={l.code}
-                onClick={() => { i18n.changeLanguage(l.code); setOpen(false); }}
+                onClick={() => switchTo(l.code)}
                 style={{
                   width: "100%", textAlign: "left", background: active ? T.base : "none", border: "none",
                   borderRadius: 8, padding: "9px 12px", fontSize: 13.5, fontWeight: active ? 700 : 500,
