@@ -6,13 +6,14 @@ import Link from "../ui/LocalizedLink";
 import { T, GRAD, display } from "../../theme";
 import { SERVICE_CATEGORIES } from "../../data/services";
 import { COMPANY_DROPDOWN } from "../../data/nav";
+import { stripLangPrefix } from "../../lib/langRouting";
 import useScrolled from "../../hooks/useScrolled";
 import Icon from "../ui/Icon";
 import LanguageSwitcher from "../ui/LanguageSwitcher";
 import ThemeToggle from "../ui/ThemeToggle";
 import logo from "../../assets/logo/optimized/title_logo.png";
 
-function DropdownPanel({ items }) {
+function DropdownPanel({ items, activeHref }) {
   return (
     <div
       className="dl-fade-in"
@@ -23,29 +24,38 @@ function DropdownPanel({ items }) {
         boxShadow: "0 20px 50px rgba(16,26,51,.14)", padding: 8, zIndex: 60,
       }}
     >
-      {items.map((it) => (
-        <Link
-          key={it.href}
-          to={it.href}
-          style={{ display: "flex", gap: 10, alignItems: "flex-start", padding: "8px 10px", borderRadius: 10, textDecoration: "none" }}
-          className="dl-navlink"
-        >
-          <span aria-hidden style={{ width: 28, height: 28, borderRadius: 9, flexShrink: 0, display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", background: GRAD }}>
-            <Icon name={it.icon} size={14} />
-          </span>
-          <span style={{ minWidth: 0 }}>
-            <span style={{ ...display, fontWeight: 600, fontSize: 13, color: T.ink, display: "block" }}>{it.label}</span>
-            <span
-              style={{
-                fontSize: 11.5, color: T.muted, display: "-webkit-box", WebkitLineClamp: 2,
-                WebkitBoxOrient: "vertical", overflow: "hidden", lineHeight: 1.4, marginTop: 1,
-              }}
-            >
-              {it.text}
+      {items.map((it) => {
+        const active = it.href === activeHref;
+        return (
+          <Link
+            key={it.href}
+            to={it.href}
+            style={{
+              display: "flex", gap: 10, alignItems: "flex-start", padding: "8px 10px", borderRadius: 10,
+              textDecoration: "none", background: active ? T.base : "transparent",
+            }}
+            className="dl-navlink"
+          >
+            <span aria-hidden style={{ width: 28, height: 28, borderRadius: 9, flexShrink: 0, display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", background: GRAD }}>
+              <Icon name={it.icon} size={14} />
             </span>
-          </span>
-        </Link>
-      ))}
+            <span style={{ minWidth: 0, flex: 1 }}>
+              <span style={{ ...display, fontWeight: 600, fontSize: 13, color: T.ink, display: "flex", alignItems: "center", gap: 6 }}>
+                {it.label}
+                {active && <Icon name="Check" size={13} color={T.blue} />}
+              </span>
+              <span
+                style={{
+                  fontSize: 11.5, color: T.muted, display: "-webkit-box", WebkitLineClamp: 2,
+                  WebkitBoxOrient: "vertical", overflow: "hidden", lineHeight: 1.4, marginTop: 1,
+                }}
+              >
+                {it.text}
+              </span>
+            </span>
+          </Link>
+        );
+      })}
     </div>
   );
 }
@@ -63,6 +73,14 @@ export default function Header() {
   const router = useRouter();
   const location = { pathname: router.asPath.split(/[?#]/)[0] };
   const scrolled = useScrolled(10);
+  // router.pathname (matched route pattern, e.g. "/en/services/[slug]"), not
+  // asPath — stays consistent between server and client so "active" styling
+  // can't cause a hydration mismatch the way it did in LanguageSwitcher/Seo.
+  const barePath = stripLangPrefix(router.pathname);
+  const currentSlug = router.query.slug;
+  const activeSubHref = barePath === "/services/[slug]" && currentSlug
+    ? `/services/${currentSlug}`
+    : barePath;
 
   useEffect(() => { setMenuOpen(false); setOpenDropdown(null); setOpenMobileCategory(null); }, [location.pathname]);
 
@@ -93,6 +111,7 @@ export default function Header() {
       label: t(`services.categories.${cat.key}.title`),
       href: `/services#${cat.key}`,
       icon: cat.icon,
+      active: cat.services.some((s) => `/services/${s.slug}` === activeSubHref),
       dropdown: cat.services.length > 1
         ? cat.services.map((s) => ({
             icon: s.icon,
@@ -106,6 +125,7 @@ export default function Header() {
       label: t("header.companyLabel"),
       href: "/company",
       icon: "Building2",
+      active: COMPANY_DROPDOWN.some((it) => it.href === activeSubHref),
       dropdown: COMPANY_DROPDOWN.map((it) => ({
         icon: it.icon,
         label: t(`nav.companyDropdown.${it.key}.label`),
@@ -113,7 +133,7 @@ export default function Header() {
         href: it.href,
       })),
     },
-  ], [t]);
+  ], [t, activeSubHref]);
 
   return (
     <header className="sticky z-50 px-5" style={{ top: HEADER_GAP }}>
@@ -153,17 +173,31 @@ export default function Header() {
                 <button
                   onClick={() => setOpenDropdown(openDropdown === item.href ? null : item.href)}
                   className="dl-navlink"
-                  style={{ background: "none", border: "none", cursor: "pointer", fontSize: 12.5, fontWeight: 500, color: openDropdown === item.href ? T.ink : T.muted, padding: "10px 8px", display: "flex", alignItems: "center", gap: 4, whiteSpace: "nowrap" }}
+                  style={{
+                    background: item.active ? T.base : "none", border: "none", borderRadius: 999, cursor: "pointer",
+                    fontSize: 12.5, fontWeight: item.active ? 700 : 500,
+                    color: openDropdown === item.href || item.active ? T.ink : T.muted,
+                    padding: "10px 12px", display: "flex", alignItems: "center", gap: 4, whiteSpace: "nowrap",
+                  }}
                 >
                   {item.label}
                   <Icon name="ChevronDown" size={14} style={{ transform: openDropdown === item.href ? "rotate(180deg)" : "none", transition: "transform .2s ease" }} />
                 </button>
               ) : (
-                <Link to={item.href} className="dl-navlink" style={{ fontSize: 12.5, fontWeight: 500, color: T.muted, textDecoration: "none", padding: "10px 8px", display: "inline-block", whiteSpace: "nowrap" }}>
+                <Link
+                  to={item.href}
+                  className="dl-navlink"
+                  style={{
+                    fontSize: 12.5, fontWeight: item.active ? 700 : 500,
+                    color: item.active ? T.ink : T.muted, textDecoration: "none",
+                    padding: "10px 12px", borderRadius: 999, display: "inline-block", whiteSpace: "nowrap",
+                    background: item.active ? T.base : "none",
+                  }}
+                >
                   {item.label}
                 </Link>
               )}
-              {item.dropdown && openDropdown === item.href && <DropdownPanel items={item.dropdown} />}
+              {item.dropdown && openDropdown === item.href && <DropdownPanel items={item.dropdown} activeHref={activeSubHref} />}
             </div>
           ))}
         </div>
@@ -210,31 +244,59 @@ export default function Header() {
                   <>
                     <button
                       onClick={() => setOpenMobileCategory(openMobileCategory === item.href ? null : item.href)}
-                      style={{ width: "100%", display: "flex", alignItems: "center", gap: 12, padding: "14px 16px", background: "none", border: "none", fontWeight: 600, fontSize: 15, color: T.ink, textAlign: "left", cursor: "pointer" }}
+                      style={{
+                        width: "100%", display: "flex", alignItems: "center", gap: 12, padding: "14px 16px",
+                        background: item.active ? T.base : "none", border: "none", fontWeight: 600, fontSize: 15,
+                        color: T.ink, textAlign: "left", cursor: "pointer",
+                      }}
                     >
                       <span aria-hidden style={{ width: 34, height: 34, borderRadius: 10, flexShrink: 0, display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", background: GRAD }}>
                         <Icon name={item.icon} size={16} />
                       </span>
-                      <span style={{ flex: 1 }}>{item.label}</span>
+                      <span style={{ flex: 1, display: "flex", alignItems: "center", gap: 8 }}>
+                        {item.label}
+                        {item.active && <Icon name="Check" size={15} color={T.blue} />}
+                      </span>
                       <Icon name="ChevronDown" size={16} color={T.muted} style={{ transform: openMobileCategory === item.href ? "rotate(180deg)" : "none", transition: "transform .2s ease", flexShrink: 0 }} />
                     </button>
                     {openMobileCategory === item.href && (
                       <div className="dl-fade-in" style={{ display: "flex", flexDirection: "column", gap: 2, padding: "0 8px 10px", borderTop: `1px solid ${T.border}`, marginTop: 2, paddingTop: 8 }}>
-                        {item.dropdown.map((it) => (
-                          <Link key={it.href} to={it.href} className="dl-navlink" style={{ display: "flex", alignItems: "center", gap: 10, color: T.muted, textDecoration: "none", fontSize: 13.5, fontWeight: 500, padding: "9px 10px", borderRadius: 10 }}>
-                            <Icon name={it.icon} size={15} style={{ flexShrink: 0 }} />
-                            {it.label}
-                          </Link>
-                        ))}
+                        {item.dropdown.map((it) => {
+                          const subActive = it.href === activeSubHref;
+                          return (
+                            <Link
+                              key={it.href}
+                              to={it.href}
+                              className="dl-navlink"
+                              style={{
+                                display: "flex", alignItems: "center", gap: 10, textDecoration: "none", fontSize: 13.5,
+                                fontWeight: subActive ? 700 : 500, color: subActive ? T.ink : T.muted,
+                                padding: "9px 10px", borderRadius: 10, background: subActive ? T.base : "transparent",
+                              }}
+                            >
+                              <Icon name={it.icon} size={15} style={{ flexShrink: 0 }} />
+                              {it.label}
+                              {subActive && <Icon name="Check" size={13} color={T.blue} style={{ marginLeft: "auto" }} />}
+                            </Link>
+                          );
+                        })}
                       </div>
                     )}
                   </>
                 ) : (
-                  <Link to={item.href} style={{ display: "flex", alignItems: "center", gap: 12, padding: "14px 16px", color: T.ink, textDecoration: "none", fontWeight: 600, fontSize: 15 }}>
+                  <Link
+                    to={item.href}
+                    style={{
+                      display: "flex", alignItems: "center", gap: 12, padding: "14px 16px",
+                      color: T.ink, textDecoration: "none", fontWeight: 600, fontSize: 15,
+                      background: item.active ? T.base : "none",
+                    }}
+                  >
                     <span aria-hidden style={{ width: 34, height: 34, borderRadius: 10, flexShrink: 0, display: "flex", alignItems: "center", justifyContent: "center", color: "#fff", background: GRAD }}>
                       <Icon name={item.icon} size={16} />
                     </span>
                     {item.label}
+                    {item.active && <Icon name="Check" size={15} color={T.blue} style={{ marginLeft: "auto" }} />}
                   </Link>
                 )}
               </div>
