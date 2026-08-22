@@ -2,18 +2,40 @@
 # /en/services/web -> en/services/web.html) — there is no client-side-only
 # routing to fall back to anymore, so this maps clean URLs to those files
 # instead of routing everything through one index.html like the old SPA did.
+
+# Defense in depth: never show a raw file listing if some path ever falls
+# through to a directory with nothing matching inside it (this is what
+# actually happened for "/en/" before the rules below were fixed — the en/
+# directory has no index.html of its own, so Apache showed its contents).
+Options -Indexes
+
+# Apache's own "add a trailing slash and redirect" behavior for directory
+# requests fires independently of the rewrite rules below (confirmed by
+# testing against a real Apache instance, not just a Node static server) and
+# was overriding the intended /en.html response with a 301 to /en/. The
+# rewrite rule already handles both the slash and no-slash cases correctly
+# on its own, so Apache's own redirect just needs to get out of the way.
+DirectorySlash Off
+
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
 
-  # Serve real files and directories (JS/CSS/images/sitemap.xml/etc.) as-is.
+  # Prefer a same-named .html file over a same-named directory. Next.js's
+  # static export can produce both for one route — e.g. "en.html" AND an
+  # "en/" directory holding en/company.html, en/contact.html, etc. Checking
+  # via DOCUMENT_ROOT + REQUEST_URI directly (not REQUEST_FILENAME) sidesteps
+  # Apache pre-resolving the URL against the directory tree first, which is
+  # what made "/en/" fall through to the directory instead of en.html.
+  RewriteCond %{REQUEST_URI} ^/(.+?)/?$
+  RewriteCond %{DOCUMENT_ROOT}/%1.html -f
+  RewriteRule ^ /%1.html [L]
+
+  # Anything else that's a real file or directory (images, css, js,
+  # sitemap.xml, robots.txt, ...): serve as-is.
   RewriteCond %{REQUEST_FILENAME} -f [OR]
   RewriteCond %{REQUEST_FILENAME} -d
   RewriteRule ^ - [L]
-
-  # Clean URL -> matching .html file, trailing slash optional.
-  RewriteCond %{REQUEST_FILENAME}.html -f
-  RewriteRule ^(.*?)/?$ $1.html [L]
 </IfModule>
 
 # A genuinely missing page now returns a real 404 status (not a 200 "soft
