@@ -66,7 +66,12 @@ export default function WebBuildMockup() {
         </div>
       </div>
 
-      <div style={{ position: "relative", minHeight: 236 }}>
+      {/* Fixed (not min) height: the "coding" and "site preview" phases below
+          have different natural content heights (measured ~236px vs ~256px),
+          and a min-height alone let the container grow/shrink as the mockup
+          auto-cycles between them every few seconds, reflowing the whole
+          page underneath it every time. */}
+      <div style={{ position: "relative", height: 256, overflow: "hidden" }}>
         {isCoding && (
           <div key={`code-${loop}`} style={{ background: "#0B0F1E", padding: "16px 18px" }}>
             {CODE_LINES.map((line, i) => (
