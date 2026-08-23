@@ -16,6 +16,7 @@ const ORGANIZATION_JSON_LD = {
   logo: `${SITE_URL}/logo512.png`,
   email: "hello@devline.digital",
   areaServed: "Worldwide",
+  sameAs: ["https://www.linkedin.com/company/devline-digital/"],
 };
 
 export default function Seo({ title, description, jsonLd, noindex }) {
