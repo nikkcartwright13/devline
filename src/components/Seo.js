@@ -6,7 +6,7 @@ import { LANGS, langFromPathname, localizePath, stripLangPrefix } from "../lib/l
 const SITE_URL = "https://devline.digital";
 
 // og:locale expects language_TERRITORY, not a bare i18next language code.
-const OG_LOCALE = { ka: "ka_GE", en: "en_US", ru: "ru_RU", de: "de_DE", pl: "pl_PL" };
+const OG_LOCALE = { ka: "ka_GE", en: "en_US", de: "de_DE", pl: "pl_PL" };
 
 const ORGANIZATION_JSON_LD = {
   "@context": "https://schema.org",
